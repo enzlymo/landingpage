@@ -128,28 +128,34 @@ export const PremiumBadge: React.FC<PremiumBadgeProps> = ({ children, className 
 );
 
 // Premium input with focus effect
-export const PremiumInput = React.forwardRef<
-  HTMLInputElement,
-  React.InputHTMLAttributes<HTMLInputElement>
->(({ className = '', ...props }, ref) => (
-  <motion.input
-    ref={ref}
-    className={`w-full px-4 py-2 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-[#FFD43B]/50 transition-all duration-300 ${className}`}
-    whileFocus={{
-      scale: 1.02,
-      boxShadow: '0 0 0 2px rgba(255, 212, 59, 0.2)'
-    }}
-    {...props}
-  />
-));
+type PremiumInputProps = Omit<HTMLMotionProps<"input">, "ref"> & {
+  className?: string;
+};
+
+export const PremiumInput = React.forwardRef<HTMLInputElement, PremiumInputProps>(
+  ({ className = '', ...props }, ref) => (
+    <motion.input
+      ref={ref}
+      className={`w-full px-4 py-2 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-[#FFD43B]/50 transition-all duration-300 ${className}`}
+      whileFocus={{
+        scale: 1.02,
+        boxShadow: '0 0 0 2px rgba(255, 212, 59, 0.2)'
+      }}
+      {...props}
+    />
+  )
+);
 
 PremiumInput.displayName = 'PremiumInput';
 
 // Premium select with hover effect
-export const PremiumSelect = React.forwardRef<
-  HTMLSelectElement,
-  React.SelectHTMLAttributes<HTMLSelectElement>
->(({ className = '', children, ...props }, ref) => (
+type PremiumSelectProps = Omit<HTMLMotionProps<"select">, "ref"> & {
+  className?: string;
+  children: ReactNode;
+};
+
+export const PremiumSelect = React.forwardRef<HTMLSelectElement, PremiumSelectProps>(
+  ({ className = '', children, ...props }, ref) => (
   <motion.select
     ref={ref}
     className={`w-full px-4 py-2 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white appearance-none cursor-pointer ${className}`}
@@ -165,10 +171,12 @@ export const PremiumSelect = React.forwardRef<
 PremiumSelect.displayName = 'PremiumSelect';
 
 // Premium checkbox with animation
-export const PremiumCheckbox = React.forwardRef<
-  HTMLInputElement,
-  React.InputHTMLAttributes<HTMLInputElement>
->(({ className = '', ...props }, ref) => (
+type PremiumInputControlProps = Omit<HTMLMotionProps<"input">, "ref"> & {
+  className?: string;
+};
+
+export const PremiumCheckbox = React.forwardRef<HTMLInputElement, PremiumInputControlProps>(
+  ({ className = '', ...props }, ref) => (
   <motion.input
     ref={ref}
     type="checkbox"
@@ -183,10 +191,8 @@ export const PremiumCheckbox = React.forwardRef<
 PremiumCheckbox.displayName = 'PremiumCheckbox';
 
 // Premium radio with animation
-export const PremiumRadio = React.forwardRef<
-  HTMLInputElement,
-  React.InputHTMLAttributes<HTMLInputElement>
->(({ className = '', ...props }, ref) => (
+export const PremiumRadio = React.forwardRef<HTMLInputElement, PremiumInputControlProps>(
+  ({ className = '', ...props }, ref) => (
   <motion.input
     ref={ref}
     type="radio"
