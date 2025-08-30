@@ -1,0 +1,259 @@
+{
+    "design_system": {
+      "name": "AI Marketing Platform Design System",
+      "version": "1.0",
+      "description": "Modern, vibrant design system for AI-powered marketing and sales platforms",
+      
+      "color_palette": {
+        "primary": {
+          "rainbow_gradients": {
+            "description": "Multi-color radial gradients featuring vibrant spectrum transitions",
+            "colors": ["#FF3366", "#FF6633", "#FFCC33", "#33FF66", "#33CCFF", "#6633FF", "#CC33FF"],
+            "usage": "Hero backgrounds, accent elements, brand identity"
+          },
+          "blue_gradients": {
+            "description": "Cool blue to purple gradients",
+            "colors": ["#4F46E5", "#7C3AED", "#EC4899"],
+            "usage": "CTA buttons, interactive elements"
+          }
+        },
+        "neutral": {
+          "backgrounds": {
+            "primary_bg": "#FFFFFF",
+            "secondary_bg": "#F8FAFC",
+            "dark_sections": "#0F172A",
+            "card_bg": "#FFFFFF"
+          },
+          "text": {
+            "primary": "#0F172A",
+            "secondary": "#64748B",
+            "muted": "#94A3B8",
+            "inverse": "#FFFFFF"
+          }
+        }
+      },
+      
+      "typography": {
+        "font_families": {
+          "primary": "Inter, system-ui, sans-serif",
+          "fallback": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        },
+        "scale": {
+          "hero_heading": {
+            "size": "clamp(2.5rem, 5vw, 4rem)",
+            "weight": 700,
+            "line_height": 1.1,
+            "letter_spacing": "-0.02em"
+          },
+          "section_heading": {
+            "size": "clamp(1.875rem, 3vw, 2.5rem)",
+            "weight": 600,
+            "line_height": 1.2
+          },
+          "card_heading": {
+            "size": "1.25rem",
+            "weight": 600,
+            "line_height": 1.3
+          },
+          "body_large": {
+            "size": "1.125rem",
+            "weight": 400,
+            "line_height": 1.6
+          },
+          "body": {
+            "size": "1rem",
+            "weight": 400,
+            "line_height": 1.6
+          },
+          "caption": {
+            "size": "0.875rem",
+            "weight": 500,
+            "line_height": 1.4
+          }
+        }
+      },
+      
+      "spacing": {
+        "scale": "1rem base unit",
+        "values": {
+          "xs": "0.25rem",
+          "sm": "0.5rem",
+          "md": "1rem",
+          "lg": "1.5rem",
+          "xl": "2rem",
+          "2xl": "3rem",
+          "3xl": "4rem",
+          "4xl": "6rem",
+          "5xl": "8rem"
+        },
+        "section_padding": {
+          "mobile": "2rem 1rem",
+          "desktop": "4rem 2rem"
+        }
+      },
+      
+      "components": {
+        "buttons": {
+          "primary": {
+            "style": "solid background with gradient or solid color",
+            "padding": "0.75rem 1.5rem",
+            "border_radius": "0.5rem",
+            "font_weight": 600,
+            "text_transform": "none",
+            "hover_effect": "subtle scale or brightness change"
+          },
+          "secondary": {
+            "style": "outline with transparent background",
+            "border": "1.5px solid currentColor",
+            "padding": "0.75rem 1.5rem",
+            "border_radius": "0.5rem",
+            "font_weight": 500
+          }
+        },
+        
+        "cards": {
+          "base": {
+            "background": "white with subtle shadow",
+            "border_radius": "1rem",
+            "padding": "1.5rem to 2rem",
+            "shadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+            "border": "none or very subtle"
+          },
+          "feature_card": {
+            "icon_area": "circular or square icon container",
+            "title": "prominent heading",
+            "description": "2-3 lines of explanatory text",
+            "spacing": "consistent internal padding"
+          },
+          "step_card": {
+            "numbering": "prominent step number",
+            "visual_indicator": "icon or small image",
+            "process_flow": "clear sequential layout"
+          }
+        },
+        
+        "navigation": {
+          "header": {
+            "layout": "logo left, nav center/right, CTA buttons right",
+            "height": "4rem typical",
+            "background": "white or transparent",
+            "sticky": "often fixed/sticky positioning"
+          },
+          "nav_links": {
+            "style": "clean, minimal text links",
+            "spacing": "generous horizontal spacing",
+            "hover_effect": "subtle color change"
+          }
+        }
+      },
+      
+      "layout_patterns": {
+        "hero_section": {
+          "structure": "centered content with large heading and CTA",
+          "background": "often features rainbow gradient or colorful element",
+          "content_width": "constrained to readable measure",
+          "vertical_spacing": "generous padding top and bottom"
+        },
+        
+        "feature_grid": {
+          "columns": "1 col mobile, 2-3 cols tablet, 3-4 cols desktop",
+          "gap": "1.5rem to 2rem",
+          "alignment": "center-aligned content typically"
+        },
+        
+        "alternating_sections": {
+          "pattern": "white background alternating with colored/dark sections",
+          "content": "text + image combinations",
+          "image_treatment": "screenshots, mockups, or interface previews"
+        },
+        
+        "process_flow": {
+          "layout": "step-by-step cards or timeline",
+          "numbering": "clear sequential indicators",
+          "visual_connection": "lines, arrows, or spacing to show flow"
+        }
+      },
+      
+      "visual_elements": {
+        "gradients": {
+          "rainbow_radial": {
+            "type": "radial-gradient",
+            "center": "center of element",
+            "colors": "full spectrum transition",
+            "usage": "hero backgrounds, accent elements"
+          },
+          "blue_linear": {
+            "type": "linear-gradient",
+            "direction": "45deg or vertical",
+            "colors": "blue to purple range"
+          }
+        },
+        
+        "imagery": {
+          "screenshots": {
+            "style": "clean interface mockups",
+            "presentation": "often with device frames or floating",
+            "shadows": "realistic drop shadows",
+            "context": "showing product in use"
+          },
+          "icons": {
+            "style": "simple, line-based or filled",
+            "size": "consistent scaling",
+            "color": "matches brand palette"
+          }
+        },
+        
+        "effects": {
+          "shadows": {
+            "card_shadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+            "elevated_shadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
+            "color_shadows": "colored shadows matching gradients"
+          },
+          "borders": {
+            "radius": "generous border radius (0.5rem to 1rem)",
+            "style": "minimal or no borders, relying on shadows"
+          }
+        }
+      },
+      
+      "responsive_behavior": {
+        "breakpoints": {
+          "mobile": "320px to 768px",
+          "tablet": "768px to 1024px",
+          "desktop": "1024px+"
+        },
+        "adaptations": {
+          "typography": "fluid scaling using clamp()",
+          "layout": "stacked on mobile, grid on larger screens",
+          "spacing": "reduced on mobile, generous on desktop",
+          "images": "full-width on mobile, constrained on desktop"
+        }
+      },
+      
+      "content_patterns": {
+        "messaging": {
+          "headlines": "benefit-focused, action-oriented",
+          "descriptions": "clear, concise explanations",
+          "cta_text": "specific action words (Get started, View demo, etc.)"
+        },
+        "information_hierarchy": {
+          "primary": "main value proposition",
+          "secondary": "supporting benefits and features",
+          "tertiary": "detailed specifications and process"
+        }
+      },
+      
+      "animation_guidelines": {
+        "hover_effects": {
+          "buttons": "subtle scale (1.02-1.05) or brightness change",
+          "cards": "gentle lift with shadow increase",
+          "links": "smooth color transitions"
+        },
+        "entrance_animations": {
+          "preferred": "fade-in with slight upward movement",
+          "timing": "300ms to 500ms duration",
+          "easing": "ease-out curves"
+        }
+      }
+    }
+  }

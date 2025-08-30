@@ -1,0 +1,157 @@
+/* Premium Gradients */
+.bg-premium-gradient {
+  background: linear-gradient(135deg, #FF3366, #FF6633, #FFCC33, #33FF66, #33CCFF, #6633FF, #CC33FF);
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+.bg-premium-radial {
+  background: radial-gradient(circle at center, #FF3366, #FF6633, #FFCC33, #33FF66, #33CCFF, #6633FF, #CC33FF);
+}
+
+.bg-premium-conic {
+  background: conic-gradient(from 45deg, #FF3366, #FF6633, #FFCC33, #33FF66, #33CCFF, #6633FF, #CC33FF, #FF3366);
+}
+
+/* Premium Animations */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Premium Effects */
+.premium-shadow {
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1),
+              0 20px 60px -10px rgba(0, 0, 0, 0.05);
+}
+
+.premium-border {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.premium-glow {
+  box-shadow: 0 0 20px rgba(255, 212, 59, 0.3),
+              0 0 60px rgba(255, 212, 59, 0.1);
+}
+
+.premium-text-gradient {
+  background: linear-gradient(135deg, #FF3366, #FF6633, #FFCC33);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Premium Hover Effects */
+.premium-hover {
+  transition: all 0.3s ease;
+}
+
+.premium-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.1),
+              0 25px 65px -10px rgba(0, 0, 0, 0.05);
+}
+
+.premium-hover-glow:hover {
+  box-shadow: 0 0 30px rgba(255, 212, 59, 0.4),
+              0 0 80px rgba(255, 212, 59, 0.2);
+}
+
+/* Premium Animations */
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+.pulse-animation {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.shimmer-animation {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+/* Premium Cards */
+.premium-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.1),
+              0 25px 65px -10px rgba(0, 0, 0, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Premium Buttons */
+.premium-button {
+  background: linear-gradient(135deg, #FF3366, #FF6633);
+  border: none;
+  border-radius: 9999px;
+  padding: 1rem 2rem;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.premium-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px rgba(255, 51, 102, 0.3);
+}
+
+/* Premium Text Effects */
+.premium-text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.premium-text-glow {
+  text-shadow: 0 0 10px rgba(255, 212, 59, 0.5),
+               0 0 20px rgba(255, 212, 59, 0.3);
+}
+
+/* Premium Backgrounds */
+.premium-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.05;
+}
+
+.premium-grid {
+  background-size: 30px 30px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+.premium-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}

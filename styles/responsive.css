@@ -1,0 +1,378 @@
+/* Mobile First Responsive Design */
+
+/* Base styles (mobile) */
+.container {
+  @apply px-4 mx-auto w-full;
+}
+
+.section {
+  @apply py-12;
+}
+
+/* Small devices (640px and up) */
+@media (min-width: 640px) {
+  .container {
+    @apply px-6 max-w-2xl;
+  }
+
+  .section {
+    @apply py-16;
+  }
+
+  .grid-cols-responsive {
+    @apply grid-cols-2;
+  }
+}
+
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+  .container {
+    @apply px-8 max-w-3xl;
+  }
+
+  .section {
+    @apply py-20;
+  }
+
+  .grid-cols-responsive {
+    @apply grid-cols-3;
+  }
+}
+
+/* Large devices (1024px and up) */
+@media (min-width: 1024px) {
+  .container {
+    @apply px-8 max-w-5xl;
+  }
+
+  .section {
+    @apply py-24;
+  }
+
+  .grid-cols-responsive {
+    @apply grid-cols-4;
+  }
+}
+
+/* Extra large devices (1280px and up) */
+@media (min-width: 1280px) {
+  .container {
+    @apply px-8 max-w-7xl;
+  }
+
+  .section {
+    @apply py-32;
+  }
+}
+
+/* Responsive Typography */
+.text-responsive {
+  @apply text-base;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+}
+
+.heading-responsive {
+  @apply text-3xl font-bold;
+  font-size: clamp(1.875rem, 5vw, 3.75rem);
+}
+
+.subheading-responsive {
+  @apply text-xl;
+  font-size: clamp(1.25rem, 3vw, 1.875rem);
+}
+
+/* Responsive Spacing */
+.space-responsive {
+  @apply space-y-6 md:space-y-8 lg:space-y-12;
+}
+
+.gap-responsive {
+  @apply gap-4 md:gap-6 lg:gap-8;
+}
+
+.padding-responsive {
+  @apply p-4 md:p-6 lg:p-8;
+}
+
+/* Responsive Grid */
+.grid-responsive {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+}
+
+/* Responsive Flex */
+.flex-responsive {
+  @apply flex flex-col sm:flex-row;
+}
+
+/* Responsive Images */
+.image-responsive {
+  @apply w-full h-auto object-cover;
+  aspect-ratio: 16/9;
+}
+
+/* Responsive Navigation */
+.nav-responsive {
+  @apply fixed top-0 left-0 right-0 z-50;
+}
+
+/* Responsive Cards */
+.card-responsive {
+  @apply w-full rounded-xl overflow-hidden;
+  @apply p-4 sm:p-6 md:p-8;
+}
+
+/* Responsive Buttons */
+.button-responsive {
+  @apply px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4;
+}
+
+/* Responsive Forms */
+.form-responsive {
+  @apply w-full max-w-sm sm:max-w-md md:max-w-lg mx-auto;
+}
+
+/* Responsive Video */
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Tables */
+.table-responsive {
+  @apply w-full overflow-x-auto;
+}
+
+/* Responsive Utilities */
+.hide-mobile {
+  @apply hidden sm:block;
+}
+
+.hide-desktop {
+  @apply block sm:hidden;
+}
+
+/* Responsive Margins */
+.margin-responsive {
+  @apply my-4 sm:my-6 md:my-8 lg:my-12;
+}
+
+/* Responsive Borders */
+.border-responsive {
+  @apply border-0 sm:border;
+}
+
+/* Responsive Shadows */
+.shadow-responsive {
+  @apply shadow-none sm:shadow-md md:shadow-lg;
+}
+
+/* Responsive Background */
+.bg-responsive {
+  @apply bg-opacity-100 sm:bg-opacity-90 md:bg-opacity-80;
+}
+
+/* Responsive Container Width */
+.width-responsive {
+  @apply w-full sm:w-3/4 md:w-2/3 lg:w-1/2;
+}
+
+/* Responsive Height */
+.height-responsive {
+  @apply h-screen sm:h-auto;
+  min-height: 100vh;
+}
+
+/* Responsive Position */
+.position-responsive {
+  @apply static sm:sticky top-0;
+}
+
+/* Responsive Z-index */
+.z-responsive {
+  @apply z-10 sm:z-20 md:z-30;
+}
+
+/* Responsive Opacity */
+.opacity-responsive {
+  @apply opacity-100 sm:opacity-90 md:opacity-80;
+}
+
+/* Responsive Transform */
+.transform-responsive {
+  @apply transform-none sm:scale-95 md:scale-100;
+}
+
+/* Responsive Transition */
+.transition-responsive {
+  @apply transition-none sm:transition-all;
+  transition-duration: 300ms;
+}
+
+/* Responsive Cursor */
+.cursor-responsive {
+  @apply cursor-pointer sm:cursor-default;
+}
+
+/* Responsive User Select */
+.select-responsive {
+  @apply select-none sm:select-auto;
+}
+
+/* Responsive Overflow */
+.overflow-responsive {
+  @apply overflow-auto sm:overflow-visible;
+}
+
+/* Responsive List Style */
+.list-responsive {
+  @apply list-none sm:list-disc;
+}
+
+/* Responsive Text Alignment */
+.text-align-responsive {
+  @apply text-left sm:text-center md:text-right;
+}
+
+/* Responsive Line Height */
+.leading-responsive {
+  @apply leading-normal sm:leading-relaxed;
+}
+
+/* Responsive Letter Spacing */
+.tracking-responsive {
+  @apply tracking-normal sm:tracking-wide;
+}
+
+/* Responsive Font Weight */
+.font-responsive {
+  @apply font-normal sm:font-medium md:font-bold;
+}
+
+/* Responsive Text Decoration */
+.decoration-responsive {
+  @apply no-underline sm:underline;
+}
+
+/* Responsive Text Transform */
+.transform-text-responsive {
+  @apply normal-case sm:uppercase;
+}
+
+/* Responsive White Space */
+.whitespace-responsive {
+  @apply whitespace-normal sm:whitespace-nowrap;
+}
+
+/* Responsive Word Break */
+.break-responsive {
+  @apply break-normal sm:break-all;
+}
+
+/* Responsive Text Overflow */
+.text-overflow-responsive {
+  @apply overflow-visible sm:truncate;
+}
+
+/* Responsive Vertical Alignment */
+.align-responsive {
+  @apply align-baseline sm:align-middle;
+}
+
+/* Responsive Display */
+.display-responsive {
+  @apply block sm:inline md:inline-block;
+}
+
+/* Responsive Float */
+.float-responsive {
+  @apply float-none sm:float-left md:float-right;
+}
+
+/* Responsive Clear */
+.clear-responsive {
+  @apply clear-none sm:clear-both;
+}
+
+/* Responsive Box Sizing */
+.box-responsive {
+  @apply box-border sm:box-content;
+}
+
+/* Responsive Resize */
+.resize-responsive {
+  @apply resize-none sm:resize;
+}
+
+/* Responsive Pointer Events */
+.pointer-responsive {
+  @apply pointer-events-none sm:pointer-events-auto;
+}
+
+/* Responsive Scroll Behavior */
+.scroll-responsive {
+  @apply scroll-auto sm:scroll-smooth;
+}
+
+/* Responsive Scroll Snap */
+.snap-responsive {
+  @apply snap-none sm:snap-y;
+}
+
+/* Responsive Touch Action */
+.touch-responsive {
+  @apply touch-auto sm:touch-none;
+}
+
+/* Responsive Will Change */
+.will-change-responsive {
+  @apply will-change-auto sm:will-change-scroll;
+}
+
+/* Responsive Backdrop Filter */
+.backdrop-responsive {
+  @apply backdrop-blur-none sm:backdrop-blur-sm;
+}
+
+/* Responsive Mix Blend Mode */
+.blend-responsive {
+  @apply mix-blend-normal sm:mix-blend-multiply;
+}
+
+/* Responsive Background Blend Mode */
+.bg-blend-responsive {
+  @apply bg-blend-normal sm:bg-blend-overlay;
+}
+
+/* Responsive Isolation */
+.isolation-responsive {
+  @apply isolation-auto sm:isolate;
+}
+
+/* Responsive Container Query */
+@container (min-width: 640px) {
+  .container-responsive {
+    @apply grid-cols-2;
+  }
+}
+
+@container (min-width: 768px) {
+  .container-responsive {
+    @apply grid-cols-3;
+  }
+}
+
+@container (min-width: 1024px) {
+  .container-responsive {
+    @apply grid-cols-4;
+  }
+}
