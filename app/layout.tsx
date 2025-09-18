@@ -280,6 +280,10 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="//getlaunchlist.com" />
+        
+        {/* LaunchList Widget */}
+        <script src="https://getlaunchlist.com/js/widget.js" defer></script>
         
         {/* Canonical URL */}
         <link rel="canonical" href="https://lymo.ai" />
