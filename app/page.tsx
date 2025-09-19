@@ -381,7 +381,7 @@ export default function Page() {
                         <div className="bg-white/10 rounded-lg p-4">
                           <div className="text-gray-400 text-xs mb-2">Your prompt</div>
                           <div className="text-white text-sm">
-                            "Create engaging social media content for a tech startup launch..."
+                            &ldquo;Create engaging social media content for a tech startup launch...&rdquo;
                           </div>
                         </div>
                         <div className="flex items-center gap-2">
