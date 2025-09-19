@@ -16,7 +16,7 @@ const inter = Inter({
 
 export default function Page() {
   return (
-    <div className={`flex flex-col min-h-screen ${inter.variable} font-sans bg-white text-gray-900`}>
+    <div className={`flex flex-col min-h-screen ${inter.variable} font-sans bg-white text-gray-900 pb-32`}>
       {/* Navigation */}
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/95 border-b border-gray-100 shadow-sm">
         <div className="max-w-6xl mx-auto px-6">

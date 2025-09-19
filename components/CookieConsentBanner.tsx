@@ -49,7 +49,7 @@ export default function CookieConsentBanner({ onShowSettings }: CookieConsentBan
   if (!isVisible) return null
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 shadow-lg">
+    <div className="fixed bottom-0 left-0 right-0 z-[100] bg-white border-t border-gray-200 shadow-lg">
       <div className="container mx-auto px-4 py-6 max-w-7xl">
         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4">
           {/* Cookie Icon & Content */}
