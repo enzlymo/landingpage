@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-  const baseUrl = process.env.SITE_URL || 'https://lymo.ai';
+  const baseUrl = process.env.SITE_URL || 'https://lymo.me';
   const currentDate = new Date().toISOString().split('T')[0];
   
   // Define your site pages with their properties

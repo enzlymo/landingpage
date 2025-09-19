@@ -20,10 +20,10 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Lymo AI",
-  "url": "https://lymo.ai",
+  "url": "https://lymo.me",
   "logo": {
     "@type": "ImageObject",
-    "url": "https://lymo.ai/images/lymo-logo.png",
+    "url": "https://lymo.me/images/lymo-logo.png",
     "width": 512,
     "height": 512
   },
@@ -37,8 +37,8 @@ export const organizationSchema = {
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "customer service",
-    "email": "support@lymo.ai",
-    "url": "https://lymo.ai/contact"
+    "email": "support@lymo.me",
+    "url": "https://lymo.me/contact"
   }
 };
 

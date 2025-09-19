@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Sora } from "next/font/google";
 import "./globals.css";
+import GoogleAnalytics from "../components/GoogleAnalytics";
 
 const sora = Sora({ 
   subsets: ['latin'],
@@ -64,7 +65,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://lymo.ai',
+    url: 'https://lymo.me',
     siteName: 'Lymo AI',
     title: 'Lymo AI - Create Winning AI Videos in Seconds',
     description: 'Generate high-converting video ads from text with Lymo AI. No editing skills required. Transform URLs into viral content instantly.',
@@ -135,18 +136,18 @@ export const metadata: Metadata = {
   
   // Alternate Languages (if you plan to support multiple languages)
   alternates: {
-    canonical: 'https://lymo.ai',
+    canonical: 'https://lymo.me',
     languages: {
-      'en-US': 'https://lymo.ai',
-      'es-ES': 'https://lymo.ai/es',
-      'fr-FR': 'https://lymo.ai/fr',
+      'en-US': 'https://lymo.me',
+      'es-ES': 'https://lymo.me/es',
+      'fr-FR': 'https://lymo.me/fr',
     },
   },
   
   // App Links (for mobile apps if you have them)
   appLinks: {
     web: {
-      url: 'https://lymo.ai',
+      url: 'https://lymo.me',
       should_fallback: true,
     },
   },
@@ -162,12 +163,12 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://lymo.ai/#organization",
+        "@id": "https://lymo.me/#organization",
         "name": "Lymo AI",
-        "url": "https://lymo.ai",
+        "url": "https://lymo.me",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://lymo.ai/images/lymo-logo.png",
+          "url": "https://lymo.me/images/lymo-logo.png",
           "width": 512,
           "height": 512
         },
@@ -181,31 +182,31 @@ export default function RootLayout({
         "contactPoint": {
           "@type": "ContactPoint",
           "contactType": "customer service",
-          "email": "support@lymo.ai",
-          "url": "https://lymo.ai/contact"
+          "email": "support@lymo.me",
+          "url": "https://lymo.me/contact"
         }
       },
       {
         "@type": "WebSite",
-        "@id": "https://lymo.ai/#website",
-        "url": "https://lymo.ai",
+        "@id": "https://lymo.me/#website",
+        "url": "https://lymo.me",
         "name": "Lymo AI",
         "description": "Create winning AI videos in seconds with Lymo AI",
         "publisher": {
-          "@id": "https://lymo.ai/#organization"
+          "@id": "https://lymo.me/#organization"
         },
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://lymo.ai/search?q={search_term_string}",
+          "target": "https://lymo.me/search?q={search_term_string}",
           "query-input": "required name=search_term_string"
         }
       },
       {
         "@type": "SoftwareApplication",
-        "@id": "https://lymo.ai/#software",
+        "@id": "https://lymo.me/#software",
         "name": "Lymo AI Video Generator",
         "description": "AI-powered video generation platform that creates professional videos from text and URLs",
-        "url": "https://lymo.ai",
+        "url": "https://lymo.me",
         "applicationCategory": "MultimediaApplication",
         "operatingSystem": "Web Browser",
         "offers": {
@@ -223,12 +224,12 @@ export default function RootLayout({
           "worstRating": "1"
         },
         "publisher": {
-          "@id": "https://lymo.ai/#organization"
+          "@id": "https://lymo.me/#organization"
         }
       },
       {
         "@type": "FAQPage",
-        "@id": "https://lymo.ai/#faq",
+        "@id": "https://lymo.me/#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -278,6 +279,7 @@ export default function RootLayout({
         {/* Preconnect to external domains for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//getlaunchlist.com" />
@@ -286,9 +288,10 @@ export default function RootLayout({
         <script src="https://getlaunchlist.com/js/widget.js" defer></script>
         
         {/* Canonical URL */}
-        <link rel="canonical" href="https://lymo.ai" />
+        <link rel="canonical" href="https://lymo.me" />
       </head>
       <body className={`${inter.className} ${sora.variable} ${inter.variable} bg-background text-foreground font-sans`}>
+        <GoogleAnalytics />
         {children}
       </body>
     </html>
