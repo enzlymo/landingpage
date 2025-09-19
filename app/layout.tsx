@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Sora } from "next/font/google";
 import "./globals.css";
 import GoogleAnalytics from "../components/GoogleAnalytics";
+import CookieConsentProvider from "../components/CookieConsentProvider";
 
 const sora = Sora({ 
   subsets: ['latin'],
@@ -292,6 +293,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} ${sora.variable} ${inter.variable} bg-background text-foreground font-sans`}>
         <GoogleAnalytics />
+        <CookieConsentProvider />
         {children}
       </body>
     </html>
