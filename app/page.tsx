@@ -55,37 +55,61 @@ export default function Page() {
               ))}
               
               {/* Language Switcher */}
-              <div className="flex items-center space-x-2 ml-4">
-                <button
-                  onClick={() => switchLocale('en')}
-                  className={`px-2 py-1 text-xs rounded ${locale === 'en' ? 'bg-[#F4D03F] text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
-                >
-                  EN
-                </button>
-                <button
-                  onClick={() => switchLocale('sv')}
-                  className={`px-2 py-1 text-xs rounded ${locale === 'sv' ? 'bg-[#F4D03F] text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
-                >
-                  SV
-                </button>
+              <div className="flex items-center ml-6">
+                <div className="relative bg-white/10 backdrop-blur-sm rounded-full p-1 border border-gray-200/50">
+                  <div className="flex items-center">
+                    <button
+                      onClick={() => switchLocale('en')}
+                      className={`relative px-3 py-1.5 text-xs font-medium rounded-full transition-all duration-300 ${
+                        locale === 'en' 
+                          ? 'bg-gradient-to-r from-[#F4D03F] to-[#F1C40F] text-gray-900 shadow-sm' 
+                          : 'text-gray-600 hover:text-gray-900 hover:bg-white/20'
+                      }`}
+                    >
+                      English
+                    </button>
+                    <button
+                      onClick={() => switchLocale('sv')}
+                      className={`relative px-3 py-1.5 text-xs font-medium rounded-full transition-all duration-300 ${
+                        locale === 'sv' 
+                          ? 'bg-gradient-to-r from-[#F4D03F] to-[#F1C40F] text-gray-900 shadow-sm' 
+                          : 'text-gray-600 hover:text-gray-900 hover:bg-white/20'
+                      }`}
+                    >
+                      Svenska
+                    </button>
+                  </div>
+                </div>
               </div>
             </nav>
             
             <div className="flex items-center space-x-3">
               {/* Mobile Language Switcher */}
-              <div className="flex md:hidden items-center space-x-1">
-                <button
-                  onClick={() => switchLocale('en')}
-                  className={`px-2 py-1 text-xs rounded ${locale === 'en' ? 'bg-[#F4D03F] text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
-                >
-                  EN
-                </button>
-                <button
-                  onClick={() => switchLocale('sv')}
-                  className={`px-2 py-1 text-xs rounded ${locale === 'sv' ? 'bg-[#F4D03F] text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
-                >
-                  SV
-                </button>
+              <div className="flex md:hidden items-center mr-3">
+                <div className="relative bg-white/10 backdrop-blur-sm rounded-full p-0.5 border border-gray-200/50">
+                  <div className="flex items-center">
+                    <button
+                      onClick={() => switchLocale('en')}
+                      className={`relative px-2 py-1 text-xs font-medium rounded-full transition-all duration-300 ${
+                        locale === 'en' 
+                          ? 'bg-gradient-to-r from-[#F4D03F] to-[#F1C40F] text-gray-900 shadow-sm' 
+                          : 'text-gray-600 hover:text-gray-900 hover:bg-white/20'
+                      }`}
+                    >
+                      EN
+                    </button>
+                    <button
+                      onClick={() => switchLocale('sv')}
+                      className={`relative px-2 py-1 text-xs font-medium rounded-full transition-all duration-300 ${
+                        locale === 'sv' 
+                          ? 'bg-gradient-to-r from-[#F4D03F] to-[#F1C40F] text-gray-900 shadow-sm' 
+                          : 'text-gray-600 hover:text-gray-900 hover:bg-white/20'
+                      }`}
+                    >
+                      SV
+                    </button>
+                  </div>
+                </div>
               </div>
               
               <Button 
@@ -119,13 +143,6 @@ export default function Page() {
               
               {/* Hero Content */}
               <div className="text-center max-w-3xl mx-auto mb-12">
-                {/* Language Debug Info */}
-                <div className="mb-4 p-3 bg-blue-100 border border-blue-300 rounded-lg text-sm">
-                  <strong>Language Test:</strong> Current locale: <span className="font-mono">{locale}</span>
-                  <br />
-                  <strong>Badge text:</strong> {t.hero.badge}
-                </div>
-
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#F4D03F] to-[#F1C40F] text-gray-900 rounded-full text-sm font-semibold mb-8 shadow-lg">
                   <Sparkles className="h-4 w-4" />
