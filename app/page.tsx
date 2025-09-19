@@ -28,16 +28,16 @@ export default function Page() {
     <div className={`flex flex-col min-h-screen ${inter.variable} font-sans bg-white text-gray-900 pb-32`}>
       {/* Floating Navigation */}
       <header className="fixed top-4 left-4 right-4 z-50 max-w-7xl mx-auto">
-        <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl shadow-2xl">
+        <div className="bg-gradient-to-r from-[#F4D03F]/95 to-[#F1C40F]/95 backdrop-blur-xl border border-[#F4D03F]/30 rounded-2xl shadow-2xl">
           <div className="px-6 py-4">
             <div className="flex items-center justify-between">
               <Link href="/" className="flex items-center space-x-2">
                 <Image 
                   src="/images/lymo-logo.png" 
                   alt="Lymo Logo" 
-                  width={32}
-                  height={32}
-                  className="h-8 w-auto"
+                  width={48}
+                  height={48}
+                  className="h-12 w-auto drop-shadow-sm"
                 />
               </Link>
               
@@ -50,23 +50,23 @@ export default function Page() {
                   <Link 
                     key={item.key}
                     href={`#${item.key}`}
-                    className="text-sm font-medium text-white/80 hover:text-white transition-colors relative group"
+                    className="text-sm font-medium text-gray-800 hover:text-gray-900 transition-colors relative group"
                   >
                     {item.label}
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-blue-400 group-hover:w-full transition-all duration-300" />
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-600 to-orange-700 group-hover:w-full transition-all duration-300" />
                   </Link>
                 ))}
                 
                 {/* Premium Language Switcher */}
                 <div className="flex items-center ml-6">
-                  <div className="relative bg-white/10 backdrop-blur-sm rounded-full p-1 border border-white/20">
+                  <div className="relative bg-white/20 backdrop-blur-sm rounded-full p-1 border border-orange-200/50">
                     <div className="flex items-center">
                       <button
                         onClick={() => switchLocale('en')}
                         className={`relative px-3 py-1.5 text-xs font-medium rounded-full transition-all duration-300 ${
                           locale === 'en' 
-                            ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white shadow-lg' 
-                            : 'text-gray-300 hover:text-white hover:bg-white/10'
+                            ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg' 
+                            : 'text-gray-700 hover:text-gray-900 hover:bg-white/20'
                         }`}
                       >
                         English
@@ -75,8 +75,8 @@ export default function Page() {
                         onClick={() => switchLocale('sv')}
                         className={`relative px-3 py-1.5 text-xs font-medium rounded-full transition-all duration-300 ${
                           locale === 'sv' 
-                            ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white shadow-lg' 
-                            : 'text-gray-300 hover:text-white hover:bg-white/10'
+                            ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg' 
+                            : 'text-gray-700 hover:text-gray-900 hover:bg-white/20'
                         }`}
                       >
                         Svenska
@@ -89,14 +89,14 @@ export default function Page() {
               <div className="flex items-center space-x-3">
                 {/* Mobile Premium Language Switcher */}
                 <div className="flex md:hidden items-center mr-3">
-                  <div className="relative bg-white/10 backdrop-blur-sm rounded-full p-0.5 border border-white/20">
+                  <div className="relative bg-white/20 backdrop-blur-sm rounded-full p-0.5 border border-orange-200/50">
                     <div className="flex items-center">
                       <button
                         onClick={() => switchLocale('en')}
                         className={`relative px-2 py-1 text-xs font-medium rounded-full transition-all duration-300 ${
                           locale === 'en' 
-                            ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white shadow-lg' 
-                            : 'text-gray-300 hover:text-white hover:bg-white/10'
+                            ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg' 
+                            : 'text-gray-700 hover:text-gray-900 hover:bg-white/20'
                         }`}
                       >
                         EN
@@ -105,8 +105,8 @@ export default function Page() {
                         onClick={() => switchLocale('sv')}
                         className={`relative px-2 py-1 text-xs font-medium rounded-full transition-all duration-300 ${
                           locale === 'sv' 
-                            ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white shadow-lg' 
-                            : 'text-gray-300 hover:text-white hover:bg-white/10'
+                            ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg' 
+                            : 'text-gray-700 hover:text-gray-900 hover:bg-white/20'
                         }`}
                       >
                         SV
@@ -123,7 +123,7 @@ export default function Page() {
                     }
                   }}
                   size="sm" 
-                  className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white font-semibold text-sm px-6 shadow-lg hover:scale-105 transition-all duration-300"
+                  className="bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-700 hover:to-orange-800 text-white font-semibold text-sm px-6 shadow-lg hover:scale-105 transition-all duration-300"
                 >
                   {t.nav.signIn}
                 </Button>
@@ -135,14 +135,14 @@ export default function Page() {
 
       <main className="flex-grow pt-24">
         {/* Premium Hero Section */}
-        <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+        <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-gray-900 via-orange-900 to-yellow-900">
           {/* Premium background gradients */}
           <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(120,119,198,0.15),transparent_50%)]" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,255,255,0.08),transparent_50%)]" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_80%,rgba(124,58,237,0.12),transparent_50%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(245,208,63,0.15),transparent_50%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,193,7,0.12),transparent_50%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_80%,rgba(255,165,0,0.18),transparent_50%)]" />
             {/* Subtle grid pattern */}
-            <div className="absolute inset-0 opacity-20 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
+            <div className="absolute inset-0 opacity-20 bg-[linear-gradient(to_right,#F4D03F12_1px,transparent_1px),linear-gradient(to_bottom,#F4D03F12_1px,transparent_1px)] bg-[size:24px_24px]" />
           </div>
           
           <div className="relative w-full z-10">
@@ -151,15 +151,15 @@ export default function Page() {
               {/* Premium Hero Content */}
               <div className="text-center max-w-4xl mx-auto mb-16">
                 {/* Premium Badge */}
-                <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500/20 to-blue-500/20 backdrop-blur-sm border border-white/20 text-white rounded-full text-sm font-semibold mb-8 shadow-2xl">
-                  <Sparkles className="h-4 w-4 text-purple-300" />
+                <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#F4D03F]/25 to-[#F1C40F]/25 backdrop-blur-sm border border-[#F4D03F]/30 text-white rounded-full text-sm font-semibold mb-8 shadow-2xl">
+                  <Sparkles className="h-4 w-4 text-[#F4D03F]" />
                   {t.hero.badge}
                 </div>
 
                 {/* Premium Main Heading */}
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight leading-[1.1] mb-6 text-white">
                   {t.hero.title}{' '}
-                  <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent font-medium">
+                  <span className="bg-gradient-to-r from-[#F4D03F] via-[#F1C40F] to-[#FF6633] bg-clip-text text-transparent font-medium">
                     {t.hero.titleHighlight}
                   </span>{' '}
                   {t.hero.titleEnd}
@@ -173,7 +173,7 @@ export default function Page() {
                 {/* Integrated CTA Section */}
                 <div className="flex flex-col items-center gap-8">
                   {/* Premium Waitlist Widget */}
-                  <div className="max-w-lg mx-auto bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 shadow-2xl">
+                  <div className="max-w-lg mx-auto bg-gradient-to-b from-[#F4D03F]/15 to-white/10 backdrop-blur-xl rounded-3xl p-8 border border-[#F4D03F]/30 shadow-2xl">
                     <DynamicWaitlist 
                       showTitle={true}
                       title={t.hero.waitlistTitle}
@@ -188,7 +188,7 @@ export default function Page() {
                       {[1, 2, 3, 4].map((i) => (
                         <div 
                           key={i} 
-                          className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-purple-400 to-blue-400 shadow-lg"
+                          className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#F4D03F] to-[#F1C40F] shadow-lg"
                         />
                       ))}
                     </div>
@@ -203,7 +203,7 @@ export default function Page() {
               {/* Premium Media Showcase */}
               <div className="max-w-7xl mx-auto mt-20">
                 <div className="text-center mb-12">
-                  <p className="text-sm font-medium text-purple-300 uppercase tracking-wide mb-3">
+                  <p className="text-sm font-medium text-[#F4D03F] uppercase tracking-wide mb-3">
                     {t.hero.showcaseTitle}
                   </p>
                   <h3 className="text-2xl md:text-3xl font-light text-white">
@@ -215,17 +215,17 @@ export default function Page() {
                 <div className="flex items-center justify-center gap-8 px-4">
                   {/* Left Image/Ad */}
                   <div className="hidden lg:block relative group">
-                    <div className="w-80 h-96 bg-gradient-to-br from-purple-500/20 to-blue-500/20 backdrop-blur-sm rounded-3xl border border-white/20 p-6 shadow-2xl hover:scale-105 transition-all duration-500">
+                    <div className="w-80 h-96 bg-gradient-to-br from-[#F4D03F]/20 to-[#F1C40F]/20 backdrop-blur-sm rounded-3xl border border-[#F4D03F]/30 p-6 shadow-2xl hover:scale-105 transition-all duration-500">
                       <div className="h-full flex flex-col justify-between">
                         <div>
-                          <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-blue-400 rounded-xl mb-4"></div>
+                          <div className="w-12 h-12 bg-gradient-to-br from-[#F4D03F] to-[#F1C40F] rounded-xl mb-4"></div>
                           <h4 className="text-lg font-semibold text-white mb-2">URL to Video</h4>
                           <p className="text-gray-300 text-sm">Transform any product page into engaging video content in seconds.</p>
                         </div>
                         <div className="bg-white/10 rounded-2xl p-4 backdrop-blur-sm">
                           <div className="flex items-center gap-3">
-                            <div className="w-8 h-8 bg-green-400 rounded-full flex items-center justify-center">
-                              <Play className="w-4 h-4 text-white" />
+                            <div className="w-8 h-8 bg-[#F4D03F] rounded-full flex items-center justify-center">
+                              <Play className="w-4 h-4 text-gray-900" />
                             </div>
                             <div>
                               <div className="text-white text-sm font-medium">2.4M views</div>
@@ -239,7 +239,7 @@ export default function Page() {
 
                   {/* Center Video (Main) */}
                   <div className="relative group">
-                    <div className="w-[320px] h-[480px] bg-gradient-to-br from-slate-800 to-purple-900 rounded-3xl border border-white/20 shadow-2xl overflow-hidden hover:scale-105 transition-all duration-500">
+                    <div className="w-[320px] h-[480px] bg-gradient-to-br from-slate-800 to-orange-900 rounded-3xl border border-white/20 shadow-2xl overflow-hidden hover:scale-105 transition-all duration-500">
                       <VideoCard
                         poster="/images/photo-2.jpg"
                         title="AI-Generated UGC Content"
@@ -254,16 +254,16 @@ export default function Page() {
 
                   {/* Right Image/Ad */}
                   <div className="hidden lg:block relative group">
-                    <div className="w-80 h-96 bg-gradient-to-br from-pink-500/20 to-purple-500/20 backdrop-blur-sm rounded-3xl border border-white/20 p-6 shadow-2xl hover:scale-105 transition-all duration-500">
+                    <div className="w-80 h-96 bg-gradient-to-br from-orange-500/20 to-[#F4D03F]/20 backdrop-blur-sm rounded-3xl border border-orange-400/30 p-6 shadow-2xl hover:scale-105 transition-all duration-500">
                       <div className="h-full flex flex-col justify-between">
                         <div>
-                          <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-purple-400 rounded-xl mb-4"></div>
+                          <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-[#F4D03F] rounded-xl mb-4"></div>
                           <h4 className="text-lg font-semibold text-white mb-2">Social Media Magic</h4>
                           <p className="text-gray-300 text-sm">Create viral social content that drives engagement and conversions.</p>
                         </div>
                         <div className="bg-white/10 rounded-2xl p-4 backdrop-blur-sm">
                           <div className="flex items-center gap-3">
-                            <div className="w-8 h-8 bg-pink-400 rounded-full flex items-center justify-center">
+                            <div className="w-8 h-8 bg-orange-400 rounded-full flex items-center justify-center">
                               <Target className="w-4 h-4 text-white" />
                             </div>
                             <div>
@@ -282,13 +282,13 @@ export default function Page() {
         </section>
 
         {/* Interactive 3-Steps Section */}
-        <section className="relative py-24 bg-gradient-to-b from-slate-900 to-gray-900">
+        <section className="relative py-24 bg-gradient-to-b from-orange-900 to-gray-900">
           <div className="max-w-7xl mx-auto px-6">
             {/* Section Header */}
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
                 3 easy steps to create your{' '}
-                <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent font-medium">
+                <span className="bg-gradient-to-r from-[#F4D03F] to-[#F1C40F] bg-clip-text text-transparent font-medium">
                   studio-quality content
                 </span>
               </h2>
@@ -299,7 +299,7 @@ export default function Page() {
 
             {/* Content Type Switcher */}
             <div className="flex justify-center mb-16">
-              <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-2 border border-white/20 w-full max-w-2xl">
+              <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-2 border border-[#F4D03F]/30 w-full max-w-2xl">
                 <div className="flex flex-col sm:flex-row gap-2">
                   {[
                     { id: 'pictures', label: 'Pictures', icon: ImageIcon },
@@ -311,7 +311,7 @@ export default function Page() {
                       onClick={() => setActiveContentType(type.id as any)}
                       className={`flex items-center justify-center gap-3 px-4 sm:px-6 py-3 rounded-xl transition-all duration-300 flex-1 ${
                         activeContentType === type.id
-                          ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white shadow-lg'
+                          ? 'bg-gradient-to-r from-[#F4D03F] to-[#F1C40F] text-gray-900 shadow-lg'
                           : 'text-gray-300 hover:text-white hover:bg-white/10'
                       }`}
                     >
@@ -329,7 +329,7 @@ export default function Page() {
               <div className="relative group">
                 <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 h-full hover:bg-white/10 transition-all duration-500">
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl flex items-center justify-center text-white font-bold text-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#F4D03F] to-[#F1C40F] rounded-2xl flex items-center justify-center text-gray-900 font-bold text-lg">
                       1
                     </div>
                     <h3 className="text-xl font-semibold text-white">
@@ -350,12 +350,12 @@ export default function Page() {
                     {activeContentType === 'pictures' && (
                       <div className="space-y-4">
                         <div className="flex items-center gap-3">
-                          <Upload className="w-5 h-5 text-purple-400" />
+                          <Upload className="w-5 h-5 text-[#F4D03F]" />
                           <span className="text-white text-sm font-medium">Drop images here</span>
                         </div>
                         <div className="grid grid-cols-3 gap-2">
                           {[1, 2, 3].map((i) => (
-                            <div key={i} className="aspect-square bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-lg"></div>
+                            <div key={i} className="aspect-square bg-gradient-to-br from-[#F4D03F]/20 to-[#F1C40F]/20 rounded-lg"></div>
                           ))}
                         </div>
                       </div>
@@ -365,7 +365,7 @@ export default function Page() {
                       <div className="space-y-4">
                         <div className="flex items-center justify-between">
                           <span className="text-white text-sm">URL</span>
-                          <Button size="sm" className="bg-purple-600 hover:bg-purple-700 text-white text-xs">
+                          <Button size="sm" className="bg-[#F4D03F] hover:bg-[#F1C40F] text-gray-900 text-xs">
                             Import Brand
                           </Button>
                         </div>
@@ -385,8 +385,8 @@ export default function Page() {
                           </div>
                         </div>
                         <div className="flex items-center gap-2">
-                          <Wand2 className="w-4 h-4 text-purple-400" />
-                          <span className="text-purple-400 text-sm">AI analyzing...</span>
+                          <Wand2 className="w-4 h-4 text-[#F4D03F]" />
+                          <span className="text-[#F4D03F] text-sm">AI analyzing...</span>
                         </div>
                       </div>
                     )}
@@ -398,7 +398,7 @@ export default function Page() {
               <div className="relative group">
                 <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 h-full hover:bg-white/10 transition-all duration-500">
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center text-white font-bold text-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#F1C40F] to-orange-500 rounded-2xl flex items-center justify-center text-gray-900 font-bold text-lg">
                       2
                     </div>
                     <h3 className="text-xl font-semibold text-white">
@@ -417,14 +417,14 @@ export default function Page() {
                   {/* Step 2 Mockup */}
                   <div className="bg-white/10 rounded-2xl p-6 border border-white/20">
                     <div className="space-y-4">
-                      <div className="text-purple-400 text-sm font-medium">
+                      <div className="text-[#F4D03F] text-sm font-medium">
                         {activeContentType === 'pictures' && 'Most Popular Styles For Your Images'}
                         {activeContentType === 'videos' && 'Most Popular Video Types For Your Brand'}
                         {activeContentType === 'text' && 'Recommended Content Types'}
                       </div>
                       <div className="grid grid-cols-2 gap-3">
                         {[1, 2, 3, 4].map((i) => (
-                          <div key={i} className="aspect-[4/3] bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-lg border border-white/20"></div>
+                          <div key={i} className="aspect-[4/3] bg-gradient-to-br from-[#F4D03F]/20 to-orange-500/20 rounded-lg border border-[#F4D03F]/20"></div>
                         ))}
                       </div>
                       <div className="flex gap-2">
@@ -452,7 +452,7 @@ export default function Page() {
               <div className="relative group">
                 <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 h-full hover:bg-white/10 transition-all duration-500">
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center text-white font-bold text-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center text-white font-bold text-lg">
                       3
                     </div>
                     <h3 className="text-xl font-semibold text-white">
@@ -471,15 +471,15 @@ export default function Page() {
                   {/* Step 3 Mockup */}
                   <div className="bg-white/10 rounded-2xl p-6 border border-white/20">
                     <div className="space-y-4">
-                      <div className="text-purple-400 text-sm font-medium">
+                      <div className="text-[#F4D03F] text-sm font-medium">
                         AI Generated {activeContentType === 'pictures' ? 'Images' : activeContentType === 'videos' ? 'Videos' : 'Content'}
                       </div>
                       <div className="grid grid-cols-2 gap-3">
                         {[1, 2].map((i) => (
-                          <div key={i} className="aspect-square bg-gradient-to-br from-pink-500/20 to-purple-500/20 rounded-lg border border-white/20 flex items-center justify-center">
-                            {activeContentType === 'pictures' && <ImageIcon className="w-8 h-8 text-white/50" />}
-                            {activeContentType === 'videos' && <Video className="w-8 h-8 text-white/50" />}
-                            {activeContentType === 'text' && <FileText className="w-8 h-8 text-white/50" />}
+                          <div key={i} className="aspect-square bg-gradient-to-br from-orange-500/20 to-[#F4D03F]/20 rounded-lg border border-orange-400/30 flex items-center justify-center">
+                            {activeContentType === 'pictures' && <ImageIcon className="w-8 h-8 text-[#F4D03F]" />}
+                            {activeContentType === 'videos' && <Video className="w-8 h-8 text-[#F4D03F]" />}
+                            {activeContentType === 'text' && <FileText className="w-8 h-8 text-[#F4D03F]" />}
                           </div>
                         ))}
                       </div>
@@ -737,9 +737,9 @@ export default function Page() {
               <Image 
                 src="/images/lymo-logo.png" 
                 alt="Lymo Logo" 
-                width={32}
-                height={32}
-                className="h-8 w-auto filter brightness-0 invert"
+                width={40}
+                height={40}
+                className="h-10 w-auto"
               />
             </div>
             <div className="flex space-x-6 text-sm text-gray-400">
