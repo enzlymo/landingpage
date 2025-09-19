@@ -64,7 +64,7 @@ export default function CookieConsentBanner({ onShowSettings }: CookieConsentBan
               </h3>
               <p className="text-sm text-gray-600 leading-relaxed">
                 Vi använder cookies för att förbättra din upplevelse, analysera webbplatstrafik och för marknadsföring. 
-                Du kan hantera dina preferenser nedan. Genom att klicka "Acceptera alla" samtycker du till användning av alla cookies.
+                Du kan hantera dina preferenser nedan. Genom att klicka &quot;Acceptera alla&quot; samtycker du till användning av alla cookies.
               </p>
               
               {/* Links */}

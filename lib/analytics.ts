@@ -46,8 +46,10 @@ export const trackConversion = (eventName: string, value?: number) => {
   }
 }
 
-export default {
+const analytics = {
   trackPageView,
   trackEvent,
   trackConversion,
 }
+
+export default analytics
