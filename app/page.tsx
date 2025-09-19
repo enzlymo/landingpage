@@ -7,6 +7,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Play, ArrowRight, Sparkles, Zap, Target, Users, BarChart3, CheckCircle, Quote } from "lucide-react"
 import { DynamicWaitlist } from "@/components/ui/dynamic-waitlist"
+import { useTranslations } from "@/lib/useTranslations"
 
 const inter = Inter({
   subsets: ['latin'],
@@ -15,6 +16,12 @@ const inter = Inter({
 })
 
 export default function Page() {
+  const { t, locale, switchLocale, mounted } = useTranslations()
+  
+  if (!mounted) {
+    return <div className="min-h-screen bg-white" /> // Loading state
+  }
+  
   return (
     <div className={`flex flex-col min-h-screen ${inter.variable} font-sans bg-white text-gray-900 pb-32`}>
       {/* Navigation */}
@@ -32,19 +39,55 @@ export default function Page() {
             </Link>
             
             <nav className="hidden md:flex items-center space-x-8">
-              {['Features', 'How It Works', 'Pricing'].map((item) => (
+              {[
+                { key: 'features', label: t.nav.features },
+                { key: 'how-it-works', label: t.nav.howItWorks },
+                { key: 'pricing', label: t.nav.pricing }
+              ].map((item) => (
                 <Link 
-                  key={item}
-                  href={`#${item.toLowerCase().replace(' ', '-')}`}
+                  key={item.key}
+                  href={`#${item.key}`}
                   className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors relative group"
                 >
-                  {item}
+                  {item.label}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#F4D03F] to-[#F1C40F] group-hover:w-full transition-all duration-300" />
                 </Link>
               ))}
+              
+              {/* Language Switcher */}
+              <div className="flex items-center space-x-2 ml-4">
+                <button
+                  onClick={() => switchLocale('en')}
+                  className={`px-2 py-1 text-xs rounded ${locale === 'en' ? 'bg-[#F4D03F] text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
+                >
+                  EN
+                </button>
+                <button
+                  onClick={() => switchLocale('sv')}
+                  className={`px-2 py-1 text-xs rounded ${locale === 'sv' ? 'bg-[#F4D03F] text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
+                >
+                  SV
+                </button>
+              </div>
             </nav>
             
             <div className="flex items-center space-x-3">
+              {/* Mobile Language Switcher */}
+              <div className="flex md:hidden items-center space-x-1">
+                <button
+                  onClick={() => switchLocale('en')}
+                  className={`px-2 py-1 text-xs rounded ${locale === 'en' ? 'bg-[#F4D03F] text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
+                >
+                  EN
+                </button>
+                <button
+                  onClick={() => switchLocale('sv')}
+                  className={`px-2 py-1 text-xs rounded ${locale === 'sv' ? 'bg-[#F4D03F] text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
+                >
+                  SV
+                </button>
+              </div>
+              
               <Button 
                 onClick={() => {
                   const waitlistElement = document.querySelector('.launchlist-widget');
@@ -55,7 +98,7 @@ export default function Page() {
                 size="sm" 
                 className="bg-gradient-to-r from-[#F4D03F] to-[#F1C40F] hover:from-[#F1C40F] hover:to-[#D4AC0D] text-gray-900 font-semibold text-sm px-6 shadow-lg"
               >
-                Sign In
+                {t.nav.signIn}
               </Button>
             </div>
           </div>
@@ -76,32 +119,39 @@ export default function Page() {
               
               {/* Hero Content */}
               <div className="text-center max-w-3xl mx-auto mb-12">
+                {/* Language Debug Info */}
+                <div className="mb-4 p-3 bg-blue-100 border border-blue-300 rounded-lg text-sm">
+                  <strong>Language Test:</strong> Current locale: <span className="font-mono">{locale}</span>
+                  <br />
+                  <strong>Badge text:</strong> {t.hero.badge}
+                </div>
+
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#F4D03F] to-[#F1C40F] text-gray-900 rounded-full text-sm font-semibold mb-8 shadow-lg">
                   <Sparkles className="h-4 w-4" />
-                  AI-Powered Content Generation
+                  {t.hero.badge}
                 </div>
 
                 {/* Main Heading */}
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1] mb-5 text-gray-900">
-                  Generate{' '}
+                  {t.hero.title}{' '}
                   <span className="bg-gradient-to-r from-[#F4D03F] via-[#F1C40F] to-[#FF6633] bg-clip-text text-transparent font-medium">
-                    images, videos & UGC
+                    {t.hero.titleHighlight}
                   </span>{' '}
-                  with just a link
+                  {t.hero.titleEnd}
                 </h1>
 
                 {/* Subtitle */}
                 <p className="text-base md:text-lg text-gray-700 max-w-xl mx-auto leading-relaxed mb-8 font-medium">
-                  Transform any URL into high-converting visual content. AI-powered generation for images, videos, and user-generated content - no design skills needed.
+                  {t.hero.subtitle}
                 </p>
 
                 {/* Primary Waitlist Widget */}
                 <div className="max-w-md mx-auto bg-white/90 backdrop-blur-sm rounded-2xl p-6 border-2 border-[#F4D03F]/20 shadow-xl mb-8">
                   <DynamicWaitlist 
                     showTitle={true}
-                    title="Unlock Early Access to Lymo AI"
-                    description="Get priority entry and exclusive updates."
+                    title={t.hero.waitlistTitle}
+                    description={t.hero.waitlistDescription}
                     height="160px" 
                   />
                 </div>
@@ -118,7 +168,7 @@ export default function Page() {
                   </div>
                   <div className="text-sm">
                     <span className="font-bold text-gray-900">1,000+</span>
-                    <span className="text-gray-600 ml-1">creators trust Lymo</span>
+                    <span className="text-gray-600 ml-1">{t.hero.socialProof}</span>
                   </div>
                 </div>
               </div>
