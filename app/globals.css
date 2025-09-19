@@ -10,6 +10,13 @@
     text-wrap: balance;
   }
   
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
   .bg-dotted-grid {
     background-image: radial-gradient(rgba(255, 225, 77, 0.15) 1px, transparent 1px);
     background-size: 24px 24px;

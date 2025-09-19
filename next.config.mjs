@@ -1,5 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Internationalization
+  i18n: {
+    locales: ['en', 'sv'],
+    defaultLocale: 'en',
+    localeDetection: true,
+  },
+  
   // Enable experimental features
   experimental: {
     optimizeCss: true,
