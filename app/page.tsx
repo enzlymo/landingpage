@@ -25,7 +25,7 @@ export default function Page() {
   }
   
   return (
-    <div className="flex flex-col min-h-screen font-sans bg-white text-gray-900 pb-32">
+    <div className="flex flex-col min-h-screen font-sans bg-white text-gray-900 pb-16">
         {/* Professional Navigation */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto">
@@ -135,9 +135,9 @@ export default function Page() {
 
       <main className="flex-grow pt-20">
         {/* Professional Hero Section */}
-        <section className="py-24 bg-white">
+        <section className="py-16 lg:py-20 bg-white">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
               {/* Professional Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#F4D03F]/10 to-[#F1C40F]/10 border border-[#F4D03F]/20 text-gray-900 rounded-full text-sm font-medium mb-8">
                 <Sparkles className="h-4 w-4 text-[#F4D03F]" />
@@ -189,7 +189,7 @@ export default function Page() {
             </div>
 
             {/* Professional Media Showcase */}
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
               <p className="text-sm font-medium text-[#F4D03F] uppercase tracking-wide mb-3">
                 {t.hero.showcaseTitle}
               </p>
@@ -709,7 +709,7 @@ export default function Page() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-gray-900 text-white py-8">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
