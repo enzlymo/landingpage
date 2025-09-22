@@ -69,14 +69,14 @@ export default function CookiePolicyPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. What Are Cookies?</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Cookies are small text files that are stored on your device when you visit a website. They contain information that is transferred to your device's hard drive and help websites recognize your device and remember certain information about your visit.
+              Cookies are small text files that are stored on your device when you visit a website. They contain information that is transferred to your device&apos;s hard drive and help websites recognize your device and remember certain information about your visit.
             </p>
             
             <h3 className="text-xl font-medium text-gray-900 mb-3">2.1 Types of Cookies</h3>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
               <li><strong>Session Cookies:</strong> Temporary cookies that are deleted when you close your browser</li>
               <li><strong>Persistent Cookies:</strong> Cookies that remain on your device for a set period or until manually deleted</li>
-              <li><strong>First-Party Cookies:</strong> Set by the website you're visiting (lymo.me)</li>
+              <li><strong>First-Party Cookies:</strong> Set by the website you&apos;re visiting (lymo.me)</li>
               <li><strong>Third-Party Cookies:</strong> Set by external services we use (like Google Analytics)</li>
             </ul>
           </section>

@@ -3,6 +3,7 @@ import { Inter, Sora } from "next/font/google";
 import "./globals.css";
 import GoogleAnalytics from "../components/GoogleAnalytics";
 import CookieConsentProvider from "../components/CookieConsentProvider";
+import { Analytics } from "@vercel/analytics/next";
 
 const sora = Sora({ 
   subsets: ['latin'],
@@ -295,6 +296,7 @@ export default function RootLayout({
         <GoogleAnalytics />
         <CookieConsentProvider />
         {children}
+        <Analytics />
       </body>
     </html>
   );

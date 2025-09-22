@@ -176,7 +176,7 @@ export default function TermsOfServicePage() {
               <li>Subscription fees are billed in advance on a recurring basis</li>
               <li>Payment processing is handled by Stripe, Inc.</li>
               <li>All fees are non-refundable unless required by law</li>
-              <li>We may change pricing with 30 days' notice</li>
+              <li>We may change pricing with 30 days&apos; notice</li>
             </ul>
 
             <h3 className="text-xl font-medium text-gray-900 mb-3">6.3 Free Trials</h3>
@@ -260,7 +260,7 @@ export default function TermsOfServicePage() {
             <h3 className="text-xl font-medium text-gray-900 mb-3">10.1 Disclaimer of Warranties</h3>
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-4">
               <p className="text-sm text-yellow-800 font-medium">
-                THE SERVICE IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+                THE SERVICE IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
               </p>
             </div>
 
