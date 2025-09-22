@@ -52,7 +52,7 @@ export default function CookiePolicyPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Introduction</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              This Cookie Policy explains how LYMERA AB ("we," "our," or "us") uses cookies and similar tracking technologies on our website lymo.me and related services (the "Service").
+              This Cookie Policy explains how LYMERA AB (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) uses cookies and similar tracking technologies on our website lymo.me and related services (the &quot;Service&quot;).
             </p>
             <p className="text-gray-700 leading-relaxed">
               This policy should be read together with our{" "}
@@ -127,7 +127,7 @@ export default function CookiePolicyPage() {
             </div>
 
             <h3 className="text-xl font-medium text-gray-900 mb-3">3.2 Analytics Cookies</h3>
-            <p className="text-gray-700 mb-4">We use Google Analytics to understand how visitors use our website:</p>
+            <p className="text-gray-700 mb-4">We use Google Analytics and Vercel Analytics to understand how visitors use our website:</p>
             
             <div className="overflow-x-auto mb-6">
               <table className="min-w-full border border-gray-200 rounded-lg">
@@ -159,23 +159,38 @@ export default function CookiePolicyPage() {
                     <td className="px-4 py-2 border-b">Third-party (Google)</td>
                   </tr>
                   <tr>
-                    <td className="px-4 py-2 font-mono">_gat</td>
-                    <td className="px-4 py-2">Throttles request rate</td>
-                    <td className="px-4 py-2">1 minute</td>
-                    <td className="px-4 py-2">Third-party (Google)</td>
+                    <td className="px-4 py-2 border-b font-mono">_gat</td>
+                    <td className="px-4 py-2 border-b">Throttles request rate</td>
+                    <td className="px-4 py-2 border-b">1 minute</td>
+                    <td className="px-4 py-2 border-b">Third-party (Google)</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 font-mono">va-*</td>
+                    <td className="px-4 py-2">Vercel Analytics tracking and performance metrics</td>
+                    <td className="px-4 py-2">Session</td>
+                    <td className="px-4 py-2">Third-party (Vercel)</td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
-              <p className="text-sm text-blue-800 mb-2"><strong>Google Analytics Information Collected:</strong></p>
-              <ul className="list-disc pl-4 text-sm text-blue-800 space-y-1">
+              <p className="text-sm text-blue-800 mb-2"><strong>Analytics Information Collected:</strong></p>
+              <p className="text-sm text-blue-800 mb-2"><em>Google Analytics:</em></p>
+              <ul className="list-disc pl-4 text-sm text-blue-800 space-y-1 mb-3">
                 <li>Pages visited and time spent</li>
                 <li>Geographic location (country/region)</li>
                 <li>Device and browser information</li>
                 <li>Traffic sources and referral data</li>
                 <li>User interactions and behavior patterns</li>
+              </ul>
+              <p className="text-sm text-blue-800 mb-2"><em>Vercel Analytics:</em></p>
+              <ul className="list-disc pl-4 text-sm text-blue-800 space-y-1">
+                <li>Page views and unique visitors</li>
+                <li>Performance metrics (page load times)</li>
+                <li>Basic device and browser information</li>
+                <li>Referrer information</li>
+                <li>No personal identifiers collected</li>
               </ul>
             </div>
 
@@ -263,7 +278,7 @@ export default function CookiePolicyPage() {
             
             <h3 className="text-xl font-medium text-gray-900 mb-3">4.1 Consent</h3>
             <p className="text-gray-700 mb-4">
-              When you first visit lymo.me, you'll see a cookie banner that allows you to:
+              When you first visit lymo.me, you&apos;ll see a cookie banner that allows you to:
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-1 mb-4">
               <li>Accept all cookies</li>
@@ -306,7 +321,7 @@ export default function CookiePolicyPage() {
             
             <h3 className="text-xl font-medium text-gray-900 mb-3">5.1 Consent</h3>
             <ul className="list-disc pl-6 text-gray-700 space-y-1 mb-4">
-              <li>Analytics cookies (Google Analytics)</li>
+              <li>Analytics cookies (Google Analytics, Vercel Analytics)</li>
               <li>Marketing cookies (when applicable)</li>
               <li>Non-essential functional cookies</li>
             </ul>
@@ -376,7 +391,14 @@ export default function CookiePolicyPage() {
               <li>Standard Contractual Clauses in place</li>
             </ul>
 
-            <h3 className="text-xl font-medium text-gray-900 mb-3">8.2 Safeguards</h3>
+            <h3 className="text-xl font-medium text-gray-900 mb-3">8.2 Vercel Analytics</h3>
+            <ul className="list-disc pl-6 text-gray-700 space-y-1 mb-4">
+              <li>Data may be processed in the US by Vercel Inc.</li>
+              <li>Privacy-first analytics with minimal data collection</li>
+              <li>Standard Contractual Clauses in place for data transfers</li>
+            </ul>
+
+            <h3 className="text-xl font-medium text-gray-900 mb-3">8.3 Safeguards</h3>
             <ul className="list-disc pl-6 text-gray-700 space-y-1">
               <li>We ensure adequate protection for all data transfers</li>
               <li>Regular assessment of third-party compliance</li>
@@ -414,7 +436,7 @@ export default function CookiePolicyPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">11. Do Not Track</h2>
             <p className="text-gray-700">
-              Some browsers include "Do Not Track" signals. Currently, there is no standard for how websites should respond to these signals, so we do not alter our cookie practices based on Do Not Track requests.
+              Some browsers include &quot;Do Not Track&quot; signals. Currently, there is no standard for how websites should respond to these signals, so we do not alter our cookie practices based on Do Not Track requests.
             </p>
           </section>
 

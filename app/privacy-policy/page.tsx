@@ -52,7 +52,7 @@ export default function PrivacyPolicyPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Introduction</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              LYMERA AB ("we," "our," or "us") operates the Lymo platform (lymo.me) and related services ("Service"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Service.
+              LYMERA AB (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) operates the Lymo platform (lymo.me) and related services (&quot;Service&quot;). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Service.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
               We are committed to protecting your privacy and complying with the General Data Protection Regulation (GDPR) and other applicable data protection laws.
@@ -99,7 +99,7 @@ export default function PrivacyPolicyPage() {
 
             <h3 className="text-xl font-medium text-gray-900 mb-3">2.4 Third-Party Data</h3>
             <ul className="list-disc pl-6 text-gray-700 space-y-1">
-              <li><strong>Analytics Data:</strong> Google Analytics data from lymo.me (cookies, session data, behavior tracking)</li>
+              <li><strong>Analytics Data:</strong> Google Analytics and Vercel Analytics data from lymo.me (cookies, session data, behavior tracking)</li>
               <li><strong>AI Service Data:</strong> Data processed through our AI partner APIs</li>
               <li><strong>Payment Data:</strong> Stripe payment processing and subscription management data</li>
             </ul>
@@ -162,6 +162,7 @@ export default function PrivacyPolicyPage() {
               <li><strong>Supabase:</strong> Database and authentication services (EU hosting)</li>
               <li><strong>Stripe:</strong> Payment processing and subscription management</li>
               <li><strong>Google Analytics:</strong> Website analytics and performance monitoring</li>
+              <li><strong>Vercel Analytics:</strong> Privacy-first website analytics and performance metrics</li>
               <li><strong>AWS:</strong> Content moderation and file scanning (EU region)</li>
             </ul>
 
@@ -232,7 +233,7 @@ export default function PrivacyPolicyPage() {
             <h3 className="text-xl font-medium text-gray-900 mb-3">9.2 Rectification</h3>
             <p className="text-gray-700 mb-4">Request correction of inaccurate or incomplete data</p>
 
-            <h3 className="text-xl font-medium text-gray-900 mb-3">9.3 Erasure ("Right to be Forgotten")</h3>
+            <h3 className="text-xl font-medium text-gray-900 mb-3">9.3 Erasure (&quot;Right to be Forgotten&quot;)</h3>
             <p className="text-gray-700 mb-4">Request deletion of your personal data under certain circumstances</p>
 
             <h3 className="text-xl font-medium text-gray-900 mb-3">9.4 Restriction</h3>
@@ -260,6 +261,7 @@ export default function PrivacyPolicyPage() {
             <h3 className="text-xl font-medium text-gray-900 mb-3">10.1 Our Website (lymo.me)</h3>
             <ul className="list-disc pl-6 text-gray-700 space-y-1 mb-4">
               <li><strong>Google Analytics:</strong> Performance and usage analytics</li>
+              <li><strong>Vercel Analytics:</strong> Privacy-first analytics and performance monitoring</li>
               <li><strong>Essential Cookies:</strong> Authentication and security</li>
               <li><strong>Preference Cookies:</strong> User settings and preferences</li>
             </ul>

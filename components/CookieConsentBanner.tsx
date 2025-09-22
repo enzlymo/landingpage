@@ -144,7 +144,7 @@ export default function CookieConsentBanner({ onShowSettings }: CookieConsentBan
           {/* Mobile Links */}
           <div className="mt-2 flex justify-center gap-3 text-xs">
             <a 
-              href={language === 'sv' ? '/cookie-policy' : '/en/cookie-policy'} 
+              href="/cookie-policy" 
               className="text-blue-600 hover:text-blue-800 underline"
               target="_blank"
               rel="noopener noreferrer"
@@ -152,7 +152,7 @@ export default function CookieConsentBanner({ onShowSettings }: CookieConsentBan
               {t.cookiePolicy}
             </a>
             <a 
-              href={language === 'sv' ? '/privacy' : '/en/privacy'} 
+              href="/privacy-policy" 
               className="text-blue-600 hover:text-blue-800 underline"
               target="_blank"
               rel="noopener noreferrer"
@@ -181,7 +181,7 @@ export default function CookieConsentBanner({ onShowSettings }: CookieConsentBan
               {/* Links */}
               <div className="mt-3 flex flex-wrap gap-4 text-xs">
                 <a 
-                  href={language === 'sv' ? '/cookie-policy' : '/en/cookie-policy'} 
+                  href="/cookie-policy" 
                   className="text-blue-600 hover:text-blue-800 underline"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -189,7 +189,7 @@ export default function CookieConsentBanner({ onShowSettings }: CookieConsentBan
                   {t.cookiePolicy}
                 </a>
                 <a 
-                  href={language === 'sv' ? '/privacy' : '/en/privacy'} 
+                  href="/privacy-policy" 
                   className="text-blue-600 hover:text-blue-800 underline"
                   target="_blank"
                   rel="noopener noreferrer"

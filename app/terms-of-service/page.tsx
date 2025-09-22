@@ -52,7 +52,7 @@ export default function TermsOfServicePage() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Agreement to Terms</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              By accessing and using the Lymo platform (the "Service") operated by LYMERA AB ("Company," "we," "our," or "us"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of these terms, you may not access the Service.
+              By accessing and using the Lymo platform (the &quot;Service&quot;) operated by LYMERA AB (&quot;Company,&quot; &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you disagree with any part of these terms, you may not access the Service.
             </p>
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
               <p className="text-sm text-blue-800">
@@ -223,7 +223,16 @@ export default function TermsOfServicePage() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">8. Third-Party Services</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Our Service integrates with various third-party providers through APIs and services. These integrations are subject to the respective third-party terms of service.
+              Our Service integrates with various third-party providers through APIs and services:
+            </p>
+            <ul className="list-disc pl-6 text-gray-700 space-y-1 mb-4">
+              <li><strong>Analytics Services:</strong> Google Analytics and Vercel Analytics for website performance monitoring</li>
+              <li><strong>Payment Processing:</strong> Stripe for secure payment handling</li>
+              <li><strong>AI Services:</strong> Various AI APIs for content generation</li>
+              <li><strong>Infrastructure:</strong> Cloud services for hosting and data processing</li>
+            </ul>
+            <p className="text-gray-700 leading-relaxed">
+              These integrations are subject to the respective third-party terms of service.
             </p>
           </section>
 
