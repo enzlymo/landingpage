@@ -1,6 +1,7 @@
 'use client'
 
-import { useEffect, useState } from "react"
+import { useState } from "react"
+import { WaitlistSuccess } from "./waitlist-success"
 
 interface WaitlistWidgetProps {
   className?: string
@@ -18,70 +19,52 @@ export function WaitlistWidget({
   height = "180px"
 }: WaitlistWidgetProps) {
   
-  const [mounted, setMounted] = useState(false);
-  const [widgetLoaded, setWidgetLoaded] = useState(false);
+  const [email, setEmail] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [error, setError] = useState("");
+  const [submittedEmail, setSubmittedEmail] = useState("");
 
-  useEffect(() => {
-    setMounted(true);
-    
-    // Wait for component to mount before initializing widget
-    const timer = setTimeout(() => {
-      // Ensure the widget script is loaded and reinitialize widgets
-      if (typeof window !== 'undefined') {
-        if ((window as any).LaunchList) {
-          (window as any).LaunchList.init();
-          setWidgetLoaded(true);
-        } else {
-          // Try to manually load the script if it's not available
-          const script = document.createElement('script');
-          script.src = 'https://getlaunchlist.com/js/widget.js';
-          script.defer = true;
-          script.onload = () => {
-            setTimeout(() => {
-              if ((window as any).LaunchList) {
-                (window as any).LaunchList.init();
-                setWidgetLoaded(true);
-              }
-            }, 500);
-          };
-          document.head.appendChild(script);
-        }
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setError("");
+
+    try {
+      const response = await fetch('/api/waitlist', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmittedEmail(email);
+        setIsSuccess(true);
+        setEmail("");
+      } else {
+        setError(data.error || 'Failed to join waitlist. Please try again.');
       }
-    }, 100);
+    } catch (err) {
+      setError('Network error. Please check your connection and try again.');
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
-    return () => clearTimeout(timer);
-  }, []);
+  const handleGoBack = () => {
+    setIsSuccess(false);
+    setSubmittedEmail("");
+    setError("");
+  };
 
-  // Don't render anything on server side to prevent hydration issues
-  if (!mounted) {
+  if (isSuccess) {
     return (
       <div className={`waitlist-widget-container ${className}`}>
-        {showTitle && (
-          <div className="mb-4 text-center">
-            <h3 className="text-lg font-semibold text-gray-900 mb-1">
-              {title}
-            </h3>
-            <p className="text-sm text-gray-600">
-              {description}
-            </p>
-          </div>
-        )}
-        <div 
-          style={{
-            minHeight: height,
-            width: '100%',
-            border: '1px solid rgba(244, 208, 63, 0.2)',
-            borderRadius: '8px',
-            overflow: 'hidden',
-            backgroundColor: '#f9f9f9',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: '#666'
-          }}
-        >
-          Loading waitlist...
-        </div>
+        <WaitlistSuccess email={submittedEmail} onGoBack={handleGoBack} />
       </div>
     );
   }
@@ -98,43 +81,57 @@ export function WaitlistWidget({
           </p>
         </div>
       )}
+      
       <div 
-        className="launchlist-widget" 
-        data-key-id="qsOaGw" 
-        data-height={height}
         style={{
           minHeight: height,
           width: '100%',
           border: '1px solid rgba(244, 208, 63, 0.2)',
           borderRadius: '8px',
-          overflow: 'hidden'
+          overflow: 'hidden',
+          padding: '20px',
+          backgroundColor: '#fff'
         }}
-      />
-      
-      {/* Fallback form in case LaunchList doesn't load */}
-      {mounted && !widgetLoaded && (
-        <div style={{ marginTop: '10px' }}>
-          <form 
-            action="https://getlaunchlist.com/s/qsOaGw" 
-            method="POST"
-            className="flex flex-col gap-3"
+      >
+        <form 
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-3"
+        >
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter your email"
+            required
+            disabled={isLoading}
+            className="px-4 py-2 border-2 border-[#F4D03F]/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F4D03F] focus:border-[#F4D03F] text-gray-900 bg-white disabled:opacity-50 disabled:cursor-not-allowed"
+          />
+          
+          {error && (
+            <div className="text-red-600 text-sm bg-red-50 border border-red-200 rounded-lg p-2">
+              {error}
+            </div>
+          )}
+          
+          <button
+            type="submit"
+            disabled={isLoading}
+            className="bg-gradient-to-r from-[#F4D03F] to-[#F1C40F] text-gray-900 font-semibold py-2 px-4 rounded-lg hover:from-[#F1C40F] hover:to-[#D4AC0D] transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
           >
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              required
-              className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F4D03F] focus:border-transparent"
-            />
-            <button
-              type="submit"
-              className="bg-gradient-to-r from-[#F4D03F] to-[#F1C40F] text-gray-900 font-semibold py-2 px-4 rounded-lg hover:from-[#F1C40F] hover:to-[#D4AC0D] transition-all"
-            >
-              Join Waitlist
-            </button>
-          </form>
-        </div>
-      )}
+            {isLoading ? (
+              <span className="flex items-center justify-center gap-2">
+                <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"/>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/>
+                </svg>
+                Joining...
+              </span>
+            ) : (
+              "Join Waitlist"
+            )}
+          </button>
+        </form>
+      </div>
     </div>
   )
 }
