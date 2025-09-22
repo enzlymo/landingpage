@@ -25,7 +25,7 @@ export default function Page() {
   }
   
   return (
-    <div className="flex flex-col min-h-screen font-sans bg-white text-gray-900 pb-16">
+    <div className="flex flex-col min-h-screen font-sans bg-white text-gray-900">
         {/* Professional Navigation */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto">
@@ -709,7 +709,7 @@ export default function Page() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8">
+      <footer className="bg-gray-900 text-white py-8 mt-auto">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
