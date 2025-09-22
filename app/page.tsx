@@ -722,9 +722,10 @@ export default function Page() {
               />
             </div>
             <div className="flex space-x-6 text-sm text-gray-400">
-              <Link href="#" className="hover:text-white transition-colors">Privacy</Link>
-              <Link href="#" className="hover:text-white transition-colors">Terms</Link>
-              <Link href="#" className="hover:text-white transition-colors">Support</Link>
+              <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
+              <Link href="/cookie-policy" className="hover:text-white transition-colors">Cookie Policy</Link>
+              <Link href="mailto:lymoadsai@gmail.com" className="hover:text-white transition-colors">Support</Link>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center">

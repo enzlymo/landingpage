@@ -68,15 +68,22 @@
   
   <!-- Legal Pages -->
   <url>
-    <loc>https://lymo.me/privacy</loc>
-    <lastmod>2024-12-19</lastmod>
+    <loc>https://lymo.me/privacy-policy</loc>
+    <lastmod>2025-09-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
-    <loc>https://lymo.me/terms</loc>
-    <lastmod>2024-12-19</lastmod>
+    <loc>https://lymo.me/terms-of-service</loc>
+    <lastmod>2025-09-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://lymo.me/cookie-policy</loc>
+    <lastmod>2025-09-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
