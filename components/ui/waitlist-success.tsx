@@ -14,7 +14,7 @@ export function WaitlistSuccess({ email, onGoBack }: WaitlistSuccessProps) {
       <div className="mb-6">
         <CheckCircle className="w-16 h-16 text-[#F4D03F] mx-auto mb-4" />
         <h2 className="text-2xl font-bold text-gray-900 mb-2">
-          🎉 You're on the list!
+          🎉 You&apos;re on the list!
         </h2>
         <p className="text-gray-600 mb-4">
           Thanks for joining the Lymo AI waitlist. We&apos;ll notify you as soon as we launch!
