@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-  const baseUrl = process.env.SITE_URL || 'https://lymo.ai';
+  const baseUrl = process.env.SITE_URL || 'https://lymo.me';
   
   const robots = `# Robots.txt for Lymo AI - ${baseUrl}
 

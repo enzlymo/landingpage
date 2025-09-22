@@ -47,7 +47,7 @@ export const softwareApplicationSchema = {
   "@type": "SoftwareApplication",
   "name": "Lymo AI Video Generator",
   "description": "AI-powered video generation platform that creates professional videos from text and URLs",
-  "url": "https://lymo.ai",
+  "url": "https://lymo.me",
   "applicationCategory": "MultimediaApplication",
   "operatingSystem": "Web Browser",
   "offers": {

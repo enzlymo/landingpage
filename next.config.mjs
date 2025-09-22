@@ -124,7 +124,7 @@ const nextConfig = {
   
   // Environment variables for build
   env: {
-    SITE_URL: process.env.SITE_URL || 'https://lymo.ai',
+    SITE_URL: process.env.SITE_URL || 'https://lymo.me',
     SITE_NAME: 'Lymo AI',
   },
 };
