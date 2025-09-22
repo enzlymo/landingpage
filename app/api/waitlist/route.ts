@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
 
     // Store in Vercel Blob
     const blob = await put(filename, JSON.stringify(waitlistEntry), {
-      access: 'private',
+      access: 'public',
       contentType: 'application/json'
     });
 
