@@ -14,38 +14,31 @@ interface WaitlistEntry {
 
 export default function WaitlistAdminPage() {
   const [entries, setEntries] = useState<WaitlistEntry[]>([])
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [password, setPassword] = useState('')
   const [isAuthenticated, setIsAuthenticated] = useState(false)
 
   const fetchEntries = async () => {
     try {
-      console.log('Fetching with password:', password)
       const response = await fetch('/api/waitlist/admin', {
         headers: {
           'Authorization': `Bearer ${password}`
         }
       })
 
-      console.log('Response status:', response.status)
-      console.log('Response ok:', response.ok)
-
       if (response.ok) {
         const data = await response.json()
-        console.log('Data received:', data)
         setEntries(data.entries || [])
         setIsAuthenticated(true)
         setError('')
       } else {
-        const errorData = await response.json().catch(() => ({ error: 'Unknown error' }))
-        console.error('Error response:', errorData)
-        setError(`Error: ${errorData.error || 'Unauthorized. Check your password.'}`)
+        const errorData = await response.json().catch(() => ({ error: 'Invalid credentials' }))
+        setError(errorData.error || 'Unauthorized. Check your password.')
         setIsAuthenticated(false)
       }
     } catch (err) {
-      console.error('Fetch error:', err)
-      setError(`Network error: ${err instanceof Error ? err.message : 'Failed to fetch waitlist entries'}`)
+      setError('Network error. Please check your connection and try again.')
     } finally {
       setLoading(false)
     }
