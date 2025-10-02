@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Info } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Lymo AI - AI Video Generator",
@@ -235,6 +235,19 @@ export default function PrivacyPolicyPage() {
 
             <h3 className="text-xl font-medium text-gray-900 mb-3">9.3 Erasure (&quot;Right to be Forgotten&quot;)</h3>
             <p className="text-gray-700 mb-4">Request deletion of your personal data under certain circumstances</p>
+            
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
+              <div className="flex items-start">
+                <Info className="h-5 w-5 text-blue-500 mt-0.5 mr-3" />
+                <div>
+                  <h4 className="text-sm font-medium text-blue-800">Faster Account Deletion Available</h4>
+                  <p className="text-sm text-blue-700 mt-1">
+                    For quicker processing, email us at <a href="mailto:contact@lymo.me" className="underline">contact@lymo.me</a> to delete your account. 
+                    We typically process email requests within 24-48 hours.
+                  </p>
+                </div>
+              </div>
+            </div>
 
             <h3 className="text-xl font-medium text-gray-900 mb-3">9.4 Restriction</h3>
             <p className="text-gray-700 mb-4">Request limitation of processing under certain conditions</p>
