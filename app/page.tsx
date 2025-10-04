@@ -9,6 +9,7 @@ import Image from "next/image"
 import { Play, ArrowRight, Sparkles, Zap, Target, Users, BarChart3, CheckCircle, Quote, Image as ImageIcon, Video, FileText, Upload, Wand2 } from "lucide-react"
 import { DynamicWaitlist } from "@/components/ui/dynamic-waitlist"
 import { StatsBanner } from "@/components/ui/stats-banner"
+import { RotatingText } from "@/components/ui/rotating-text"
 import { useTranslations } from "@/lib/useTranslations"
 
 const inter = Inter({
@@ -136,136 +137,121 @@ export default function Page() {
 
       <main className="flex-grow pt-20">
         {/* Professional Hero Section */}
-        <section className="py-16 lg:py-20 bg-white">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-12">
+        <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-20 lg:py-32">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+            <div className="space-y-6 sm:space-y-8 text-center lg:text-left">
               {/* Stats Banner */}
-              <div className="flex justify-center mb-4">
+              <div className="flex justify-center lg:justify-start">
                 <StatsBanner count={127} />
               </div>
               
-              {/* Professional Badge */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#F4D03F]/10 to-[#F1C40F]/10 border border-[#F4D03F]/20 text-gray-900 rounded-full text-sm font-medium mb-8">
-                <Sparkles className="h-4 w-4 text-[#F4D03F]" />
-                {t.hero.badge}
-              </div>
-
-              {/* Professional Main Heading */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1] mb-6 text-gray-900">
-                {t.hero.title}{' '}
-                <span className="bg-gradient-to-r from-[#F4D03F] via-[#F1C40F] to-[#FF6633] bg-clip-text text-transparent font-medium">
-                  {t.hero.titleHighlight}
-                </span>{' '}
-                {t.hero.titleEnd}
-              </h1>
-
-              {/* Professional Subtitle */}
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mb-12">
-                {t.hero.subtitle}
-              </p>
-
-              {/* Professional CTA Section */}
-              <div className="flex flex-col items-center gap-8">
-                {/* Professional Waitlist Widget */}
-                <div className="max-w-lg mx-auto bg-white rounded-2xl p-8 border border-gray-200 shadow-lg">
-                  <DynamicWaitlist 
-                    showTitle={true}
-                    title={t.hero.waitlistTitle}
-                    description={t.hero.waitlistDescription}
-                    height="160px" 
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                Generate Ideas.<br />
+                Create Content.<br />
+                <span className="bg-gradient-to-r from-[#F4D03F] via-[#F1C40F] to-[#FF6633] bg-clip-text text-transparent">
+                  <RotatingText 
+                    texts={["Stay Organized.", "Go Viral.", "Drive Sales.", "Build Brands.", "Scale Fast."]}
+                    interval={5000}
                   />
-                </div>
-
-                {/* Professional Social Proof */}
-                <div className="inline-flex items-center gap-4 px-6 py-3 bg-gray-50 rounded-full border border-gray-200">
-                  <div className="flex -space-x-2">
-                    {[1, 2, 3, 4].map((i) => (
-                      <div 
-                        key={i} 
-                        className="w-8 h-8 rounded-full border-2 border-white bg-gradient-to-br from-[#F4D03F] to-[#F1C40F] shadow-sm"
-                      />
-                    ))}
-                  </div>
-                  <div className="text-sm">
-                    <span className="font-bold text-gray-900">1,000+</span>
-                    <span className="text-gray-600 ml-1">{t.hero.socialProof}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Professional Media Showcase */}
-            <div className="text-center mb-12">
-              <p className="text-sm font-medium text-[#F4D03F] uppercase tracking-wide mb-3">
-                {t.hero.showcaseTitle}
+                </span>
+              </h1>
+              
+              <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed">
+                Meet Lymo AI - <span className="font-semibold text-gray-900">Your AI Content Generation Companion</span>. 
+                An AI-powered platform that makes creating professional videos, images, and content effortless. 
+                Advanced algorithms, smart templates, and viral content strategies. All for just{' '}
+                <span className="font-bold text-gray-900">$29/month</span>.
               </p>
-              <h3 className="text-2xl md:text-3xl font-light text-gray-900">
-                {t.hero.showcaseSubtitle}
-              </h3>
+              
+              <div className="flex items-center justify-center lg:justify-start gap-4 pt-2">
+                <div className="flex items-center gap-1">
+                  <span className="text-[#F4D03F] text-xl">★</span>
+                  <span className="text-[#F4D03F] text-xl">★</span>
+                  <span className="text-[#F4D03F] text-xl">★</span>
+                  <span className="text-[#F4D03F] text-xl">★</span>
+                  <span className="text-[#F4D03F] text-xl">★</span>
+                </div>
+                <div className="text-sm text-gray-600">
+                  <span className="font-semibold text-gray-900">4.8/5</span> from 1,247 reviews
+                </div>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+                <Button className="bg-gradient-to-r from-[#F4D03F] to-[#F1C40F] hover:from-[#F1C40F] hover:to-[#D4AC0D] text-gray-900 font-semibold text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto h-11 min-h-[44px] rounded-md shadow-sm hover:shadow-md transition-all duration-200 active:scale-95">
+                  Start Free Trial
+                </Button>
+                <Button 
+                  variant="outline" 
+                  className="border border-gray-300 bg-white hover:bg-gray-50 hover:border-[#F4D03F]/50 text-gray-900 h-11 min-h-[44px] rounded-md text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto transition-all duration-200"
+                >
+                  View Pricing
+                </Button>
+              </div>
+              
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4 text-xs text-gray-600">
+                <div className="flex items-center gap-1.5">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>No credit card required</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>7-day free trial</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>Cancel anytime</span>
+                </div>
+              </div>
             </div>
-                
-            {/* Professional Layout: 1 Center Video + 2 Side Images */}
-            <div className="flex items-center justify-center gap-8 px-4">
-              {/* Left Card */}
-              <div className="hidden lg:block relative group">
-                <div className="w-80 h-96 bg-white rounded-2xl border border-gray-200 p-6 shadow-lg hover:shadow-xl transition-all duration-500">
-                  <div className="h-full flex flex-col justify-between">
-                    <div>
-                      <div className="w-12 h-12 bg-gradient-to-br from-[#F4D03F] to-[#F1C40F] rounded-xl mb-4"></div>
-                      <h4 className="text-lg font-semibold text-gray-900 mb-2">URL to Video</h4>
-                      <p className="text-gray-600 text-sm">Transform any product page into engaging video content in seconds.</p>
-                    </div>
-                    <div className="bg-gray-50 rounded-2xl p-4">
-                      <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 bg-[#F4D03F] rounded-full flex items-center justify-center">
-                          <Play className="w-4 h-4 text-gray-900" />
-                        </div>
-                        <div>
-                          <div className="text-gray-900 text-sm font-medium">2.4M views</div>
-                          <div className="text-gray-600 text-xs">Product Demo</div>
-                        </div>
+            
+            <div className="relative order-first lg:order-last">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#F4D03F]/20 to-[#F1C40F]/20 blur-3xl rounded-full"></div>
+              <div className="relative grid grid-cols-2 gap-4 max-w-[400px] mx-auto">
+                {/* Generated Video Content */}
+                <div className="space-y-4">
+                  <VideoCard
+                    poster="/images/photo-1.jpg"
+                    title="AI-Generated Ad"
+                    stats={{ views: "2.1M", likes: "89k" }}
+                    overlay={{ text: "AI CREATED", position: "top" }}
+                    className="w-full h-48 rounded-2xl shadow-xl"
+                  />
+                  <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-100">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-8 h-8 bg-gradient-to-r from-[#F4D03F] to-[#F1C40F] rounded-full flex items-center justify-center">
+                        <ImageIcon className="w-4 h-4 text-gray-900" />
                       </div>
+                      <span className="text-sm font-semibold text-gray-900">Product Images</span>
+                    </div>
+                    <div className="grid grid-cols-2 gap-2">
+                      <div className="aspect-square bg-gradient-to-br from-[#F4D03F]/20 to-[#F1C40F]/20 rounded-lg border border-[#F4D03F]/30"></div>
+                      <div className="aspect-square bg-gradient-to-br from-[#F1C40F]/20 to-orange-400/20 rounded-lg border border-orange-400/30"></div>
                     </div>
                   </div>
                 </div>
-              </div>
-
-              {/* Center Video (Main) */}
-              <div className="relative group">
-                <div className="w-[320px] h-[480px] bg-white rounded-2xl border border-gray-200 shadow-lg overflow-hidden hover:shadow-xl transition-all duration-500">
+                
+                <div className="space-y-4 pt-8">
+                  <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-100">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-8 h-8 bg-gradient-to-r from-orange-400 to-[#F4D03F] rounded-full flex items-center justify-center">
+                        <Video className="w-4 h-4 text-gray-900" />
+                      </div>
+                      <span className="text-sm font-semibold text-gray-900">Social Videos</span>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="h-16 bg-gradient-to-r from-orange-400/20 to-[#F4D03F]/20 rounded-lg border border-orange-400/30 flex items-center justify-center">
+                        <Play className="w-6 h-6 text-[#F4D03F]" />
+                      </div>
+                      <div className="text-xs text-gray-600 text-center">1.5M views • 45k likes</div>
+                    </div>
+                  </div>
                   <VideoCard
                     poster="/images/photo-2.jpg"
-                    title="AI-Generated UGC Content"
-                    stats={{ views: "1.2M", likes: "45k" }}
-                    overlay={{ text: "AI CREATOR", position: "center" }}
-                    className="w-full h-full rounded-3xl border-0"
+                    title="Brand Story"
+                    stats={{ views: "890K", likes: "32k" }}
+                    overlay={{ text: "VIRAL", position: "center" }}
+                    className="w-full h-48 rounded-2xl shadow-xl"
                   />
-                  {/* Premium overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
-                </div>
-              </div>
-
-              {/* Right Card */}
-              <div className="hidden lg:block relative group">
-                <div className="w-80 h-96 bg-white rounded-2xl border border-gray-200 p-6 shadow-lg hover:shadow-xl transition-all duration-500">
-                  <div className="h-full flex flex-col justify-between">
-                    <div>
-                      <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-[#F4D03F] rounded-xl mb-4"></div>
-                      <h4 className="text-lg font-semibold text-gray-900 mb-2">Social Media Magic</h4>
-                      <p className="text-gray-600 text-sm">Create viral social content that drives engagement and conversions.</p>
-                    </div>
-                    <div className="bg-gray-50 rounded-2xl p-4">
-                      <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 bg-orange-400 rounded-full flex items-center justify-center">
-                          <Target className="w-4 h-4 text-white" />
-                        </div>
-                        <div>
-                          <div className="text-gray-900 text-sm font-medium">890K views</div>
-                          <div className="text-gray-600 text-xs">Social Campaign</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
