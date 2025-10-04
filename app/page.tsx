@@ -8,6 +8,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Play, ArrowRight, Sparkles, Zap, Target, Users, BarChart3, CheckCircle, Quote, Image as ImageIcon, Video, FileText, Upload, Wand2 } from "lucide-react"
 import { DynamicWaitlist } from "@/components/ui/dynamic-waitlist"
+import { StatsBanner } from "@/components/ui/stats-banner"
 import { useTranslations } from "@/lib/useTranslations"
 
 const inter = Inter({
@@ -26,7 +27,7 @@ export default function Page() {
   
   return (
     <div className="flex flex-col min-h-screen font-sans bg-white text-gray-900">
-        {/* Professional Navigation */}
+      {/* Professional Navigation */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto">
           <div className="px-6 py-4">
@@ -138,6 +139,11 @@ export default function Page() {
         <section className="py-16 lg:py-20 bg-white">
           <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-12">
+              {/* Stats Banner */}
+              <div className="flex justify-center mb-4">
+                <StatsBanner count={127} />
+              </div>
+              
               {/* Professional Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#F4D03F]/10 to-[#F1C40F]/10 border border-[#F4D03F]/20 text-gray-900 rounded-full text-sm font-medium mb-8">
                 <Sparkles className="h-4 w-4 text-[#F4D03F]" />
