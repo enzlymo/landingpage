@@ -32,7 +32,7 @@ You need to create these favicon files from your Lymo logo:
 ## QUICK CREATION TOOLS:
 - Use https://realfavicongenerator.net/ to generate all favicons from one source
 - Use Canva or Figma to create social media images
-- Use your existing `/public/images/lymo-logo.png` as the source
+- Use your existing `/public/images/lymologonew.svg.svg` as the source
 
 
 

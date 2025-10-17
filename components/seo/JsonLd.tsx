@@ -23,7 +23,7 @@ export const organizationSchema = {
   "url": "https://lymo.me",
   "logo": {
     "@type": "ImageObject",
-    "url": "https://lymo.me/images/lymo-logo.png",
+    "url": "https://lymo.me/images/lymologonew.svg.svg",
     "width": 512,
     "height": 512
   },

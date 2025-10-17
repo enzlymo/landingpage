@@ -79,7 +79,7 @@ export const metadata: Metadata = {
         alt: 'Lymo AI - AI Video Generator Platform',
       },
       {
-        url: '/images/lymo-logo.png',
+        url: '/images/lymologonew.svg.svg',
         width: 800,
         height: 600,
         alt: 'Lymo AI Logo',
@@ -170,7 +170,7 @@ export default function RootLayout({
         "url": "https://lymo.me",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://lymo.me/images/lymo-logo.png",
+          "url": "https://lymo.me/images/lymologonew.svg.svg",
           "width": 512,
           "height": 512
         },

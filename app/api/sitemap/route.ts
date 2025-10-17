@@ -73,7 +73,7 @@ export async function GET() {
     <priority>${page.priority}</priority>
     ${page.url === '' ? `
     <image:image>
-      <image:loc>${baseUrl}/images/lymo-logo.png</image:loc>
+      <image:loc>${baseUrl}/images/lymologonew.svg.svg</image:loc>
       <image:title>Lymo AI Logo</image:title>
       <image:caption>Lymo AI - Create winning AI videos in seconds</image:caption>
     </image:image>` : ''}

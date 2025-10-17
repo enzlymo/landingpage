@@ -36,7 +36,7 @@ export default function Page() {
             <div className="flex items-center justify-between">
               <Link href="/" className="flex items-center justify-center">
                 <Image 
-                  src="/images/lymo-logo.png" 
+                  src="/images/lymologonew.svg.svg" 
                   alt="Lymo Logo" 
                   width={36}
                   height={36}
@@ -1049,7 +1049,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
               <Image 
-                src="/images/lymo-logo.png" 
+                src="/images/lymologonew.svg.svg" 
                 alt="Lymo Logo" 
                 width={40}
                 height={40}
