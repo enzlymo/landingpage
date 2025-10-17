@@ -279,11 +279,20 @@ export default function Page() {
                       </div>
                       
                       <div className="aspect-[3/2] bg-gradient-to-br from-[#2D3748] to-[#1A202C] rounded-xl border-2 border-dashed border-[#4A5568] flex items-center justify-center relative overflow-hidden group cursor-pointer">
+                        {/* Original Cosmetic Tube Mockup */}
                         <Image
                           src="/images/Free Cosmetic Tube Mockup.png"
                           alt="Product showcase"
                           fill
-                          className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-110 group-hover:rotate-1 transition-all duration-700 rounded-xl"
+                          className="object-cover opacity-90 group-hover:opacity-0 transition-all duration-700 rounded-xl"
+                        />
+                        
+                        {/* AI Generated Result - Shows on Hover */}
+                        <Image
+                          src="/images/1.jpg"
+                          alt="AI Generated Result"
+                          fill
+                          className="object-cover opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 rounded-xl absolute inset-0"
                         />
                         
                         {/* AI Processing Overlay */}
