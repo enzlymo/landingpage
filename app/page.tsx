@@ -179,7 +179,7 @@ export default function Page() {
                   
                   <p className="text-xl lg:text-2xl text-[#A0AEC0] leading-relaxed max-w-2xl">
                     Transform any product photo into professional videos, ads, and campaigns. 
-                    <span className="text-[#F7FAFC] font-semibold"> Join the AI revolution</span> that's changing content creation forever.
+                    <span className="text-[#F7FAFC] font-semibold"> Join the AI revolution</span> that&apos;s changing content creation forever.
                   </p>
                 </div>
 
