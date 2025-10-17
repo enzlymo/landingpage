@@ -136,8 +136,8 @@ export default function Page() {
       </header>
 
       <main className="flex-grow pt-20">
-        {/* Billion Dollar SaaS Hero Section */}
-        <section className="relative min-h-screen bg-gradient-to-br from-[#0F1419] via-[#1A202C] to-[#161B22] flex items-center justify-center overflow-hidden">
+        {/* Premium $100M Startup Hero Section */}
+        <section className="relative min-h-[90vh] bg-gradient-to-br from-[#0F1419] via-[#1A202C] to-[#161B22] flex items-center justify-center overflow-hidden">
           {/* Premium Background Effects */}
           <div className="absolute inset-0">
             <div className="absolute top-20 left-20 w-72 h-72 bg-[#F6E05E]/10 rounded-full blur-3xl animate-pulse"></div>
@@ -145,11 +145,11 @@ export default function Page() {
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-[#F6E05E]/5 to-[#A78BFA]/5 rounded-full blur-3xl"></div>
           </div>
 
-          <div className="relative z-10 max-w-7xl mx-auto px-6 py-16">
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="relative z-10 max-w-7xl mx-auto px-6 py-12">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
               
-              {/* Left Content */}
-              <div className="space-y-8 text-center lg:text-left">
+              {/* Left Content - More Compact */}
+              <div className="space-y-6 text-center lg:text-left">
                 {/* Trust Badge */}
                 <div className="flex items-center justify-center lg:justify-start gap-4">
                   <div className="flex items-center gap-2 bg-[#0F1419]/80 backdrop-blur-sm border border-[#2D3748] rounded-full px-4 py-2">
@@ -162,14 +162,14 @@ export default function Page() {
                   </div>
                 </div>
                 
-                {/* Main Headlines */}
-                <div className="space-y-6">
-                  <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[0.9] text-[#F7FAFC]">
+                {/* Main Headlines - More Compact */}
+                <div className="space-y-4">
+                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[0.9] text-[#F7FAFC]">
                     Create Viral
                     <span className="block bg-gradient-to-r from-[#F6E05E] via-[#F59E0B] to-[#60A5FA] bg-clip-text text-transparent">
                       AI Content
                     </span>
-                    <span className="block text-4xl sm:text-5xl lg:text-6xl">
+                    <span className="block text-3xl sm:text-4xl lg:text-5xl">
                       <RotatingText 
                         texts={["in Seconds", "That Converts", "That Scales", "That Sells"]}
                         interval={2500}
@@ -177,54 +177,50 @@ export default function Page() {
                     </span>
                   </h1>
                   
-                  <p className="text-xl lg:text-2xl text-[#A0AEC0] leading-relaxed max-w-2xl">
+                  <p className="text-lg lg:text-xl text-[#A0AEC0] leading-relaxed max-w-2xl">
                     Transform any product photo into professional videos, ads, and campaigns. 
                     <span className="text-[#F7FAFC] font-semibold"> Join the AI revolution</span> that&apos;s changing content creation forever.
                   </p>
                 </div>
 
-                {/* CTA Section */}
-                <div className="space-y-6">
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <Button className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-bold text-xl px-10 py-7 rounded-2xl shadow-2xl hover:shadow-[#F6E05E]/30 transition-all duration-300 transform hover:scale-105 group">
-                      <Sparkles className="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform" />
+                {/* CTA Section - More Compact */}
+                <div className="space-y-4">
+                  <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+                    <Button className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-bold text-lg px-8 py-6 rounded-2xl shadow-2xl hover:shadow-[#F6E05E]/30 transition-all duration-300 transform hover:scale-105 group">
+                      <Sparkles className="w-5 h-5 mr-3 group-hover:rotate-12 transition-transform" />
                       Start Creating Free
                     </Button>
                     <Button 
                       variant="outline" 
-                      className="border-2 border-[#2D3748] bg-[#0F1419]/80 backdrop-blur-sm hover:bg-[#1A202C] hover:border-[#F6E05E]/50 text-[#F7FAFC] text-xl px-10 py-7 rounded-2xl transition-all duration-300 group"
+                      className="border-2 border-[#2D3748] bg-[#0F1419]/80 backdrop-blur-sm hover:bg-[#1A202C] hover:border-[#F6E05E]/50 text-[#F7FAFC] text-lg px-8 py-6 rounded-2xl transition-all duration-300 group"
                     >
-                      <Play className="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" />
+                      <Play className="w-5 h-5 mr-3 group-hover:scale-110 transition-transform" />
                       Watch Demo
                     </Button>
                   </div>
 
-                  {/* Social Proof */}
-                  <div className="flex flex-wrap items-center justify-center lg:justify-start gap-8 pt-4">
+                  {/* Social Proof - More Compact */}
+                  <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 pt-2">
                     <div className="flex items-center gap-2 text-sm text-[#A0AEC0]">
-                      <CheckCircle className="w-5 h-5 text-[#10B981]" />
+                      <CheckCircle className="w-4 h-4 text-[#10B981]" />
                       <span>No credit card required</span>
                     </div>
                     <div className="flex items-center gap-2 text-sm text-[#A0AEC0]">
-                      <CheckCircle className="w-5 h-5 text-[#10B981]" />
+                      <CheckCircle className="w-4 h-4 text-[#10B981]" />
                       <span>14-day free trial</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm text-[#A0AEC0]">
-                      <CheckCircle className="w-5 h-5 text-[#10B981]" />
-                      <span>Cancel anytime</span>
                     </div>
                   </div>
                 </div>
               </div>
               
-              {/* Right Visual Showcase */}
+              {/* Right Visual Showcase - Interactive Video Example */}
               <div className="relative">
                 {/* Floating Performance Cards */}
-                <div className="absolute -top-8 -left-8 z-30 hidden lg:block">
-                  <div className="bg-[#0F1419]/95 backdrop-blur-xl border border-[#2D3748] rounded-2xl p-5 shadow-2xl animate-float">
+                <div className="absolute -top-6 -left-6 z-30 hidden lg:block">
+                  <div className="bg-[#0F1419]/95 backdrop-blur-xl border border-[#2D3748] rounded-2xl p-4 shadow-2xl animate-float">
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-gradient-to-r from-[#10B981] to-[#60A5FA] rounded-xl flex items-center justify-center">
-                        <Zap className="w-6 h-6 text-white" />
+                      <div className="w-10 h-10 bg-gradient-to-r from-[#10B981] to-[#60A5FA] rounded-xl flex items-center justify-center">
+                        <Zap className="w-5 h-5 text-white" />
                       </div>
                       <div>
                         <div className="text-sm font-bold text-[#F7FAFC]">Lightning Fast</div>
@@ -234,11 +230,11 @@ export default function Page() {
                   </div>
                 </div>
 
-                <div className="absolute -bottom-8 -right-8 z-30 hidden lg:block">
-                  <div className="bg-[#0F1419]/95 backdrop-blur-xl border border-[#2D3748] rounded-2xl p-5 shadow-2xl animate-float" style={{ animationDelay: '1s' }}>
+                <div className="absolute -bottom-6 -right-6 z-30 hidden lg:block">
+                  <div className="bg-[#0F1419]/95 backdrop-blur-xl border border-[#2D3748] rounded-2xl p-4 shadow-2xl animate-float" style={{ animationDelay: '1s' }}>
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-xl flex items-center justify-center">
-                        <TrendingUp className="w-6 h-6 text-[#111827]" />
+                      <div className="w-10 h-10 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-xl flex items-center justify-center">
+                        <TrendingUp className="w-5 h-5 text-[#111827]" />
                       </div>
                       <div>
                         <div className="text-sm font-bold text-[#F7FAFC]">+347% Engagement</div>
@@ -248,37 +244,37 @@ export default function Page() {
                   </div>
                 </div>
 
-                {/* Main Product Interface */}
-                <div className="relative bg-[#0F1419]/90 backdrop-blur-xl border border-[#2D3748] rounded-3xl p-6 shadow-2xl max-w-xl mx-auto">
+                {/* Premium Interactive Demo Interface */}
+                <div className="relative bg-[#0F1419]/90 backdrop-blur-xl border border-[#2D3748] rounded-3xl p-5 shadow-2xl max-w-lg mx-auto">
                   <div className="absolute inset-0 bg-gradient-to-br from-[#F6E05E]/8 to-[#60A5FA]/8 rounded-3xl"></div>
                   
-                  {/* Browser Header */}
-                  <div className="relative z-10 flex items-center justify-between mb-6">
-                    <div className="flex items-center gap-3">
-                      <div className="w-4 h-4 bg-[#EF4444] rounded-full"></div>
-                      <div className="w-4 h-4 bg-[#F59E0B] rounded-full"></div>
-                      <div className="w-4 h-4 bg-[#10B981] rounded-full"></div>
+                  {/* Simplified Browser Header */}
+                  <div className="relative z-10 flex items-center justify-between mb-5">
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 bg-[#EF4444] rounded-full"></div>
+                      <div className="w-3 h-3 bg-[#F59E0B] rounded-full"></div>
+                      <div className="w-3 h-3 bg-[#10B981] rounded-full"></div>
                     </div>
-                    <div className="text-sm text-[#A0AEC0] bg-[#1A202C] px-4 py-2 rounded-full border border-[#2D3748]">
-                      lymo.ai/create
+                    <div className="text-xs text-[#A0AEC0] bg-[#1A202C] px-3 py-1.5 rounded-full border border-[#2D3748]">
+                      AI Demo
                     </div>
                   </div>
 
-                  {/* Content Creation Flow */}
-                  <div className="space-y-6">
-                    {/* Upload Section */}
-                    <div className="bg-[#1A202C] rounded-2xl p-5 border border-[#2D3748] group hover:border-[#F6E05E]/50 transition-all duration-300">
-                      <div className="flex items-center gap-3 mb-4">
-                        <div className="w-8 h-8 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-lg flex items-center justify-center">
-                          <Upload className="w-4 h-4 text-[#111827]" />
+                  {/* Interactive Product Transformation */}
+                  <div className="space-y-4">
+                    {/* Upload Section with Hover Transform */}
+                    <div className="bg-[#1A202C] rounded-2xl p-4 border border-[#2D3748] group hover:border-[#F6E05E]/50 transition-all duration-300">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="w-7 h-7 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-lg flex items-center justify-center">
+                          <Upload className="w-3.5 h-3.5 text-[#111827]" />
                         </div>
                         <div>
-                          <span className="text-sm font-semibold text-[#F7FAFC]">Upload Product</span>
-                          <div className="text-xs text-[#A0AEC0]">Watch AI transformation in real-time</div>
+                          <span className="text-sm font-semibold text-[#F7FAFC]">Upload & Transform</span>
+                          <div className="text-xs text-[#A0AEC0]">Hover to see AI magic</div>
                         </div>
                       </div>
                       
-                      <div className="aspect-[3/2] bg-gradient-to-br from-[#2D3748] to-[#1A202C] rounded-xl border-2 border-dashed border-[#4A5568] flex items-center justify-center relative overflow-hidden group cursor-pointer">
+                      <div className="aspect-[4/3] bg-gradient-to-br from-[#2D3748] to-[#1A202C] rounded-xl border-2 border-dashed border-[#4A5568] flex items-center justify-center relative overflow-hidden group cursor-pointer">
                         {/* Original Cosmetic Tube Mockup */}
                         <Image
                           src="/images/Free Cosmetic Tube Mockup.png"
@@ -295,13 +291,19 @@ export default function Page() {
                           className="object-cover opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 rounded-xl absolute inset-0"
                         />
                         
-                        {/* AI Processing Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#F6E05E]/20 via-transparent to-[#60A5FA]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        {/* Premium AI Processing Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#F6E05E]/30 via-transparent to-[#60A5FA]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         
-                        {/* Scanning Effect */}
+                        {/* Advanced Scanning Effect */}
                         <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                           <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-[#F6E05E] to-transparent animate-pulse"></div>
                           <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-[#60A5FA] to-transparent animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                          <div className="absolute top-1/2 left-0 w-0.5 h-full bg-gradient-to-b from-transparent via-[#A78BFA] to-transparent animate-pulse" style={{ animationDelay: '0.25s' }}></div>
+                        </div>
+                        
+                        {/* Transform Indicator */}
+                        <div className="absolute top-3 right-3 bg-[#F6E05E] text-[#111827] px-2 py-1 rounded-full text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse">
+                          AI ENHANCED
                         </div>
                         
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
@@ -314,104 +316,65 @@ export default function Page() {
                       </div>
                     </div>
 
-                    {/* AI Results Grid */}
-                    <div className="grid grid-cols-2 gap-4">
-                      {/* Video Output */}
-                      <div className="bg-[#1A202C] rounded-2xl p-4 border border-[#2D3748] group hover:border-[#60A5FA]/50 transition-all duration-300 hover:shadow-xl hover:shadow-[#60A5FA]/10 hover:scale-105">
-                        <div className="flex items-center gap-2 mb-3">
-                          <div className="w-6 h-6 bg-gradient-to-r from-[#60A5FA] to-[#A78BFA] rounded-lg flex items-center justify-center">
-                            <Video className="w-3 h-3 text-white" />
-                          </div>
-                          <div className="flex-1">
-                            <span className="text-xs font-semibold text-[#F7FAFC] block">AI Video</span>
-                            <div className="text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded-full inline-block animate-pulse">Live Preview</div>
-                          </div>
+                    {/* Interactive Video Example */}
+                    <div className="bg-[#1A202C] rounded-2xl p-4 border border-[#2D3748] group hover:border-[#60A5FA]/50 transition-all duration-300 cursor-pointer">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="w-7 h-7 bg-gradient-to-r from-[#60A5FA] to-[#A78BFA] rounded-lg flex items-center justify-center">
+                          <Video className="w-3.5 h-3.5 text-white" />
                         </div>
-                        
-                        <div className="aspect-video bg-gradient-to-br from-[#60A5FA]/20 to-[#A78BFA]/20 rounded-lg border border-[#60A5FA]/30 flex items-center justify-center relative overflow-hidden cursor-pointer">
-                          {/* Animated Video Preview Background */}
-                          <div className="absolute inset-0">
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#60A5FA]/10 to-[#A78BFA]/10 animate-pulse"></div>
-                            <div className="absolute top-2 left-2 w-2 h-2 bg-[#60A5FA] rounded-full animate-ping"></div>
-                            <div className="absolute bottom-2 right-2 w-1 h-1 bg-[#A78BFA] rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
-                          </div>
-                          
-                          {/* Interactive Play Button */}
-                          <div className="relative z-10 bg-white/95 rounded-full p-2 shadow-xl group-hover:scale-125 group-hover:bg-white transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#60A5FA]/50">
-                            <Play className="w-4 h-4 text-[#60A5FA] group-hover:text-[#A78BFA] transition-colors" />
-                          </div>
-                          
-                          {/* Pulse Rings */}
-                          <div className="absolute inset-0 rounded-lg border-2 border-[#60A5FA]/0 group-hover:border-[#60A5FA]/50 group-hover:animate-ping transition-all duration-300"></div>
-                          <div className="absolute inset-2 rounded-lg border border-[#A78BFA]/0 group-hover:border-[#A78BFA]/30 group-hover:animate-pulse transition-all duration-300" style={{ animationDelay: '0.2s' }}></div>
-                          
-                          {/* Video Stats Overlay */}
-                          <div className="absolute top-2 right-2 bg-black/60 backdrop-blur-sm rounded-full px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <span className="text-xs text-white font-medium">2.1M views</span>
-                          </div>
-                        </div>
-                        
-                        <div className="mt-2 text-center">
-                          <div className="text-xs text-[#A0AEC0]">Generated in <span className="text-[#F6E05E] font-semibold animate-pulse">8.2s</span></div>
+                        <div className="flex-1">
+                          <span className="text-sm font-semibold text-[#F7FAFC]">AI Video Example</span>
+                          <div className="text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded-full inline-block animate-pulse">Click to Play</div>
                         </div>
                       </div>
-
-                      {/* Images Output */}
-                      <div className="bg-[#1A202C] rounded-2xl p-4 border border-[#2D3748] group hover:border-[#F6E05E]/50 transition-all duration-300 hover:shadow-xl hover:shadow-[#F6E05E]/10 hover:scale-105">
-                        <div className="flex items-center gap-2 mb-3">
-                          <div className="w-6 h-6 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-lg flex items-center justify-center">
-                            <ImageIcon className="w-3 h-3 text-[#111827]" />
-                          </div>
-                          <div className="flex-1">
-                            <span className="text-xs font-semibold text-[#F7FAFC] block">AI Images</span>
-                            <div className="text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded-full inline-block animate-pulse">4 Variants</div>
-                          </div>
+                      
+                      <div className="aspect-video bg-gradient-to-br from-[#60A5FA]/20 to-[#A78BFA]/20 rounded-xl border border-[#60A5FA]/30 flex items-center justify-center relative overflow-hidden">
+                        {/* Premium Video Preview Background */}
+                        <div className="absolute inset-0">
+                          <div className="absolute inset-0 bg-gradient-to-br from-[#60A5FA]/10 to-[#A78BFA]/10 animate-pulse"></div>
+                          <div className="absolute top-2 left-2 w-2 h-2 bg-[#60A5FA] rounded-full animate-ping"></div>
+                          <div className="absolute bottom-2 right-2 w-1 h-1 bg-[#A78BFA] rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
+                          <div className="absolute top-1/2 right-2 w-1.5 h-1.5 bg-[#F6E05E] rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
                         </div>
                         
-                        <div className="grid grid-cols-2 gap-1.5">
-                          <div className="aspect-square rounded-lg overflow-hidden shadow-lg cursor-pointer group/img relative">
-                            <Image 
-                              src="/images/1.jpg" 
-                              alt="AI Generated" 
-                              width={80} 
-                              height={80} 
-                              className="w-full h-full object-cover group-hover:scale-110 group/img:scale-125 group/img:rotate-2 transition-all duration-500"
-                            />
-                            {/* Hover Glow Effect */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#F6E05E]/0 to-[#F59E0B]/0 group/img:from-[#F6E05E]/20 group/img:to-[#F59E0B]/20 transition-all duration-300 rounded-lg"></div>
-                          </div>
-                          <div className="aspect-square rounded-lg overflow-hidden shadow-lg cursor-pointer group/img relative">
-                            <Image 
-                              src="/images/2.jpg" 
-                              alt="AI Generated" 
-                              width={80} 
-                              height={80} 
-                              className="w-full h-full object-cover group-hover:scale-110 group/img:scale-125 group/img:-rotate-2 transition-all duration-500"
-                            />
-                            {/* Hover Glow Effect */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#F6E05E]/0 to-[#F59E0B]/0 group/img:from-[#F6E05E]/20 group/img:to-[#F59E0B]/20 transition-all duration-300 rounded-lg"></div>
-                          </div>
+                        {/* Premium Interactive Play Button */}
+                        <div className="relative z-10 bg-white/95 rounded-full p-4 shadow-2xl group-hover:scale-125 group-hover:bg-white transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#60A5FA]/50">
+                          <Play className="w-6 h-6 text-[#60A5FA] group-hover:text-[#A78BFA] transition-colors" />
                         </div>
                         
-                        <div className="mt-2 text-center">
-                          <div className="text-xs text-[#A0AEC0]">4 variants • <span className="text-[#F6E05E] font-semibold animate-pulse">12.1s</span></div>
+                        {/* Premium Pulse Rings */}
+                        <div className="absolute inset-0 rounded-xl border-2 border-[#60A5FA]/0 group-hover:border-[#60A5FA]/50 group-hover:animate-ping transition-all duration-300"></div>
+                        <div className="absolute inset-2 rounded-xl border border-[#A78BFA]/0 group-hover:border-[#A78BFA]/30 group-hover:animate-pulse transition-all duration-300" style={{ animationDelay: '0.2s' }}></div>
+                        
+                        {/* Premium Stats Overlay */}
+                        <div className="absolute top-3 right-3 bg-black/70 backdrop-blur-sm rounded-full px-3 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <span className="text-xs text-white font-medium">2.1M views</span>
                         </div>
+                        
+                        {/* Live Indicator */}
+                        <div className="absolute top-3 left-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse">
+                          LIVE DEMO
+                        </div>
+                      </div>
+                      
+                      <div className="mt-3 text-center">
+                        <div className="text-xs text-[#A0AEC0]">Generated in <span className="text-[#F6E05E] font-semibold animate-pulse">8.2s</span></div>
                       </div>
                     </div>
 
-                    {/* Live Processing Status with Animation */}
+                    {/* Premium Processing Status */}
                     <div className="bg-[#1A202C] rounded-xl p-3 border border-[#2D3748] group hover:border-[#10B981]/50 transition-all duration-300">
                       <div className="flex items-center justify-between mb-2">
                         <span className="text-xs font-medium text-[#F7FAFC]">AI Processing Status</span>
                         <div className="flex items-center gap-2">
                           <div className="w-2 h-2 bg-[#10B981] rounded-full animate-pulse"></div>
-                          <span className="text-xs text-[#10B981] font-semibold animate-pulse">Complete</span>
+                          <span className="text-xs text-[#10B981] font-semibold animate-pulse">Ready</span>
                         </div>
                       </div>
                       <div className="w-full bg-[#2D3748] rounded-full h-2 overflow-hidden">
                         <div className="bg-gradient-to-r from-[#F6E05E] via-[#60A5FA] to-[#10B981] h-2 rounded-full relative" style={{ width: '100%' }}>
-                          {/* Shimmer Effect */}
-                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse"></div>
+                          {/* Premium Shimmer Effect */}
+                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-pulse"></div>
                         </div>
                       </div>
                     </div>
@@ -421,8 +384,8 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          {/* Premium Scroll Indicator */}
+          <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce">
             <div className="w-6 h-10 border-2 border-[#2D3748] rounded-full flex justify-center">
               <div className="w-1 h-3 bg-[#F6E05E] rounded-full mt-2 animate-pulse"></div>
             </div>
