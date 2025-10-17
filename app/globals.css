@@ -168,6 +168,20 @@
     will-change: background-color, color, border-color;
   }
 
+  /* Floating animation for premium UI elements */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
   /* LaunchList Widget Custom Styling */
   .waitlist-widget-container {
     width: 100%;

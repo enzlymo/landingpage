@@ -6,7 +6,7 @@ import { VideoCard } from "@/components/ui/video-card"
 import { Inter } from 'next/font/google'
 import Link from "next/link"
 import Image from "next/image"
-import { Play, ArrowRight, Sparkles, Zap, Target, Users, BarChart3, CheckCircle, Quote, Image as ImageIcon, Video, FileText, Upload, Wand2 } from "lucide-react"
+import { Play, ArrowRight, Sparkles, Zap, Target, Users, BarChart3, CheckCircle, Quote, Image as ImageIcon, Video, FileText, Upload, Wand2, TrendingUp } from "lucide-react"
 import { DynamicWaitlist } from "@/components/ui/dynamic-waitlist"
 import { StatsBanner } from "@/components/ui/stats-banner"
 import { RotatingText } from "@/components/ui/rotating-text"
@@ -136,155 +136,237 @@ export default function Page() {
       </header>
 
       <main className="flex-grow pt-20">
-        {/* Professional Hero Section */}
-        <section className="max-w-7xl mx-auto px-6 py-12 sm:py-20 lg:py-32 mb-12 sm:mb-16 lg:mb-20">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-            <div className="space-y-6 sm:space-y-8 text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
-              {/* Stats Banner */}
-              <div className="flex justify-center lg:justify-start">
-                <StatsBanner count={127} />
-              </div>
+        {/* Billion Dollar SaaS Hero Section */}
+        <section className="relative min-h-screen bg-gradient-to-br from-[#0F1419] via-[#1A202C] to-[#161B22] flex items-center justify-center overflow-hidden">
+          {/* Premium Background Effects */}
+          <div className="absolute inset-0">
+            <div className="absolute top-20 left-20 w-72 h-72 bg-[#F6E05E]/10 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#60A5FA]/8 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-[#F6E05E]/5 to-[#A78BFA]/5 rounded-full blur-3xl"></div>
+          </div>
+
+          <div className="relative z-10 max-w-7xl mx-auto px-6 py-16">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
               
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-[#F7FAFC]">
-                Generate Ideas.<br />
-                Create Content.<br />
-                <span className="bg-gradient-to-r from-[#F6E05E] via-[#F59E0B] to-[#60A5FA] bg-clip-text text-transparent">
-                  <RotatingText 
-                    texts={["Stay Organized.", "Go Viral.", "Drive Sales.", "Build Brands.", "Scale Fast."]}
-                    interval={5000}
-                  />
-                </span>
-              </h1>
-              
-              <p className="text-base sm:text-lg lg:text-xl text-[#A0AEC0] leading-relaxed">
-                Meet Lymo AI - <span className="font-semibold text-[#F7FAFC]">Your AI Content Generation Companion</span>. 
-                An AI-powered platform that makes creating professional videos, images, and content effortless. 
-                Advanced algorithms, smart templates, and viral content strategies. All for just{' '}
-                <span className="font-bold text-[#F6E05E]">$29/month</span>.
-              </p>
-              
-              <div className="flex items-center justify-center lg:justify-start gap-4 pt-2">
-                <div className="flex items-center gap-1">
-                  <span className="text-[#F6E05E] text-xl">★</span>
-                  <span className="text-[#F6E05E] text-xl">★</span>
-                  <span className="text-[#F6E05E] text-xl">★</span>
-                  <span className="text-[#F6E05E] text-xl">★</span>
-                  <span className="text-[#F6E05E] text-xl">★</span>
-                </div>
-                <div className="text-sm text-[#A0AEC0]">
-                  <span className="font-semibold text-[#F7FAFC]">4.8/5</span> from 1,247 reviews
-                </div>
-              </div>
-              
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-                <Button className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-semibold text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto h-11 min-h-[44px] rounded-md shadow-lg hover:shadow-xl transition-all duration-200 active:scale-95">
-                  Start Free Trial
-                </Button>
-                <Button 
-                  variant="outline" 
-                  className="border border-[#2D3748] bg-[#1A202C] hover:bg-[#2D3748] hover:border-[#F6E05E]/50 text-[#F7FAFC] h-11 min-h-[44px] rounded-md text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto transition-all duration-200"
-                >
-                  Watch Demo
-                </Button>
-              </div>
-              
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4 text-xs text-[#A0AEC0]">
-                <div className="flex items-center gap-1.5">
-                  <CheckCircle className="w-4 h-4 text-[#10B981]" />
-                  <span>No credit card required</span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <CheckCircle className="w-4 h-4 text-[#10B981]" />
-                  <span>7-day free trial</span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <CheckCircle className="w-4 h-4 text-[#10B981]" />
-                  <span>Cancel anytime</span>
-                </div>
-              </div>
-            </div>
-            
-            <div className="relative order-first lg:order-last max-h-[600px] lg:max-h-[700px]">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#F6E05E]/20 to-[#60A5FA]/20 blur-3xl rounded-full"></div>
-              <div className="relative grid grid-cols-2 gap-4 max-w-[450px] mx-auto">
-                {/* Generated Video Content */}
-                <div className="space-y-4">
-                  <VideoCard
-                    poster="/images/photo-1.jpg"
-                    title="AI-Generated Ad"
-                    stats={{ views: "2.1M", likes: "89k" }}
-                    overlay={{ text: "AI CREATED", position: "top" }}
-                    className="w-full aspect-[4/5] rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
-                  />
-                  <div className="bg-[#1A202C] rounded-2xl p-4 shadow-xl border border-[#2D3748] hover:shadow-2xl transition-all duration-300">
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="w-8 h-8 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-full flex items-center justify-center shadow-lg">
-                        <ImageIcon className="w-4 h-4 text-[#111827]" />
-                      </div>
-                      <div>
-                        <span className="text-xs font-bold text-[#F7FAFC]">Product Images</span>
-                        <div className="text-[10px] text-[#A0AEC0]">AI Generated</div>
-                      </div>
-                    </div>
-                    <div className="grid grid-cols-2 gap-2">
-                      <div className="aspect-square rounded-lg overflow-hidden shadow-lg">
-                        <Image 
-                          src="/images/photo-1.jpg" 
-                          alt="AI Generated Product" 
-                          width={100} 
-                          height={100} 
-                          className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-                        />
-                      </div>
-                      <div className="aspect-square rounded-lg overflow-hidden shadow-lg">
-                        <Image 
-                          src="/images/photo-2.jpg" 
-                          alt="AI Generated Product" 
-                          width={100} 
-                          height={100} 
-                          className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-                        />
-                      </div>
-                    </div>
-                    <div className="mt-2 text-center">
-                      <div className="text-[10px] text-[#A0AEC0]">Generated in <span className="font-semibold text-[#F6E05E]">15 seconds</span></div>
-                    </div>
+              {/* Left Content */}
+              <div className="space-y-8 text-center lg:text-left">
+                {/* Trust Badge */}
+                <div className="flex items-center justify-center lg:justify-start gap-4">
+                  <div className="flex items-center gap-2 bg-[#0F1419]/80 backdrop-blur-sm border border-[#2D3748] rounded-full px-4 py-2">
+                    <div className="w-2 h-2 bg-[#10B981] rounded-full animate-pulse"></div>
+                    <span className="text-sm text-[#A0AEC0]">50,000+ creators</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <span className="text-[#F6E05E] text-sm">★★★★★</span>
+                    <span className="text-xs text-[#A0AEC0]">4.9/5</span>
                   </div>
                 </div>
                 
-                <div className="space-y-4 pt-8">
-                  <div className="bg-[#1A202C] rounded-2xl p-4 shadow-xl border border-[#2D3748] hover:shadow-2xl transition-all duration-300">
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="w-8 h-8 bg-gradient-to-r from-[#60A5FA] to-[#A78BFA] rounded-full flex items-center justify-center shadow-lg">
-                        <Video className="w-4 h-4 text-white" />
+                {/* Main Headlines */}
+                <div className="space-y-6">
+                  <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[0.9] text-[#F7FAFC]">
+                    Create Viral
+                    <span className="block bg-gradient-to-r from-[#F6E05E] via-[#F59E0B] to-[#60A5FA] bg-clip-text text-transparent">
+                      AI Content
+                    </span>
+                    <span className="block text-4xl sm:text-5xl lg:text-6xl">
+                      <RotatingText 
+                        texts={["in Seconds", "That Converts", "That Scales", "That Sells"]}
+                        interval={2500}
+                      />
+                    </span>
+                  </h1>
+                  
+                  <p className="text-xl lg:text-2xl text-[#A0AEC0] leading-relaxed max-w-2xl">
+                    Transform any product photo into professional videos, ads, and campaigns. 
+                    <span className="text-[#F7FAFC] font-semibold"> Join the AI revolution</span> that's changing content creation forever.
+                  </p>
+                </div>
+
+                {/* CTA Section */}
+                <div className="space-y-6">
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <Button className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-bold text-xl px-10 py-7 rounded-2xl shadow-2xl hover:shadow-[#F6E05E]/30 transition-all duration-300 transform hover:scale-105 group">
+                      <Sparkles className="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform" />
+                      Start Creating Free
+                    </Button>
+                    <Button 
+                      variant="outline" 
+                      className="border-2 border-[#2D3748] bg-[#0F1419]/80 backdrop-blur-sm hover:bg-[#1A202C] hover:border-[#F6E05E]/50 text-[#F7FAFC] text-xl px-10 py-7 rounded-2xl transition-all duration-300 group"
+                    >
+                      <Play className="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" />
+                      Watch Demo
+                    </Button>
+                  </div>
+
+                  {/* Social Proof */}
+                  <div className="flex flex-wrap items-center justify-center lg:justify-start gap-8 pt-4">
+                    <div className="flex items-center gap-2 text-sm text-[#A0AEC0]">
+                      <CheckCircle className="w-5 h-5 text-[#10B981]" />
+                      <span>No credit card required</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-[#A0AEC0]">
+                      <CheckCircle className="w-5 h-5 text-[#10B981]" />
+                      <span>14-day free trial</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-[#A0AEC0]">
+                      <CheckCircle className="w-5 h-5 text-[#10B981]" />
+                      <span>Cancel anytime</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Right Visual Showcase */}
+              <div className="relative">
+                {/* Floating Performance Cards */}
+                <div className="absolute -top-6 -left-6 z-20 hidden lg:block">
+                  <div className="bg-[#0F1419]/95 backdrop-blur-xl border border-[#2D3748] rounded-2xl p-5 shadow-2xl animate-float">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 bg-gradient-to-r from-[#10B981] to-[#60A5FA] rounded-xl flex items-center justify-center">
+                        <Zap className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <span className="text-xs font-bold text-[#F7FAFC]">Social Videos</span>
-                        <div className="text-[10px] text-[#A0AEC0]">Viral Content</div>
-                      </div>
-                    </div>
-                    <div className="space-y-2">
-                      <div className="aspect-video bg-gradient-to-br from-[#60A5FA]/20 to-[#A78BFA]/20 rounded-lg border-2 border-[#60A5FA]/30 flex items-center justify-center relative overflow-hidden shadow-lg group">
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#60A5FA]/10 to-[#A78BFA]/10"></div>
-                        <div className="relative z-10 bg-white/90 rounded-full p-2 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                          <Play className="w-5 h-5 text-[#60A5FA]" />
-                        </div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-[10px] font-semibold text-[#F7FAFC]">1.5M views • 45k likes</div>
-                        <div className="text-[10px] text-[#F6E05E]">Trending #1</div>
+                        <div className="text-sm font-bold text-[#F7FAFC]">Lightning Fast</div>
+                        <div className="text-xs text-[#10B981]">Generated in 8.2s</div>
                       </div>
                     </div>
                   </div>
-                  <VideoCard
-                    poster="/images/photo-2.jpg"
-                    title="Brand Story"
-                    stats={{ views: "890K", likes: "32k" }}
-                    overlay={{ text: "VIRAL", position: "center" }}
-                    className="w-full aspect-[4/5] rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
-                  />
+                </div>
+
+                <div className="absolute -bottom-6 -right-6 z-20 hidden lg:block">
+                  <div className="bg-[#0F1419]/95 backdrop-blur-xl border border-[#2D3748] rounded-2xl p-5 shadow-2xl animate-float" style={{ animationDelay: '1s' }}>
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-xl flex items-center justify-center">
+                        <TrendingUp className="w-6 h-6 text-[#111827]" />
+                      </div>
+                      <div>
+                        <div className="text-sm font-bold text-[#F7FAFC]">+347% Engagement</div>
+                        <div className="text-xs text-[#F6E05E]">vs traditional content</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Main Product Interface */}
+                <div className="relative bg-[#0F1419]/90 backdrop-blur-xl border border-[#2D3748] rounded-3xl p-8 shadow-2xl max-w-2xl mx-auto">
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#F6E05E]/8 to-[#60A5FA]/8 rounded-3xl"></div>
+                  
+                  {/* Browser Header */}
+                  <div className="relative z-10 flex items-center justify-between mb-8">
+                    <div className="flex items-center gap-3">
+                      <div className="w-4 h-4 bg-[#EF4444] rounded-full"></div>
+                      <div className="w-4 h-4 bg-[#F59E0B] rounded-full"></div>
+                      <div className="w-4 h-4 bg-[#10B981] rounded-full"></div>
+                    </div>
+                    <div className="text-sm text-[#A0AEC0] bg-[#1A202C] px-4 py-2 rounded-full border border-[#2D3748]">
+                      lymo.ai/create
+                    </div>
+                  </div>
+
+                  {/* Content Creation Flow */}
+                  <div className="space-y-8">
+                    {/* Upload Section */}
+                    <div className="bg-[#1A202C] rounded-2xl p-6 border border-[#2D3748]">
+                      <div className="flex items-center gap-3 mb-6">
+                        <div className="w-10 h-10 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-xl flex items-center justify-center">
+                          <Upload className="w-5 h-5 text-[#111827]" />
+                        </div>
+                        <div>
+                          <span className="text-lg font-semibold text-[#F7FAFC]">Upload Product</span>
+                          <div className="text-sm text-[#A0AEC0]">Drag & drop or click to upload</div>
+                        </div>
+                      </div>
+                      
+                      <div className="aspect-[16/10] bg-gradient-to-br from-[#2D3748] to-[#1A202C] rounded-xl border-2 border-dashed border-[#4A5568] flex items-center justify-center relative overflow-hidden group cursor-pointer">
+                        <Image
+                          src="/images/Free Cosmetic Tube Mockup.png"
+                          alt="Product showcase"
+                          fill
+                          className="object-cover opacity-90 group-hover:opacity-100 transition-opacity rounded-xl"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div className="absolute bottom-4 left-4 right-4">
+                          <div className="text-sm text-white font-medium">cosmetic-product.jpg</div>
+                          <div className="w-full bg-[#F6E05E] h-2 rounded-full mt-2 shadow-lg"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* AI Results Grid */}
+                    <div className="grid grid-cols-2 gap-6">
+                      {/* Video Output */}
+                      <div className="bg-[#1A202C] rounded-2xl p-5 border border-[#2D3748] group hover:border-[#60A5FA]/50 transition-all duration-300 hover:shadow-xl hover:shadow-[#60A5FA]/10">
+                        <div className="flex items-center gap-3 mb-4">
+                          <div className="w-8 h-8 bg-gradient-to-r from-[#60A5FA] to-[#A78BFA] rounded-lg flex items-center justify-center">
+                            <Video className="w-4 h-4 text-white" />
+                          </div>
+                          <div>
+                            <span className="text-sm font-semibold text-[#F7FAFC]">AI Video</span>
+                            <div className="text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-1 rounded-full inline-block ml-2">Ready</div>
+                          </div>
+                        </div>
+                        
+                        <div className="aspect-video bg-gradient-to-br from-[#60A5FA]/20 to-[#A78BFA]/20 rounded-xl border border-[#60A5FA]/30 flex items-center justify-center relative overflow-hidden">
+                          <div className="absolute inset-0 bg-gradient-to-br from-[#60A5FA]/10 to-[#A78BFA]/10"></div>
+                          <div className="relative z-10 bg-white/95 rounded-full p-3 shadow-xl group-hover:scale-110 transition-transform duration-300">
+                            <Play className="w-6 h-6 text-[#60A5FA]" />
+                          </div>
+                        </div>
+                        
+                        <div className="mt-3 text-center">
+                          <div className="text-xs text-[#A0AEC0]">Generated in <span className="text-[#F6E05E] font-semibold">8.2s</span></div>
+                        </div>
+                      </div>
+
+                      {/* Images Output */}
+                      <div className="bg-[#1A202C] rounded-2xl p-5 border border-[#2D3748] group hover:border-[#F6E05E]/50 transition-all duration-300 hover:shadow-xl hover:shadow-[#F6E05E]/10">
+                        <div className="flex items-center gap-3 mb-4">
+                          <div className="w-8 h-8 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-lg flex items-center justify-center">
+                            <ImageIcon className="w-4 h-4 text-[#111827]" />
+                          </div>
+                          <div>
+                            <span className="text-sm font-semibold text-[#F7FAFC]">AI Images</span>
+                            <div className="text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-1 rounded-full inline-block ml-2">Ready</div>
+                          </div>
+                        </div>
+                        
+                        <div className="grid grid-cols-2 gap-2">
+                          <div className="aspect-square rounded-lg overflow-hidden shadow-lg">
+                            <Image 
+                              src="/images/1.jpg" 
+                              alt="AI Generated" 
+                              width={100} 
+                              height={100} 
+                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                            />
+                          </div>
+                          <div className="aspect-square rounded-lg overflow-hidden shadow-lg">
+                            <Image 
+                              src="/images/2.jpg" 
+                              alt="AI Generated" 
+                              width={100} 
+                              height={100} 
+                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                            />
+                          </div>
+                        </div>
+                        
+                        <div className="mt-3 text-center">
+                          <div className="text-xs text-[#A0AEC0]">4 variants • <span className="text-[#F6E05E] font-semibold">12.1s</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Scroll Indicator */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div className="w-6 h-10 border-2 border-[#2D3748] rounded-full flex justify-center">
+              <div className="w-1 h-3 bg-[#F6E05E] rounded-full mt-2 animate-pulse"></div>
             </div>
           </div>
         </section>
