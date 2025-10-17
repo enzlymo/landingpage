@@ -220,7 +220,7 @@ export default function Page() {
               {/* Right Visual Showcase */}
               <div className="relative">
                 {/* Floating Performance Cards */}
-                <div className="absolute -top-6 -left-6 z-20 hidden lg:block">
+                <div className="absolute -top-8 -left-8 z-30 hidden lg:block">
                   <div className="bg-[#0F1419]/95 backdrop-blur-xl border border-[#2D3748] rounded-2xl p-5 shadow-2xl animate-float">
                     <div className="flex items-center gap-3">
                       <div className="w-12 h-12 bg-gradient-to-r from-[#10B981] to-[#60A5FA] rounded-xl flex items-center justify-center">
@@ -234,7 +234,7 @@ export default function Page() {
                   </div>
                 </div>
 
-                <div className="absolute -bottom-6 -right-6 z-20 hidden lg:block">
+                <div className="absolute -bottom-8 -right-8 z-30 hidden lg:block">
                   <div className="bg-[#0F1419]/95 backdrop-blur-xl border border-[#2D3748] rounded-2xl p-5 shadow-2xl animate-float" style={{ animationDelay: '1s' }}>
                     <div className="flex items-center gap-3">
                       <div className="w-12 h-12 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-xl flex items-center justify-center">
@@ -249,11 +249,11 @@ export default function Page() {
                 </div>
 
                 {/* Main Product Interface */}
-                <div className="relative bg-[#0F1419]/90 backdrop-blur-xl border border-[#2D3748] rounded-3xl p-8 shadow-2xl max-w-2xl mx-auto">
+                <div className="relative bg-[#0F1419]/90 backdrop-blur-xl border border-[#2D3748] rounded-3xl p-6 shadow-2xl max-w-xl mx-auto">
                   <div className="absolute inset-0 bg-gradient-to-br from-[#F6E05E]/8 to-[#60A5FA]/8 rounded-3xl"></div>
                   
                   {/* Browser Header */}
-                  <div className="relative z-10 flex items-center justify-between mb-8">
+                  <div className="relative z-10 flex items-center justify-between mb-6">
                     <div className="flex items-center gap-3">
                       <div className="w-4 h-4 bg-[#EF4444] rounded-full"></div>
                       <div className="w-4 h-4 bg-[#F59E0B] rounded-full"></div>
@@ -265,96 +265,109 @@ export default function Page() {
                   </div>
 
                   {/* Content Creation Flow */}
-                  <div className="space-y-8">
+                  <div className="space-y-6">
                     {/* Upload Section */}
-                    <div className="bg-[#1A202C] rounded-2xl p-6 border border-[#2D3748]">
-                      <div className="flex items-center gap-3 mb-6">
-                        <div className="w-10 h-10 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-xl flex items-center justify-center">
-                          <Upload className="w-5 h-5 text-[#111827]" />
+                    <div className="bg-[#1A202C] rounded-2xl p-5 border border-[#2D3748] group hover:border-[#F6E05E]/50 transition-all duration-300">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-8 h-8 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-lg flex items-center justify-center">
+                          <Upload className="w-4 h-4 text-[#111827]" />
                         </div>
                         <div>
-                          <span className="text-lg font-semibold text-[#F7FAFC]">Upload Product</span>
-                          <div className="text-sm text-[#A0AEC0]">Drag & drop or click to upload</div>
+                          <span className="text-sm font-semibold text-[#F7FAFC]">Upload Product</span>
+                          <div className="text-xs text-[#A0AEC0]">Drag & drop or click to upload</div>
                         </div>
                       </div>
                       
-                      <div className="aspect-[16/10] bg-gradient-to-br from-[#2D3748] to-[#1A202C] rounded-xl border-2 border-dashed border-[#4A5568] flex items-center justify-center relative overflow-hidden group cursor-pointer">
+                      <div className="aspect-[3/2] bg-gradient-to-br from-[#2D3748] to-[#1A202C] rounded-xl border-2 border-dashed border-[#4A5568] flex items-center justify-center relative overflow-hidden group cursor-pointer">
                         <Image
                           src="/images/Free Cosmetic Tube Mockup.png"
                           alt="Product showcase"
                           fill
-                          className="object-cover opacity-90 group-hover:opacity-100 transition-opacity rounded-xl"
+                          className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 rounded-xl"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                        <div className="absolute bottom-4 left-4 right-4">
-                          <div className="text-sm text-white font-medium">cosmetic-product.jpg</div>
-                          <div className="w-full bg-[#F6E05E] h-2 rounded-full mt-2 shadow-lg"></div>
+                        <div className="absolute bottom-3 left-3 right-3">
+                          <div className="text-xs text-white font-medium">cosmetic-product.jpg</div>
+                          <div className="w-full bg-[#F6E05E] h-1.5 rounded-full mt-2 shadow-lg animate-pulse"></div>
                         </div>
                       </div>
                     </div>
 
                     {/* AI Results Grid */}
-                    <div className="grid grid-cols-2 gap-6">
+                    <div className="grid grid-cols-2 gap-4">
                       {/* Video Output */}
-                      <div className="bg-[#1A202C] rounded-2xl p-5 border border-[#2D3748] group hover:border-[#60A5FA]/50 transition-all duration-300 hover:shadow-xl hover:shadow-[#60A5FA]/10">
-                        <div className="flex items-center gap-3 mb-4">
-                          <div className="w-8 h-8 bg-gradient-to-r from-[#60A5FA] to-[#A78BFA] rounded-lg flex items-center justify-center">
-                            <Video className="w-4 h-4 text-white" />
+                      <div className="bg-[#1A202C] rounded-2xl p-4 border border-[#2D3748] group hover:border-[#60A5FA]/50 transition-all duration-300 hover:shadow-xl hover:shadow-[#60A5FA]/10 hover:scale-105">
+                        <div className="flex items-center gap-2 mb-3">
+                          <div className="w-6 h-6 bg-gradient-to-r from-[#60A5FA] to-[#A78BFA] rounded-lg flex items-center justify-center">
+                            <Video className="w-3 h-3 text-white" />
                           </div>
-                          <div>
-                            <span className="text-sm font-semibold text-[#F7FAFC]">AI Video</span>
-                            <div className="text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-1 rounded-full inline-block ml-2">Ready</div>
+                          <div className="flex-1">
+                            <span className="text-xs font-semibold text-[#F7FAFC] block">AI Video</span>
+                            <div className="text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded-full inline-block">Ready</div>
                           </div>
                         </div>
                         
-                        <div className="aspect-video bg-gradient-to-br from-[#60A5FA]/20 to-[#A78BFA]/20 rounded-xl border border-[#60A5FA]/30 flex items-center justify-center relative overflow-hidden">
+                        <div className="aspect-video bg-gradient-to-br from-[#60A5FA]/20 to-[#A78BFA]/20 rounded-lg border border-[#60A5FA]/30 flex items-center justify-center relative overflow-hidden cursor-pointer">
                           <div className="absolute inset-0 bg-gradient-to-br from-[#60A5FA]/10 to-[#A78BFA]/10"></div>
-                          <div className="relative z-10 bg-white/95 rounded-full p-3 shadow-xl group-hover:scale-110 transition-transform duration-300">
-                            <Play className="w-6 h-6 text-[#60A5FA]" />
+                          <div className="relative z-10 bg-white/95 rounded-full p-2 shadow-xl group-hover:scale-125 group-hover:bg-white transition-all duration-300">
+                            <Play className="w-4 h-4 text-[#60A5FA]" />
                           </div>
+                          {/* Pulse rings on hover */}
+                          <div className="absolute inset-0 rounded-lg border-2 border-[#60A5FA]/0 group-hover:border-[#60A5FA]/50 group-hover:animate-ping transition-all duration-300"></div>
                         </div>
                         
-                        <div className="mt-3 text-center">
+                        <div className="mt-2 text-center">
                           <div className="text-xs text-[#A0AEC0]">Generated in <span className="text-[#F6E05E] font-semibold">8.2s</span></div>
                         </div>
                       </div>
 
                       {/* Images Output */}
-                      <div className="bg-[#1A202C] rounded-2xl p-5 border border-[#2D3748] group hover:border-[#F6E05E]/50 transition-all duration-300 hover:shadow-xl hover:shadow-[#F6E05E]/10">
-                        <div className="flex items-center gap-3 mb-4">
-                          <div className="w-8 h-8 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-lg flex items-center justify-center">
-                            <ImageIcon className="w-4 h-4 text-[#111827]" />
+                      <div className="bg-[#1A202C] rounded-2xl p-4 border border-[#2D3748] group hover:border-[#F6E05E]/50 transition-all duration-300 hover:shadow-xl hover:shadow-[#F6E05E]/10 hover:scale-105">
+                        <div className="flex items-center gap-2 mb-3">
+                          <div className="w-6 h-6 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-lg flex items-center justify-center">
+                            <ImageIcon className="w-3 h-3 text-[#111827]" />
                           </div>
-                          <div>
-                            <span className="text-sm font-semibold text-[#F7FAFC]">AI Images</span>
-                            <div className="text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-1 rounded-full inline-block ml-2">Ready</div>
+                          <div className="flex-1">
+                            <span className="text-xs font-semibold text-[#F7FAFC] block">AI Images</span>
+                            <div className="text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded-full inline-block">Ready</div>
                           </div>
                         </div>
                         
-                        <div className="grid grid-cols-2 gap-2">
-                          <div className="aspect-square rounded-lg overflow-hidden shadow-lg">
+                        <div className="grid grid-cols-2 gap-1.5">
+                          <div className="aspect-square rounded-lg overflow-hidden shadow-lg cursor-pointer group/img">
                             <Image 
                               src="/images/1.jpg" 
                               alt="AI Generated" 
-                              width={100} 
-                              height={100} 
-                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                              width={80} 
+                              height={80} 
+                              className="w-full h-full object-cover group-hover:scale-110 group/img:scale-125 group/img:rotate-1 transition-all duration-300"
                             />
                           </div>
-                          <div className="aspect-square rounded-lg overflow-hidden shadow-lg">
+                          <div className="aspect-square rounded-lg overflow-hidden shadow-lg cursor-pointer group/img">
                             <Image 
                               src="/images/2.jpg" 
                               alt="AI Generated" 
-                              width={100} 
-                              height={100} 
-                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                              width={80} 
+                              height={80} 
+                              className="w-full h-full object-cover group-hover:scale-110 group/img:scale-125 group/img:-rotate-1 transition-all duration-300"
                             />
                           </div>
                         </div>
                         
-                        <div className="mt-3 text-center">
+                        <div className="mt-2 text-center">
                           <div className="text-xs text-[#A0AEC0]">4 variants • <span className="text-[#F6E05E] font-semibold">12.1s</span></div>
                         </div>
+                      </div>
+                    </div>
+
+                    {/* Processing Status Bar */}
+                    <div className="bg-[#1A202C] rounded-xl p-3 border border-[#2D3748]">
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-xs font-medium text-[#F7FAFC]">Processing Status</span>
+                        <span className="text-xs text-[#10B981] font-semibold">Complete</span>
+                      </div>
+                      <div className="w-full bg-[#2D3748] rounded-full h-2">
+                        <div className="bg-gradient-to-r from-[#F6E05E] to-[#10B981] h-2 rounded-full animate-pulse" style={{ width: '100%' }}></div>
                       </div>
                     </div>
                   </div>
