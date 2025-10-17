@@ -274,7 +274,7 @@ export default function Page() {
                         </div>
                         <div>
                           <span className="text-sm font-semibold text-[#F7FAFC]">Upload Product</span>
-                          <div className="text-xs text-[#A0AEC0]">Drag & drop or click to upload</div>
+                          <div className="text-xs text-[#A0AEC0]">Watch AI transformation in real-time</div>
                         </div>
                       </div>
                       
@@ -283,12 +283,24 @@ export default function Page() {
                           src="/images/Free Cosmetic Tube Mockup.png"
                           alt="Product showcase"
                           fill
-                          className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 rounded-xl"
+                          className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-110 group-hover:rotate-1 transition-all duration-700 rounded-xl"
                         />
+                        
+                        {/* AI Processing Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#F6E05E]/20 via-transparent to-[#60A5FA]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
+                        {/* Scanning Effect */}
+                        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-[#F6E05E] to-transparent animate-pulse"></div>
+                          <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-[#60A5FA] to-transparent animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                        </div>
+                        
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                         <div className="absolute bottom-3 left-3 right-3">
                           <div className="text-xs text-white font-medium">cosmetic-product.jpg</div>
-                          <div className="w-full bg-[#F6E05E] h-1.5 rounded-full mt-2 shadow-lg animate-pulse"></div>
+                          <div className="w-full bg-[#F6E05E] h-1.5 rounded-full mt-2 shadow-lg">
+                            <div className="bg-gradient-to-r from-[#F6E05E] to-[#10B981] h-1.5 rounded-full animate-pulse" style={{ width: '100%' }}></div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -303,21 +315,35 @@ export default function Page() {
                           </div>
                           <div className="flex-1">
                             <span className="text-xs font-semibold text-[#F7FAFC] block">AI Video</span>
-                            <div className="text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded-full inline-block">Ready</div>
+                            <div className="text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded-full inline-block animate-pulse">Live Preview</div>
                           </div>
                         </div>
                         
                         <div className="aspect-video bg-gradient-to-br from-[#60A5FA]/20 to-[#A78BFA]/20 rounded-lg border border-[#60A5FA]/30 flex items-center justify-center relative overflow-hidden cursor-pointer">
-                          <div className="absolute inset-0 bg-gradient-to-br from-[#60A5FA]/10 to-[#A78BFA]/10"></div>
-                          <div className="relative z-10 bg-white/95 rounded-full p-2 shadow-xl group-hover:scale-125 group-hover:bg-white transition-all duration-300">
-                            <Play className="w-4 h-4 text-[#60A5FA]" />
+                          {/* Animated Video Preview Background */}
+                          <div className="absolute inset-0">
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#60A5FA]/10 to-[#A78BFA]/10 animate-pulse"></div>
+                            <div className="absolute top-2 left-2 w-2 h-2 bg-[#60A5FA] rounded-full animate-ping"></div>
+                            <div className="absolute bottom-2 right-2 w-1 h-1 bg-[#A78BFA] rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
                           </div>
-                          {/* Pulse rings on hover */}
+                          
+                          {/* Interactive Play Button */}
+                          <div className="relative z-10 bg-white/95 rounded-full p-2 shadow-xl group-hover:scale-125 group-hover:bg-white transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#60A5FA]/50">
+                            <Play className="w-4 h-4 text-[#60A5FA] group-hover:text-[#A78BFA] transition-colors" />
+                          </div>
+                          
+                          {/* Pulse Rings */}
                           <div className="absolute inset-0 rounded-lg border-2 border-[#60A5FA]/0 group-hover:border-[#60A5FA]/50 group-hover:animate-ping transition-all duration-300"></div>
+                          <div className="absolute inset-2 rounded-lg border border-[#A78BFA]/0 group-hover:border-[#A78BFA]/30 group-hover:animate-pulse transition-all duration-300" style={{ animationDelay: '0.2s' }}></div>
+                          
+                          {/* Video Stats Overlay */}
+                          <div className="absolute top-2 right-2 bg-black/60 backdrop-blur-sm rounded-full px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span className="text-xs text-white font-medium">2.1M views</span>
+                          </div>
                         </div>
                         
                         <div className="mt-2 text-center">
-                          <div className="text-xs text-[#A0AEC0]">Generated in <span className="text-[#F6E05E] font-semibold">8.2s</span></div>
+                          <div className="text-xs text-[#A0AEC0]">Generated in <span className="text-[#F6E05E] font-semibold animate-pulse">8.2s</span></div>
                         </div>
                       </div>
 
@@ -329,45 +355,55 @@ export default function Page() {
                           </div>
                           <div className="flex-1">
                             <span className="text-xs font-semibold text-[#F7FAFC] block">AI Images</span>
-                            <div className="text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded-full inline-block">Ready</div>
+                            <div className="text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded-full inline-block animate-pulse">4 Variants</div>
                           </div>
                         </div>
                         
                         <div className="grid grid-cols-2 gap-1.5">
-                          <div className="aspect-square rounded-lg overflow-hidden shadow-lg cursor-pointer group/img">
+                          <div className="aspect-square rounded-lg overflow-hidden shadow-lg cursor-pointer group/img relative">
                             <Image 
                               src="/images/1.jpg" 
                               alt="AI Generated" 
                               width={80} 
                               height={80} 
-                              className="w-full h-full object-cover group-hover:scale-110 group/img:scale-125 group/img:rotate-1 transition-all duration-300"
+                              className="w-full h-full object-cover group-hover:scale-110 group/img:scale-125 group/img:rotate-2 transition-all duration-500"
                             />
+                            {/* Hover Glow Effect */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#F6E05E]/0 to-[#F59E0B]/0 group/img:from-[#F6E05E]/20 group/img:to-[#F59E0B]/20 transition-all duration-300 rounded-lg"></div>
                           </div>
-                          <div className="aspect-square rounded-lg overflow-hidden shadow-lg cursor-pointer group/img">
+                          <div className="aspect-square rounded-lg overflow-hidden shadow-lg cursor-pointer group/img relative">
                             <Image 
                               src="/images/2.jpg" 
                               alt="AI Generated" 
                               width={80} 
                               height={80} 
-                              className="w-full h-full object-cover group-hover:scale-110 group/img:scale-125 group/img:-rotate-1 transition-all duration-300"
+                              className="w-full h-full object-cover group-hover:scale-110 group/img:scale-125 group/img:-rotate-2 transition-all duration-500"
                             />
+                            {/* Hover Glow Effect */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#F6E05E]/0 to-[#F59E0B]/0 group/img:from-[#F6E05E]/20 group/img:to-[#F59E0B]/20 transition-all duration-300 rounded-lg"></div>
                           </div>
                         </div>
                         
                         <div className="mt-2 text-center">
-                          <div className="text-xs text-[#A0AEC0]">4 variants • <span className="text-[#F6E05E] font-semibold">12.1s</span></div>
+                          <div className="text-xs text-[#A0AEC0]">4 variants • <span className="text-[#F6E05E] font-semibold animate-pulse">12.1s</span></div>
                         </div>
                       </div>
                     </div>
 
-                    {/* Processing Status Bar */}
-                    <div className="bg-[#1A202C] rounded-xl p-3 border border-[#2D3748]">
+                    {/* Live Processing Status with Animation */}
+                    <div className="bg-[#1A202C] rounded-xl p-3 border border-[#2D3748] group hover:border-[#10B981]/50 transition-all duration-300">
                       <div className="flex items-center justify-between mb-2">
-                        <span className="text-xs font-medium text-[#F7FAFC]">Processing Status</span>
-                        <span className="text-xs text-[#10B981] font-semibold">Complete</span>
+                        <span className="text-xs font-medium text-[#F7FAFC]">AI Processing Status</span>
+                        <div className="flex items-center gap-2">
+                          <div className="w-2 h-2 bg-[#10B981] rounded-full animate-pulse"></div>
+                          <span className="text-xs text-[#10B981] font-semibold animate-pulse">Complete</span>
+                        </div>
                       </div>
-                      <div className="w-full bg-[#2D3748] rounded-full h-2">
-                        <div className="bg-gradient-to-r from-[#F6E05E] to-[#10B981] h-2 rounded-full animate-pulse" style={{ width: '100%' }}></div>
+                      <div className="w-full bg-[#2D3748] rounded-full h-2 overflow-hidden">
+                        <div className="bg-gradient-to-r from-[#F6E05E] via-[#60A5FA] to-[#10B981] h-2 rounded-full relative" style={{ width: '100%' }}>
+                          {/* Shimmer Effect */}
+                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
