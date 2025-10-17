@@ -11,6 +11,7 @@ import { DynamicWaitlist } from "@/components/ui/dynamic-waitlist"
 import { StatsBanner } from "@/components/ui/stats-banner"
 import { RotatingText } from "@/components/ui/rotating-text"
 import { ProductTransformationShowcase } from "@/components/ui/product-transformation-showcase"
+import { HeroProductShowcase } from "@/components/ui/hero-product-showcase"
 import { useTranslations } from "@/lib/useTranslations"
 
 const inter = Inter({
@@ -248,166 +249,8 @@ export default function Page() {
                   </div>
                 </div>
 
-                {/* Main Product Interface */}
-                <div className="relative bg-[#0F1419]/90 backdrop-blur-xl border border-[#2D3748] rounded-3xl p-6 shadow-2xl max-w-xl mx-auto">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#F6E05E]/8 to-[#60A5FA]/8 rounded-3xl"></div>
-                  
-                  {/* Browser Header */}
-                  <div className="relative z-10 flex items-center justify-between mb-6">
-                    <div className="flex items-center gap-3">
-                      <div className="w-4 h-4 bg-[#EF4444] rounded-full"></div>
-                      <div className="w-4 h-4 bg-[#F59E0B] rounded-full"></div>
-                      <div className="w-4 h-4 bg-[#10B981] rounded-full"></div>
-                    </div>
-                    <div className="text-sm text-[#A0AEC0] bg-[#1A202C] px-4 py-2 rounded-full border border-[#2D3748]">
-                      lymo.ai/create
-                    </div>
-                  </div>
-
-                  {/* Content Creation Flow */}
-                  <div className="space-y-6">
-                    {/* Upload Section */}
-                    <div className="bg-[#1A202C] rounded-2xl p-5 border border-[#2D3748] group hover:border-[#F6E05E]/50 transition-all duration-300">
-                      <div className="flex items-center gap-3 mb-4">
-                        <div className="w-8 h-8 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-lg flex items-center justify-center">
-                          <Upload className="w-4 h-4 text-[#111827]" />
-                        </div>
-                        <div>
-                          <span className="text-sm font-semibold text-[#F7FAFC]">Upload Product</span>
-                          <div className="text-xs text-[#A0AEC0]">Watch AI transformation in real-time</div>
-                        </div>
-                      </div>
-                      
-                      <div className="aspect-[3/2] bg-gradient-to-br from-[#2D3748] to-[#1A202C] rounded-xl border-2 border-dashed border-[#4A5568] flex items-center justify-center relative overflow-hidden group cursor-pointer">
-                        <Image
-                          src="/images/Free Cosmetic Tube Mockup.png"
-                          alt="Product showcase"
-                          fill
-                          className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-110 group-hover:rotate-1 transition-all duration-700 rounded-xl"
-                        />
-                        
-                        {/* AI Processing Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#F6E05E]/20 via-transparent to-[#60A5FA]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        
-                        {/* Scanning Effect */}
-                        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-[#F6E05E] to-transparent animate-pulse"></div>
-                          <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-[#60A5FA] to-transparent animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-                        </div>
-                        
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                        <div className="absolute bottom-3 left-3 right-3">
-                          <div className="text-xs text-white font-medium">cosmetic-product.jpg</div>
-                          <div className="w-full bg-[#F6E05E] h-1.5 rounded-full mt-2 shadow-lg">
-                            <div className="bg-gradient-to-r from-[#F6E05E] to-[#10B981] h-1.5 rounded-full animate-pulse" style={{ width: '100%' }}></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* AI Results Grid */}
-                    <div className="grid grid-cols-2 gap-4">
-                      {/* Video Output */}
-                      <div className="bg-[#1A202C] rounded-2xl p-4 border border-[#2D3748] group hover:border-[#60A5FA]/50 transition-all duration-300 hover:shadow-xl hover:shadow-[#60A5FA]/10 hover:scale-105">
-                        <div className="flex items-center gap-2 mb-3">
-                          <div className="w-6 h-6 bg-gradient-to-r from-[#60A5FA] to-[#A78BFA] rounded-lg flex items-center justify-center">
-                            <Video className="w-3 h-3 text-white" />
-                          </div>
-                          <div className="flex-1">
-                            <span className="text-xs font-semibold text-[#F7FAFC] block">AI Video</span>
-                            <div className="text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded-full inline-block animate-pulse">Live Preview</div>
-                          </div>
-                        </div>
-                        
-                        <div className="aspect-video bg-gradient-to-br from-[#60A5FA]/20 to-[#A78BFA]/20 rounded-lg border border-[#60A5FA]/30 flex items-center justify-center relative overflow-hidden cursor-pointer">
-                          {/* Animated Video Preview Background */}
-                          <div className="absolute inset-0">
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#60A5FA]/10 to-[#A78BFA]/10 animate-pulse"></div>
-                            <div className="absolute top-2 left-2 w-2 h-2 bg-[#60A5FA] rounded-full animate-ping"></div>
-                            <div className="absolute bottom-2 right-2 w-1 h-1 bg-[#A78BFA] rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
-                          </div>
-                          
-                          {/* Interactive Play Button */}
-                          <div className="relative z-10 bg-white/95 rounded-full p-2 shadow-xl group-hover:scale-125 group-hover:bg-white transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#60A5FA]/50">
-                            <Play className="w-4 h-4 text-[#60A5FA] group-hover:text-[#A78BFA] transition-colors" />
-                          </div>
-                          
-                          {/* Pulse Rings */}
-                          <div className="absolute inset-0 rounded-lg border-2 border-[#60A5FA]/0 group-hover:border-[#60A5FA]/50 group-hover:animate-ping transition-all duration-300"></div>
-                          <div className="absolute inset-2 rounded-lg border border-[#A78BFA]/0 group-hover:border-[#A78BFA]/30 group-hover:animate-pulse transition-all duration-300" style={{ animationDelay: '0.2s' }}></div>
-                          
-                          {/* Video Stats Overlay */}
-                          <div className="absolute top-2 right-2 bg-black/60 backdrop-blur-sm rounded-full px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <span className="text-xs text-white font-medium">2.1M views</span>
-                          </div>
-                        </div>
-                        
-                        <div className="mt-2 text-center">
-                          <div className="text-xs text-[#A0AEC0]">Generated in <span className="text-[#F6E05E] font-semibold animate-pulse">8.2s</span></div>
-                        </div>
-                      </div>
-
-                      {/* Images Output */}
-                      <div className="bg-[#1A202C] rounded-2xl p-4 border border-[#2D3748] group hover:border-[#F6E05E]/50 transition-all duration-300 hover:shadow-xl hover:shadow-[#F6E05E]/10 hover:scale-105">
-                        <div className="flex items-center gap-2 mb-3">
-                          <div className="w-6 h-6 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-lg flex items-center justify-center">
-                            <ImageIcon className="w-3 h-3 text-[#111827]" />
-                          </div>
-                          <div className="flex-1">
-                            <span className="text-xs font-semibold text-[#F7FAFC] block">AI Images</span>
-                            <div className="text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded-full inline-block animate-pulse">4 Variants</div>
-                          </div>
-                        </div>
-                        
-                        <div className="grid grid-cols-2 gap-1.5">
-                          <div className="aspect-square rounded-lg overflow-hidden shadow-lg cursor-pointer group/img relative">
-                            <Image 
-                              src="/images/1.jpg" 
-                              alt="AI Generated" 
-                              width={80} 
-                              height={80} 
-                              className="w-full h-full object-cover group-hover:scale-110 group/img:scale-125 group/img:rotate-2 transition-all duration-500"
-                            />
-                            {/* Hover Glow Effect */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#F6E05E]/0 to-[#F59E0B]/0 group/img:from-[#F6E05E]/20 group/img:to-[#F59E0B]/20 transition-all duration-300 rounded-lg"></div>
-                          </div>
-                          <div className="aspect-square rounded-lg overflow-hidden shadow-lg cursor-pointer group/img relative">
-                            <Image 
-                              src="/images/2.jpg" 
-                              alt="AI Generated" 
-                              width={80} 
-                              height={80} 
-                              className="w-full h-full object-cover group-hover:scale-110 group/img:scale-125 group/img:-rotate-2 transition-all duration-500"
-                            />
-                            {/* Hover Glow Effect */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#F6E05E]/0 to-[#F59E0B]/0 group/img:from-[#F6E05E]/20 group/img:to-[#F59E0B]/20 transition-all duration-300 rounded-lg"></div>
-                          </div>
-                        </div>
-                        
-                        <div className="mt-2 text-center">
-                          <div className="text-xs text-[#A0AEC0]">4 variants • <span className="text-[#F6E05E] font-semibold animate-pulse">12.1s</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Live Processing Status with Animation */}
-                    <div className="bg-[#1A202C] rounded-xl p-3 border border-[#2D3748] group hover:border-[#10B981]/50 transition-all duration-300">
-                      <div className="flex items-center justify-between mb-2">
-                        <span className="text-xs font-medium text-[#F7FAFC]">AI Processing Status</span>
-                        <div className="flex items-center gap-2">
-                          <div className="w-2 h-2 bg-[#10B981] rounded-full animate-pulse"></div>
-                          <span className="text-xs text-[#10B981] font-semibold animate-pulse">Complete</span>
-                        </div>
-                      </div>
-                      <div className="w-full bg-[#2D3748] rounded-full h-2 overflow-hidden">
-                        <div className="bg-gradient-to-r from-[#F6E05E] via-[#60A5FA] to-[#10B981] h-2 rounded-full relative" style={{ width: '100%' }}>
-                          {/* Shimmer Effect */}
-                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                {/* Enhanced AI Product Showcase */}
+                <HeroProductShowcase />
               </div>
             </div>
           </div>
@@ -419,6 +262,22 @@ export default function Page() {
             </div>
           </div>
         </section>
+
+        {/* Custom Animations */}
+        <style jsx global>{`
+          @keyframes float {
+            0%, 100% {
+              transform: translateY(0px);
+            }
+            50% {
+              transform: translateY(-10px);
+            }
+          }
+          
+          .animate-float {
+            animation: float 6s ease-in-out infinite;
+          }
+        `}</style>
 
         {/* Product Transformation Showcase */}
         <ProductTransformationShowcase />
