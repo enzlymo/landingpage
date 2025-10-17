@@ -347,118 +347,6 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Product Transformation Showcase */}
-        <ProductTransformationShowcase />
-
-        {/* AI Video Creation Interface Showcase */}
-        <section className="py-24 bg-gradient-to-br from-[#1A202C] via-[#2D3748] to-[#1A202C]">
-          <div className="max-w-7xl mx-auto px-6">
-            {/* Header */}
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F7FAFC] mb-6">
-                Professional Video Creation
-                <span className="block bg-gradient-to-r from-[#F6E05E] via-[#60A5FA] to-[#A78BFA] bg-clip-text text-transparent">
-                  Made Simple
-                </span>
-              </h2>
-              <p className="text-xl text-[#A0AEC0] max-w-3xl mx-auto">
-                Create stunning marketing videos with our intuitive AI interface - from avatar presentations to product showcases
-              </p>
-            </div>
-
-            {/* Interface Showcase Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              
-              {/* Avatar Marketing Interface */}
-              <div className="group relative">
-                <div className="bg-[#0F1419] rounded-3xl p-8 shadow-2xl border border-[#2D3748] hover:border-[#F6E05E]/50 hover:shadow-3xl transition-all duration-700 hover:scale-105">
-                  {/* Interface Preview Photo */}
-                  <div className="relative aspect-[4/3] bg-gradient-to-br from-[#2D3748] to-[#1A202C] rounded-2xl overflow-hidden mb-6 border-2 border-[#2D3748]">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center">
-                        <ImageIcon className="w-12 h-12 text-[#A0AEC0] mx-auto mb-2" />
-                        <div className="text-sm text-[#F7FAFC] font-medium">Avatar Marketing Interface</div>
-                        <div className="text-xs text-[#A0AEC0]">Upload your screenshot here</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="text-center">
-                    <h3 className="text-xl font-bold text-[#F7FAFC] mb-2">Avatar Marketing Video</h3>
-                    <p className="text-[#A0AEC0] text-sm">
-                      AI generates marketing videos with realistic avatars and professional presentation
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Product Showcase Interface */}
-              <div className="group relative">
-                <div className="bg-[#0F1419] rounded-3xl p-8 shadow-2xl border border-[#2D3748] hover:border-[#F6E05E]/50 hover:shadow-3xl transition-all duration-700 hover:scale-105">
-                  {/* Interface Preview Photo */}
-                  <div className="relative aspect-[4/3] bg-gradient-to-br from-[#2D3748] to-[#1A202C] rounded-2xl overflow-hidden mb-6 border-2 border-[#2D3748]">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center">
-                        <ImageIcon className="w-12 h-12 text-[#A0AEC0] mx-auto mb-2" />
-                        <div className="text-sm text-[#F7FAFC] font-medium">Product Showcase Interface</div>
-                        <div className="text-xs text-[#A0AEC0]">Upload your screenshot here</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="text-center">
-                    <h3 className="text-xl font-bold text-[#F7FAFC] mb-2">Product Showcase</h3>
-                    <p className="text-[#A0AEC0] text-sm">
-                      AI transforms products into engaging videos perfect for social media marketing
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Character Swap Interface */}
-              <div className="group relative">
-                <div className="bg-[#0F1419] rounded-3xl p-8 shadow-2xl border border-[#2D3748] hover:border-[#F6E05E]/50 hover:shadow-3xl transition-all duration-700 hover:scale-105">
-                  {/* Interface Preview Photo */}
-                  <div className="relative aspect-[4/3] bg-gradient-to-br from-[#2D3748] to-[#1A202C] rounded-2xl overflow-hidden mb-6 border-2 border-[#2D3748]">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center">
-                        <ImageIcon className="w-12 h-12 text-[#A0AEC0] mx-auto mb-2" />
-                        <div className="text-sm text-[#F7FAFC] font-medium">Character Swap Interface</div>
-                        <div className="text-xs text-[#A0AEC0]">Upload your screenshot here</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="text-center">
-                    <h3 className="text-xl font-bold text-[#F7FAFC] mb-2">Character Swap</h3>
-                    <p className="text-[#A0AEC0] text-sm">
-                      Replace faces naturally while maintaining expressions and movement quality
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Bottom Stats */}
-            <div className="text-center mt-16">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#F7FAFC] mb-2">15 sec</div>
-                  <div className="text-[#A0AEC0]">Average creation time</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#F7FAFC] mb-2">99.9%</div>
-                  <div className="text-[#A0AEC0]">Accuracy rate</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#F7FAFC] mb-2">50+</div>
-                  <div className="text-[#A0AEC0]">Video formats supported</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* AI Video Generation Showcase */}
         <section className="py-24 bg-gradient-to-b from-gray-900 to-black text-white">
           <div className="max-w-7xl mx-auto px-6">
@@ -605,6 +493,118 @@ export default function Page() {
                 <div className="flex items-center gap-2 text-gray-400">
                   <CheckCircle className="w-5 h-5 text-green-400" />
                   <span>No credit card required</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Product Transformation Showcase */}
+        <ProductTransformationShowcase />
+
+        {/* AI Video Creation Interface Showcase */}
+        <section className="py-24 bg-gradient-to-br from-[#1A202C] via-[#2D3748] to-[#1A202C]">
+          <div className="max-w-7xl mx-auto px-6">
+            {/* Header */}
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F7FAFC] mb-6">
+                Professional Video Creation
+                <span className="block bg-gradient-to-r from-[#F6E05E] via-[#60A5FA] to-[#A78BFA] bg-clip-text text-transparent">
+                  Made Simple
+                </span>
+              </h2>
+              <p className="text-xl text-[#A0AEC0] max-w-3xl mx-auto">
+                Create stunning marketing videos with our intuitive AI interface - from avatar presentations to product showcases
+              </p>
+            </div>
+
+            {/* Interface Showcase Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              
+              {/* Avatar Marketing Interface */}
+              <div className="group relative">
+                <div className="bg-[#0F1419] rounded-3xl p-8 shadow-2xl border border-[#2D3748] hover:border-[#F6E05E]/50 hover:shadow-3xl transition-all duration-700 hover:scale-105">
+                  {/* Interface Preview Photo */}
+                  <div className="relative aspect-[4/3] bg-gradient-to-br from-[#2D3748] to-[#1A202C] rounded-2xl overflow-hidden mb-6 border-2 border-[#2D3748]">
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center">
+                        <ImageIcon className="w-12 h-12 text-[#A0AEC0] mx-auto mb-2" />
+                        <div className="text-sm text-[#F7FAFC] font-medium">Avatar Marketing Interface</div>
+                        <div className="text-xs text-[#A0AEC0]">Upload your screenshot here</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="text-center">
+                    <h3 className="text-xl font-bold text-[#F7FAFC] mb-2">Avatar Marketing Video</h3>
+                    <p className="text-[#A0AEC0] text-sm">
+                      AI generates marketing videos with realistic avatars and professional presentation
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Product Showcase Interface */}
+              <div className="group relative">
+                <div className="bg-[#0F1419] rounded-3xl p-8 shadow-2xl border border-[#2D3748] hover:border-[#F6E05E]/50 hover:shadow-3xl transition-all duration-700 hover:scale-105">
+                  {/* Interface Preview Photo */}
+                  <div className="relative aspect-[4/3] bg-gradient-to-br from-[#2D3748] to-[#1A202C] rounded-2xl overflow-hidden mb-6 border-2 border-[#2D3748]">
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center">
+                        <ImageIcon className="w-12 h-12 text-[#A0AEC0] mx-auto mb-2" />
+                        <div className="text-sm text-[#F7FAFC] font-medium">Product Showcase Interface</div>
+                        <div className="text-xs text-[#A0AEC0]">Upload your screenshot here</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="text-center">
+                    <h3 className="text-xl font-bold text-[#F7FAFC] mb-2">Product Showcase</h3>
+                    <p className="text-[#A0AEC0] text-sm">
+                      AI transforms products into engaging videos perfect for social media marketing
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Character Swap Interface */}
+              <div className="group relative">
+                <div className="bg-[#0F1419] rounded-3xl p-8 shadow-2xl border border-[#2D3748] hover:border-[#F6E05E]/50 hover:shadow-3xl transition-all duration-700 hover:scale-105">
+                  {/* Interface Preview Photo */}
+                  <div className="relative aspect-[4/3] bg-gradient-to-br from-[#2D3748] to-[#1A202C] rounded-2xl overflow-hidden mb-6 border-2 border-[#2D3748]">
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center">
+                        <ImageIcon className="w-12 h-12 text-[#A0AEC0] mx-auto mb-2" />
+                        <div className="text-sm text-[#F7FAFC] font-medium">Character Swap Interface</div>
+                        <div className="text-xs text-[#A0AEC0]">Upload your screenshot here</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="text-center">
+                    <h3 className="text-xl font-bold text-[#F7FAFC] mb-2">Character Swap</h3>
+                    <p className="text-[#A0AEC0] text-sm">
+                      Replace faces naturally while maintaining expressions and movement quality
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom Stats */}
+            <div className="text-center mt-16">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-[#F7FAFC] mb-2">15 sec</div>
+                  <div className="text-[#A0AEC0]">Average creation time</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-[#F7FAFC] mb-2">99.9%</div>
+                  <div className="text-[#A0AEC0]">Accuracy rate</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-[#F7FAFC] mb-2">50+</div>
+                  <div className="text-[#A0AEC0]">Video formats supported</div>
                 </div>
               </div>
             </div>
