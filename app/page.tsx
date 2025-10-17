@@ -348,7 +348,7 @@ export default function Page() {
         </section>
 
         {/* AI Video Generation Showcase */}
-        <section className="py-24 bg-gradient-to-b from-gray-900 to-black text-white">
+        <section className="py-24 bg-gradient-to-br from-[#1A202C] via-[#2D3748] to-[#1A202C] text-white">
           <div className="max-w-7xl mx-auto px-6">
             {/* Header */}
             <div className="text-center mb-16">
@@ -478,24 +478,6 @@ export default function Page() {
               </div>
             </div>
 
-            {/* Bottom CTA */}
-            <div className="text-center">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
-                100% AI-Generated Marketing Videos
-              </h3>
-              <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-                Join thousands of creators and brands using Lymo AI to produce viral content that converts
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button className="bg-gradient-to-r from-[#F4D03F] to-[#F1C40F] hover:from-[#F1C40F] hover:to-[#D4AC0D] text-gray-900 font-bold px-10 py-6 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 text-lg transform hover:scale-105">
-                  Start Creating Videos
-                </Button>
-                <div className="flex items-center gap-2 text-gray-400">
-                  <CheckCircle className="w-5 h-5 text-green-400" />
-                  <span>No credit card required</span>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -527,7 +509,7 @@ export default function Page() {
                   {/* Interface Preview Photo */}
                   <div className="relative aspect-[4/3] bg-gradient-to-br from-[#2D3748] to-[#1A202C] rounded-2xl overflow-hidden mb-6 border-2 border-[#2D3748]">
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center">
+            <div className="text-center">
                         <ImageIcon className="w-12 h-12 text-[#A0AEC0] mx-auto mb-2" />
                         <div className="text-sm text-[#F7FAFC] font-medium">Avatar Marketing Interface</div>
                         <div className="text-xs text-[#A0AEC0]">Upload your screenshot here</div>
