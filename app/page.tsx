@@ -316,51 +316,6 @@ export default function Page() {
                       </div>
                     </div>
 
-                    {/* Interactive Video Example */}
-                    <div className="bg-[#1A202C] rounded-2xl p-4 border border-[#2D3748] group hover:border-[#60A5FA]/50 transition-all duration-300 cursor-pointer">
-                      <div className="flex items-center gap-3 mb-3">
-                        <div className="w-7 h-7 bg-gradient-to-r from-[#60A5FA] to-[#A78BFA] rounded-lg flex items-center justify-center">
-                          <Video className="w-3.5 h-3.5 text-white" />
-                        </div>
-                        <div className="flex-1">
-                          <span className="text-sm font-semibold text-[#F7FAFC]">AI Video Example</span>
-                          <div className="text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded-full inline-block animate-pulse">Click to Play</div>
-                        </div>
-                      </div>
-                      
-                      <div className="aspect-video bg-gradient-to-br from-[#60A5FA]/20 to-[#A78BFA]/20 rounded-xl border border-[#60A5FA]/30 flex items-center justify-center relative overflow-hidden">
-                        {/* Premium Video Preview Background */}
-                        <div className="absolute inset-0">
-                          <div className="absolute inset-0 bg-gradient-to-br from-[#60A5FA]/10 to-[#A78BFA]/10 animate-pulse"></div>
-                          <div className="absolute top-2 left-2 w-2 h-2 bg-[#60A5FA] rounded-full animate-ping"></div>
-                          <div className="absolute bottom-2 right-2 w-1 h-1 bg-[#A78BFA] rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
-                          <div className="absolute top-1/2 right-2 w-1.5 h-1.5 bg-[#F6E05E] rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
-                        </div>
-                        
-                        {/* Premium Interactive Play Button */}
-                        <div className="relative z-10 bg-white/95 rounded-full p-4 shadow-2xl group-hover:scale-125 group-hover:bg-white transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#60A5FA]/50">
-                          <Play className="w-6 h-6 text-[#60A5FA] group-hover:text-[#A78BFA] transition-colors" />
-                        </div>
-                        
-                        {/* Premium Pulse Rings */}
-                        <div className="absolute inset-0 rounded-xl border-2 border-[#60A5FA]/0 group-hover:border-[#60A5FA]/50 group-hover:animate-ping transition-all duration-300"></div>
-                        <div className="absolute inset-2 rounded-xl border border-[#A78BFA]/0 group-hover:border-[#A78BFA]/30 group-hover:animate-pulse transition-all duration-300" style={{ animationDelay: '0.2s' }}></div>
-                        
-                        {/* Premium Stats Overlay */}
-                        <div className="absolute top-3 right-3 bg-black/70 backdrop-blur-sm rounded-full px-3 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          <span className="text-xs text-white font-medium">2.1M views</span>
-                        </div>
-                        
-                        {/* Live Indicator */}
-                        <div className="absolute top-3 left-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse">
-                          LIVE DEMO
-                        </div>
-                      </div>
-                      
-                      <div className="mt-3 text-center">
-                        <div className="text-xs text-[#A0AEC0]">Generated in <span className="text-[#F6E05E] font-semibold animate-pulse">8.2s</span></div>
-                      </div>
-                    </div>
 
                     {/* Premium Processing Status */}
                     <div className="bg-[#1A202C] rounded-xl p-3 border border-[#2D3748] group hover:border-[#10B981]/50 transition-all duration-300">
