@@ -655,51 +655,16 @@ export default function Page() {
                   {activeContentType === 'text' && 'Tell us what kind of content you want to create. Be as specific or general as you like.'}
                 </p>
 
-                {/* Professional Step Mockup */}
-                <div className="bg-[#0F1419] rounded-lg p-4 border border-[#2D3748]">
-                  {activeContentType === 'pictures' && (
-                    <div className="space-y-3">
-                      <div className="flex items-center gap-3">
-                        <Upload className="w-4 h-4 text-[#F6E05E]" />
-                        <span className="text-[#F7FAFC] text-sm font-medium">Drop images here</span>
-                      </div>
-                      <div className="grid grid-cols-3 gap-2">
-                        {[1, 2, 3].map((i) => (
-                          <div key={i} className="aspect-square bg-gradient-to-br from-[#F6E05E]/20 to-[#F59E0B]/20 rounded border border-[#F6E05E]/30"></div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                  
-                  {activeContentType === 'videos' && (
-                    <div className="space-y-3">
-                      <div className="flex items-center justify-between">
-                        <span className="text-[#F7FAFC] text-sm">URL</span>
-                        <Button size="sm" className="bg-[#F6E05E] hover:bg-[#F59E0B] text-[#111827] text-xs">
-                          Import Brand
-                        </Button>
-                      </div>
-                      <div className="bg-[#1A202C] rounded p-3 border border-[#2D3748]">
-                        <div className="text-[#F7FAFC] text-sm">Brand Name: Lymo AI</div>
-                        <div className="text-[#A0AEC0] text-xs mt-1">Colors, fonts, and style detected</div>
-                      </div>
-                    </div>
-                  )}
-                  
-                  {activeContentType === 'text' && (
-                    <div className="space-y-3">
-                      <div className="bg-[#1A202C] rounded p-3 border border-[#2D3748]">
-                        <div className="text-[#A0AEC0] text-xs mb-2">Your prompt</div>
-                        <div className="text-[#F7FAFC] text-sm">
-                          &ldquo;Create engaging social media content for a tech startup launch...&rdquo;
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Wand2 className="w-4 h-4 text-[#F6E05E]" />
-                        <span className="text-[#F6E05E] text-sm">AI analyzing...</span>
-                      </div>
-                    </div>
-                  )}
+                {/* Step 1 Interface Screenshot */}
+                <div className="bg-[#0F1419] rounded-lg p-2 border border-[#2D3748] overflow-hidden">
+                  <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+                    <Image
+                      src="/images/Frame 2@2x.png"
+                      alt="Step 1: Import your brand interface"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -722,35 +687,15 @@ export default function Page() {
                   {activeContentType === 'text' && 'Choose from various content formats. Our AI will structure your ideas into the perfect format.'}
                 </p>
 
-                {/* Step 2 Mockup */}
-                <div className="bg-[#0F1419] rounded-lg p-4 border border-[#2D3748]">
-                  <div className="space-y-4">
-                    <div className="text-[#60A5FA] text-sm font-medium">
-                      {activeContentType === 'pictures' && 'Most Popular Styles For Your Images'}
-                      {activeContentType === 'videos' && 'Most Popular Video Types For Your Brand'}
-                      {activeContentType === 'text' && 'Recommended Content Types'}
-                    </div>
-                    <div className="grid grid-cols-2 gap-3">
-                      {[1, 2, 3, 4].map((i) => (
-                        <div key={i} className="aspect-[4/3] bg-gradient-to-br from-[#60A5FA]/20 to-[#A78BFA]/20 rounded-lg border border-[#60A5FA]/20"></div>
-                      ))}
-                    </div>
-                    <div className="flex gap-2">
-                      <div className="flex-1 bg-[#2D3748] rounded-lg p-3 text-center">
-                        <div className="text-[#F7FAFC] text-sm">
-                          {activeContentType === 'pictures' && 'Product Photos'}
-                          {activeContentType === 'videos' && 'Social Videos'}
-                          {activeContentType === 'text' && 'Blog Posts'}
-                        </div>
-                      </div>
-                      <div className="flex-1 bg-[#2D3748] rounded-lg p-3 text-center">
-                        <div className="text-[#F7FAFC] text-sm">
-                          {activeContentType === 'pictures' && 'Lifestyle'}
-                          {activeContentType === 'videos' && 'Ads'}
-                          {activeContentType === 'text' && 'Social Posts'}
-                        </div>
-                      </div>
-                    </div>
+                {/* Step 2 Interface Screenshot */}
+                <div className="bg-[#0F1419] rounded-lg p-2 border border-[#2D3748] overflow-hidden">
+                  <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+                    <Image
+                      src="/images/Frame 3@2x.png"
+                      alt="Step 2: Choose video type interface"
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 </div>
               </div>
@@ -774,25 +719,15 @@ export default function Page() {
                   {activeContentType === 'text' && 'Sit back while our AI produces conversion-focused content faster than it takes to brainstorm ideas.'}
                 </p>
 
-                {/* Step 3 Mockup */}
-                <div className="bg-[#0F1419] rounded-lg p-4 border border-[#2D3748]">
-                  <div className="space-y-4">
-                    <div className="text-[#A78BFA] text-sm font-medium">
-                      AI Generated {activeContentType === 'pictures' ? 'Images' : activeContentType === 'videos' ? 'Videos' : 'Content'}
-                    </div>
-                    <div className="grid grid-cols-2 gap-3">
-                      {[1, 2].map((i) => (
-                        <div key={i} className="aspect-square bg-gradient-to-br from-[#A78BFA]/20 to-[#10B981]/20 rounded-lg border border-[#A78BFA]/30 flex items-center justify-center">
-                          {activeContentType === 'pictures' && <ImageIcon className="w-8 h-8 text-[#A78BFA]" />}
-                          {activeContentType === 'videos' && <Video className="w-8 h-8 text-[#A78BFA]" />}
-                          {activeContentType === 'text' && <FileText className="w-8 h-8 text-[#A78BFA]" />}
-                        </div>
-                      ))}
-                    </div>
-                    <div className="bg-[#10B981]/20 rounded-lg p-3 border border-[#10B981]/30">
-                      <div className="text-[#10B981] text-sm font-medium">✓ Ready to download</div>
-                      <div className="text-[#10B981] text-xs">Generated in 15 seconds</div>
-                    </div>
+                {/* Step 3 Interface Screenshot */}
+                <div className="bg-[#0F1419] rounded-lg p-2 border border-[#2D3748] overflow-hidden">
+                  <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+                    <Image
+                      src="/images/Frame 4@2x.png"
+                      alt="Step 3: Generate videos interface"
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 </div>
               </div>
