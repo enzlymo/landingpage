@@ -115,15 +115,16 @@ export const metadata: Metadata = {
   // Icons and Manifest
   icons: {
     icon: [
-      { url: '/favicon.ico' },
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/images/favicon.ico' },
+      { url: '/images/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/images/favicon.svg', type: 'image/svg+xml' },
     ],
     apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/images/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
     other: [
-      { rel: 'mask-icon', url: '/safari-pinned-tab.svg', color: '#F4D03F' },
+      { rel: 'icon', url: '/images/web-app-manifest-192x192.png', sizes: '192x192', type: 'image/png' },
+      { rel: 'icon', url: '/images/web-app-manifest-512x512.png', sizes: '512x512', type: 'image/png' },
     ],
   },
   manifest: '/manifest.json',
