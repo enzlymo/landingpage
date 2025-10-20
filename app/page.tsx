@@ -308,8 +308,7 @@ export default function Page() {
                         
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                         <div className="absolute bottom-3 left-3 right-3">
-                          <div className="text-xs text-white font-medium">cosmetic-product.jpg</div>
-                          <div className="w-full bg-[#F6E05E] h-1.5 rounded-full mt-2 shadow-lg">
+                          <div className="w-full bg-[#F6E05E] h-1.5 rounded-full shadow-lg">
                             <div className="bg-gradient-to-r from-[#F6E05E] to-[#10B981] h-1.5 rounded-full animate-pulse" style={{ width: '100%' }}></div>
                           </div>
                         </div>
