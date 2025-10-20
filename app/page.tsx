@@ -192,7 +192,7 @@ export default function Page() {
                     </Button>
                     <Button 
                       variant="outline" 
-                      className="border-2 border-[#2D3748] bg-[#0F1419]/80 backdrop-blur-sm hover:bg-[#2D3748]/60 hover:border-[#F6E05E]/70 text-[#F7FAFC] text-lg px-8 py-6 rounded-2xl transition-all duration-300 group"
+                      className="border-2 border-[#2D3748] bg-[#0F1419]/80 backdrop-blur-sm hover:bg-[#2D3748]/60 hover:border-[#F6E05E]/70 active:bg-[#2D3748]/80 active:text-[#F7FAFC] text-[#F7FAFC] text-lg px-8 py-6 rounded-2xl transition-all duration-300 group"
                     >
                       <Play className="w-5 h-5 mr-3 group-hover:scale-110 transition-transform" />
                       Watch Demo
