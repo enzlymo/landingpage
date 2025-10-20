@@ -659,8 +659,16 @@ export default function Page() {
                 <div className="bg-[#0F1419] rounded-lg p-2 border border-[#2D3748] overflow-hidden">
                   <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
                     <Image
-                      src="/images/Frame 2@2x.png"
-                      alt="Step 1: Import your brand interface"
+                      src={
+                        activeContentType === 'pictures' ? '/images/Frame 5@2x.png' :
+                        activeContentType === 'videos' ? '/images/Frame 2@2x.png' :
+                        '/images/Frame 8@2x.png'
+                      }
+                      alt={
+                        activeContentType === 'pictures' ? 'Step 1: Upload your images interface' :
+                        activeContentType === 'videos' ? 'Step 1: Import your brand interface' :
+                        'Step 1: Describe your vision interface'
+                      }
                       fill
                       className="object-cover"
                     />
@@ -691,8 +699,16 @@ export default function Page() {
                 <div className="bg-[#0F1419] rounded-lg p-2 border border-[#2D3748] overflow-hidden">
                   <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
                     <Image
-                      src="/images/Frame 3@2x.png"
-                      alt="Step 2: Choose video type interface"
+                      src={
+                        activeContentType === 'pictures' ? '/images/Frame 6@2x.png' :
+                        activeContentType === 'videos' ? '/images/Frame 3@2x.png' :
+                        '/images/Frame 9@2x.png'
+                      }
+                      alt={
+                        activeContentType === 'pictures' ? 'Step 2: Select style & format interface' :
+                        activeContentType === 'videos' ? 'Step 2: Choose video type interface' :
+                        'Step 2: Pick content format interface'
+                      }
                       fill
                       className="object-cover"
                     />
@@ -723,8 +739,16 @@ export default function Page() {
                 <div className="bg-[#0F1419] rounded-lg p-2 border border-[#2D3748] overflow-hidden">
                   <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
                     <Image
-                      src="/images/Frame 4@2x.png"
-                      alt="Step 3: Generate videos interface"
+                      src={
+                        activeContentType === 'pictures' ? '/images/Frame 7@2x.png' :
+                        activeContentType === 'videos' ? '/images/Frame 4@2x.png' :
+                        '/images/Frame 10@2x.png'
+                      }
+                      alt={
+                        activeContentType === 'pictures' ? 'Step 3: Generate images interface' :
+                        activeContentType === 'videos' ? 'Step 3: Generate videos interface' :
+                        'Step 3: Generate content interface'
+                      }
                       fill
                       className="object-cover"
                     />
