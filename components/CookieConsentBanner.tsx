@@ -24,7 +24,7 @@ interface CookieConsentBannerProps {
 export default function CookieConsentBanner({ onShowSettings }: CookieConsentBannerProps) {
   const [isVisible, setIsVisible] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
-  const [language, setCurrentLanguage] = useState<SupportedLanguage>('none')
+  const [language, setCurrentLanguage] = useState<SupportedLanguage>('en') // Default to English
   const [detecting, setDetecting] = useState(true)
 
   useEffect(() => {
@@ -37,7 +37,7 @@ export default function CookieConsentBanner({ onShowSettings }: CookieConsentBan
         setCurrentLanguage(storedLang)
         setDetecting(false)
         
-        // Only show banner for EU users
+        // Show banner for EU users (default to showing for English)
         if (storedLang === 'sv' || storedLang === 'en') {
           const shouldShow = shouldShowBanner()
           setIsVisible(shouldShow)
@@ -51,14 +51,16 @@ export default function CookieConsentBanner({ onShowSettings }: CookieConsentBan
         setLanguage(detectedLang)
         setCurrentLanguage(detectedLang)
         
-        // Only show banner for EU users (Swedish or English)
+        // Show banner for EU users (Swedish or English)
         if (detectedLang === 'sv' || detectedLang === 'en') {
           const shouldShow = shouldShowBanner()
           setIsVisible(shouldShow)
         }
       } catch (error) {
-        console.log('Language detection failed')
-        setCurrentLanguage('none')
+        console.log('Language detection failed, defaulting to English')
+        setCurrentLanguage('en')
+        const shouldShow = shouldShowBanner()
+        setIsVisible(shouldShow)
       } finally {
         setDetecting(false)
       }
@@ -89,7 +91,7 @@ export default function CookieConsentBanner({ onShowSettings }: CookieConsentBan
     onShowSettings()
   }
 
-  // Don't show anything if detecting language or not an EU user
+  // Don't show anything if detecting language or not visible
   if (detecting || language === 'none' || !isVisible) return null
 
   const t = translations[language].banner

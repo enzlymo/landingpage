@@ -27,12 +27,6 @@ Replace the English text on the right side with Swedish translations. Keep the s
 - **Transform any URL into high-converting visual content. AI-powered generation for images, videos, and user-generated content - no design skills needed.** → 
   `Förvandla vilken URL som helst till högkonverterande visuellt innehåll. AI-driven generering för bilder, videor och användargenererat innehåll - inga designkunskaper behövs.`
 
-### Waitlist
-- **Unlock Early Access to Lymo AI** → `Få tidig tillgång till Lymo AI`
-- **Get priority entry and exclusive updates.** → `Få prioriterad access och exklusiva uppdateringar.`
-- **Enter your email for early access** → `Ange din e-post för tidig access`
-- **🚀 Join the Waitlist Now** → `🚀 Gå med på väntelistan nu`
-
 ### Social Proof
 - **creators trust Lymo** → `skapare litar på Lymo`
 
@@ -99,8 +93,8 @@ Replace the English text on the right side with Swedish translations. Keep the s
 - **pricing** → `priser`
 
 ### Subtitle
-- **Join the waitlist for exclusive early access pricing** → 
-  `Gå med på väntelistan för exklusiva priser för tidig access`
+- **Choose the perfect plan for your content creation needs** → 
+  `Välj den perfekta planen för dina innehållsskapande behov`
 
 ### Plans
 

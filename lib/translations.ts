@@ -5,7 +5,12 @@ export const translations = {
       features: "Features",
       howItWorks: "How It Works", 
       pricing: "Pricing",
-      signIn: "Sign In"
+      signIn: "Launch App"
+    },
+
+    // Sale Banner
+    saleBanner: {
+      text: "🚀 LAUNCH MONTH SALE - Limited Time Only!"
     },
     
     // Hero Section
@@ -15,8 +20,6 @@ export const translations = {
       titleHighlight: "images, videos & UGC",
       titleEnd: "with just a link",
       subtitle: "Transform any URL into high-converting visual content. AI-powered generation for images, videos, and user-generated content - no design skills needed.",
-      waitlistTitle: "Unlock Early Access to Lymo AI",
-      waitlistDescription: "Get priority entry and exclusive updates.",
       socialProof: "creators trust Lymo",
       showcaseTitle: "Generated with Lymo AI",
       showcaseSubtitle: "From URL to content in seconds"
@@ -72,7 +75,7 @@ export const translations = {
     pricing: {
       title: "Simple, transparent",
       titleHighlight: "pricing",
-      subtitle: "Join the waitlist for exclusive early access pricing",
+      subtitle: "Choose the perfect plan for your content creation needs",
       plans: [
         {
           name: "Starter",
@@ -134,13 +137,6 @@ export const translations = {
       copyright: "© 2024 Lymo AI. All rights reserved."
     },
     
-    // Waitlist
-    waitlist: {
-      email: "Enter your email for early access",
-      button: "🚀 Join the Waitlist Now",
-      title: "Join the Waitlist",
-      description: "Get early access to Lymo AI"
-    }
   },
   
   sv: {
@@ -149,20 +145,23 @@ export const translations = {
       features: "Funktioner",
       howItWorks: "Så fungerar det",
       pricing: "Priser", 
-      signIn: "Logga in"
+      signIn: "Starta App"
+    },
+
+    // Sale Banner
+    saleBanner: {
+      text: "🚀 LANSERING - Specialpris denna månad!"
     },
     
     // Hero Section
     hero: {
       badge: "AI-driven innehållsproduktion",
       title: "Skapa",
-      titleHighlight: "bilder, videor & UGC",
+      titleHighlight: "bilder, videos & UGC",
       titleEnd: "med bara en länk",
-      subtitle: "Förvandla vilken URL som helst till högkonverterande visuellt innehåll. AI-driven generering för bilder, videor och användargenererat innehåll - inga designkunskaper behövs.",
-      waitlistTitle: "Få tidig tillgång till Lymo AI",
-      waitlistDescription: "Få prioriterad access och exklusiva uppdateringar.",
-      socialProof: "skapare litar på Lymo",
-      showcaseTitle: "Skapad med Lymo AI",
+      subtitle: "Förvandla vilken URL som helst till högkonverterande visuellt innehåll. AI-driven generering för bilder, videos och användargenererat innehåll - inga designkunskaper krävs.",
+      socialProof: "creators litar på Lymo",
+      showcaseTitle: "Genererat med Lymo AI",
       showcaseSubtitle: "Från URL till innehåll på sekunder"
     },
     
@@ -170,23 +169,23 @@ export const translations = {
     features: {
       title: "Allt du behöver för att skapa",
       titleHighlight: "konverterande videoinnehåll",
-      subtitle: "Professionella videoskapande verktyg drivna av avancerad AI-teknik",
+      subtitle: "Professionella verktyg för videoproduktion med avancerad AI-teknik",
       items: [
         {
           title: "Blixtsnabbt",
-          description: "Generera videor på under 60 sekunder"
+          description: "Generera videos på under 60 sekunder"
         },
         {
           title: "AI-optimering",
-          description: "Smarta algoritmer för maximal engagemang"
+          description: "Smarta algoritmer för maximal engagement"
         },
         {
-          title: "Teamsamarbete",
+          title: "Team-samarbete",
           description: "Verktyg för samarbete i realtid"
         },
         {
-          title: "Analys",
-          description: "Detaljerade prestandainsikter"
+          title: "Analytics",
+          description: "Detaljerade performance-insikter"
         }
       ]
     },
@@ -195,19 +194,19 @@ export const translations = {
     howItWorks: {
       title: "Enkel process,",
       titleHighlight: "kraftfulla resultat",
-      subtitle: "Skapa professionella videor i tre enkla steg",
+      subtitle: "Skapa professionella videos i tre enkla steg",
       steps: [
         {
-          title: "Ange ditt innehåll",
-          description: "Beskriv enkelt ditt videokoncept eller klistra in din marknadsföringstext"
+          title: "Lägg till ditt innehåll",
+          description: "Beskriv enkelt ditt videokoncept eller klistra in din copy"
         },
         {
           title: "AI genererar video",
-          description: "Vår AI skapar professionell video med visuella effekter, animationer och effekter"
+          description: "Vår AI skapar professionell video med visuals, animationer och effekter"
         },
         {
           title: "Exportera & dela",
-          description: "Ladda ner i flera format optimerade för vilken plattform som helst"
+          description: "Ladda ner i flera format optimerade för alla plattformar"
         }
       ]
     },
@@ -216,44 +215,44 @@ export const translations = {
     pricing: {
       title: "Enkla, transparenta",
       titleHighlight: "priser",
-      subtitle: "Gå med på väntelistan för exklusiva priser för tidig access",
+      subtitle: "Välj den perfekta planen för dina content-behov",
       plans: [
         {
           name: "Starter",
           price: "279 kr",
           period: "/månad",
-          description: "Perfekt för privatpersoner och små team",
+          description: "Perfekt för creators och små team",
           features: [
-            "10 videor per månad",
-            "HD-videokvalitet",
-            "Grundläggande mallar", 
-            "E-postsupport"
+            "10 videos per månad",
+            "HD-kvalitet",
+            "Basic templates", 
+            "Email support"
           ]
         },
         {
-          name: "Professional",
+          name: "Pro",
           price: "999 kr",
           period: "/månad",
-          description: "För växande företag och byråer",
+          description: "För växande företag och agencies",
           features: [
-            "Obegränsat antal videor",
-            "4K-videokvalitet",
-            "Premium-mallar",
-            "Prioritetsupport",
-            "Anpassad varumärkning"
+            "Unlimited videos",
+            "4K-kvalitet",
+            "Premium templates",
+            "Priority support",
+            "Custom branding"
           ],
           popular: true
         },
         {
           name: "Enterprise",
-          price: "Anpassat",
+          price: "Custom",
           period: "",
-          description: "För stora organisationer med anpassade behov",
+          description: "För stora organisationer med custom behov",
           features: [
-            "Allt i Professional",
-            "Dedikerad kontoansvarig",
-            "Anpassade integrationer",
-            "Avancerad analys",
+            "Allt i Pro",
+            "Dedicated account manager",
+            "Custom integrations",
+            "Advanced analytics",
             "SLA-garanti"
           ]
         }
@@ -264,27 +263,20 @@ export const translations = {
     // Final CTA
     finalCta: {
       title: "Redo att transformera din",
-      titleHighlight: "innehållsskapande?",
-      subtitle: "Gå med tusentals skapare som redan gör högkonverterande videor med AI"
+      titleHighlight: "content creation?",
+      subtitle: "Gå med tusentals creators som redan skapar high-converting videos med AI"
     },
     
     // Footer
     footer: {
       links: {
-        privacy: "Integritet",
-        terms: "Villkor",
+        privacy: "Privacy Policy",
+        terms: "Terms of Service",
         support: "Support"
       },
-      copyright: "© 2024 Lymo AI. Alla rättigheter förbehållna."
+      copyright: "© 2025 Lymo AI. Alla rättigheter förbehållna."
     },
     
-    // Waitlist
-    waitlist: {
-      email: "Ange din e-post för tidig access",
-      button: "🚀 Gå med på väntelistan nu",
-      title: "Gå med på väntelistan",
-      description: "Få tidig tillgång till Lymo AI"
-    }
   }
 } as const
 

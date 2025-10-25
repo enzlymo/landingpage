@@ -10,19 +10,22 @@ export type SupportedLanguage = 'sv' | 'en' | 'none'
 // Detect user's location and determine appropriate language
 export const detectLanguage = async (): Promise<SupportedLanguage> => {
   try {
+    // Default to English for cookie banner (most international users)
+    // Only show Swedish for explicitly Swedish users
+    
     // First try to get location from browser API (if user allows)
     if ('geolocation' in navigator) {
       // For now, we'll use a simpler approach with browser language
       const browserLang = navigator.language.toLowerCase()
       
-      // Swedish users get Swedish
-      if (browserLang.startsWith('sv')) {
+      // Only Swedish users get Swedish (very specific)
+      if (browserLang === 'sv' || browserLang === 'sv-se') {
         return 'sv'
       }
       
-      // Try to detect EU languages for English fallback
+      // All other EU languages get English
       const euLanguages = [
-        'de', 'fr', 'it', 'es', 'pt', 'nl', 'pl', 'da', 'fi', 'no',
+        'en', 'de', 'fr', 'it', 'es', 'pt', 'nl', 'pl', 'da', 'fi', 'no',
         'cs', 'sk', 'hu', 'ro', 'bg', 'hr', 'sl', 'lv', 'lt', 'et'
       ]
       
@@ -43,6 +46,7 @@ export const detectLanguage = async (): Promise<SupportedLanguage> => {
       const data = await response.json()
       const country = data.country_code
       
+      // Only Sweden gets Swedish
       if (country === 'SE') {
         return 'sv'
       } else if (EU_COUNTRIES.includes(country)) {
@@ -50,20 +54,13 @@ export const detectLanguage = async (): Promise<SupportedLanguage> => {
       }
     }
     
-    // Default fallback - no cookie banner for non-EU
-    return 'none'
+    // Default fallback - English for most users, none for non-EU
+    return 'en'
   } catch (error) {
-    console.log('Language detection failed, using browser language fallback')
+    console.log('Language detection failed, defaulting to English')
     
-    // Fallback to browser language
-    const browserLang = navigator.language.toLowerCase()
-    if (browserLang.startsWith('sv')) {
-      return 'sv'
-    } else if (browserLang.startsWith('en') || browserLang.startsWith('de') || browserLang.startsWith('fr')) {
-      return 'en'
-    }
-    
-    return 'none'
+    // Always default to English on error
+    return 'en'
   }
 }
 

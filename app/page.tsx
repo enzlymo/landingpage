@@ -7,7 +7,6 @@ import { Inter } from 'next/font/google'
 import Link from "next/link"
 import Image from "next/image"
 import { Play, ArrowRight, Sparkles, Zap, Target, Users, BarChart3, CheckCircle, Quote, Image as ImageIcon, Video, FileText, Upload, Wand2, TrendingUp } from "lucide-react"
-import { DynamicWaitlist } from "@/components/ui/dynamic-waitlist"
 import { StatsBanner } from "@/components/ui/stats-banner"
 import { RotatingText } from "@/components/ui/rotating-text"
 import { ProductTransformationShowcase } from "@/components/ui/product-transformation-showcase"
@@ -117,25 +116,45 @@ export default function Page() {
                   </div>
                 </div>
                 
-                <Button 
-                  onClick={() => {
-                    const waitlistElement = document.querySelector('.launchlist-widget');
-                    if (waitlistElement) {
-                      waitlistElement.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }}
-                  size="sm" 
-                  className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-semibold text-sm px-6 shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  {t.nav.signIn}
-                </Button>
+                <Link href="https://app.lymo.me">
+                  <Button 
+                    size="sm" 
+                    className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-semibold text-sm px-6 shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    {t.nav.signIn}
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </header>
 
-      <main className="flex-grow pt-20">
+      {/* Launch Month Sale Banner */}
+      <div className="fixed top-[80px] left-0 right-0 z-40 bg-gradient-to-r from-[#F6E05E] via-[#F59E0B] to-[#F6E05E] shadow-lg overflow-hidden">
+        {/* Animated background shimmer */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse"></div>
+        
+        <div className="max-w-7xl mx-auto px-6 py-3 relative">
+          <div className="flex items-center justify-center text-center">
+            <div className="flex items-center gap-3">
+              <div className="w-2 h-2 bg-[#111827] rounded-full animate-bounce"></div>
+              <span className="text-[#111827] font-bold text-sm md:text-base tracking-wide">
+                {t.saleBanner.text}
+              </span>
+              <div className="w-2 h-2 bg-[#111827] rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Animated border */}
+        <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-[#111827] to-transparent animate-pulse"></div>
+        
+        {/* Subtle glow effect */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#F6E05E]/30 via-[#F59E0B]/30 to-[#F6E05E]/30 blur-sm -z-10"></div>
+      </div>
+
+      <main className="flex-grow pt-32">
         {/* Premium $100M Startup Hero Section */}
         <section className="relative min-h-[90vh] bg-gradient-to-br from-[#0F1419] via-[#1A202C] to-[#161B22] flex items-center justify-center overflow-hidden">
           {/* Premium Background Effects */}
@@ -186,10 +205,12 @@ export default function Page() {
                 {/* CTA Section - More Compact */}
                 <div className="space-y-4">
                   <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-                    <Button className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-bold text-lg px-8 py-6 rounded-2xl shadow-2xl hover:shadow-[#F6E05E]/30 transition-all duration-300 transform hover:scale-105 group">
-                      <Sparkles className="w-5 h-5 mr-3 group-hover:rotate-12 transition-transform" />
-                      Start Creating Free
-                    </Button>
+                    <Link href="https://app.lymo.me">
+                      <Button className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-bold text-lg px-8 py-6 rounded-2xl shadow-2xl hover:shadow-[#F6E05E]/30 transition-all duration-300 transform hover:scale-105 group">
+                        <Sparkles className="w-5 h-5 mr-3 group-hover:rotate-12 transition-transform" />
+                        Start Creating Free
+                      </Button>
+                    </Link>
                     <Button 
                       variant="outline" 
                       className="border-2 border-[#2D3748] bg-[#0F1419]/80 backdrop-blur-sm hover:bg-[#2D3748]/60 hover:border-[#F6E05E]/70 active:bg-[#2D3748]/80 active:text-[#F7FAFC] text-[#F7FAFC] text-lg px-8 py-6 rounded-2xl transition-all duration-300 group"
@@ -888,13 +909,14 @@ export default function Page() {
               <p className="text-lg text-[#111827]/80 mb-8 max-w-2xl mx-auto">
                 Join thousands of creators who are already making high-converting videos with AI
               </p>
-              <div className="max-w-md mx-auto bg-white/95 backdrop-blur-sm rounded-2xl p-6 border-2 border-[#0F1419]/20 shadow-2xl">
-                <DynamicWaitlist 
-                  showTitle={true}
-                  title="Unlock Early Access to Lymo AI"
-                  description="Get priority entry and exclusive updates."
-                  height="150px"
-                />
+              <div className="flex justify-center">
+                <Link href="https://app.lymo.me">
+                  <Button className="bg-[#0F1419] hover:bg-[#1A202C] text-white font-bold text-xl px-12 py-6 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 group">
+                    <Sparkles className="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform" />
+                    Start Creating Now
+                    <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
