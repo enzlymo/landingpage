@@ -127,7 +127,7 @@ export const metadata: Metadata = {
       { rel: 'icon', url: '/web-app-manifest-512x512.png', sizes: '512x512', type: 'image/png' },
     ],
   },
-  manifest: '/site.webmanifest',
+  manifest: '/manifest.json',
   
   // Viewport
   viewport: {

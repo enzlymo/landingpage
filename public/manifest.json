@@ -4,37 +4,37 @@
   "description": "Create winning AI videos in seconds with Lymo AI. Generate professional videos from text and URLs instantly.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#F4D03F",
+  "background_color": "#0F1419",
+  "theme_color": "#F6E05E",
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "en-US",
   "categories": ["productivity", "business", "multimedia"],
   "icons": [
     {
-      "src": "/images/favicon.ico",
+      "src": "/favicon.ico",
       "sizes": "any",
       "type": "image/x-icon"
     },
     {
-      "src": "/images/favicon-96x96.png",
+      "src": "/favicon-96x96.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "/images/apple-touch-icon.png",
+      "src": "/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/images/web-app-manifest-192x192.png",
+      "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/images/web-app-manifest-512x512.png",
+      "src": "/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -48,7 +48,7 @@
       "url": "/create",
       "icons": [
         {
-          "src": "/images/favicon-96x96.png",
+          "src": "/favicon-96x96.png",
           "sizes": "96x96",
           "type": "image/png"
         }
@@ -61,7 +61,7 @@
       "url": "/videos",
       "icons": [
         {
-          "src": "/images/favicon-96x96.png",
+          "src": "/favicon-96x96.png",
           "sizes": "96x96",
           "type": "image/png"
         }
