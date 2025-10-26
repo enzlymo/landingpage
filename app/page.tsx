@@ -28,8 +28,25 @@ export default function Page() {
   
   return (
     <div className="flex flex-col min-h-screen font-sans bg-gradient-to-br from-[#0F1419] via-[#161B22] to-[#1A202C] text-[#F7FAFC]">
+      {/* Launch Month Sale Banner - Top of Page */}
+      <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#F6E05E] via-[#F59E0B] to-[#F6E05E] shadow-lg overflow-hidden">
+        {/* Animated background shimmer */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse"></div>
+        <div className="max-w-7xl mx-auto px-6 py-2 relative">
+          <div className="flex items-center justify-center text-center">
+            <div className="flex items-center gap-3">
+              <div className="w-2 h-2 bg-[#111827] rounded-full animate-bounce"></div>
+              <span className="text-[#111827] font-bold text-sm md:text-base tracking-wide">
+                🔥 LAUNCH MONTH SALE - Limited Time Only! 🔥
+              </span>
+              <div className="w-2 h-2 bg-[#111827] rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Professional Navigation */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[#1A202C]/95 backdrop-blur-sm border-b border-[#2D3748] shadow-xl">
+      <header className="fixed top-[48px] left-0 right-0 z-40 bg-[#1A202C]/95 backdrop-blur-sm border-b border-[#2D3748] shadow-xl">
         <div className="max-w-7xl mx-auto">
           <div className="px-6 py-4">
             <div className="flex items-center justify-between">
@@ -119,12 +136,9 @@ export default function Page() {
                 <Link href="https://app.lymo.me">
                 <Button 
                   size="sm" 
-                    className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-semibold text-sm px-6 shadow-lg hover:shadow-xl transition-all duration-300 relative"
+                    className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-semibold text-sm px-6 shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                    Try Free Today
-                    <div className="absolute -top-1 -right-1 bg-[#10B981] text-white text-xs font-bold px-1.5 py-0.5 rounded-full animate-pulse">
-                      FREE
-                    </div>
+                    Start Creating Free
                 </Button>
                 </Link>
               </div>
@@ -133,31 +147,8 @@ export default function Page() {
         </div>
       </header>
 
-      {/* Launch Month Sale Banner */}
-      <div className="fixed top-[80px] left-0 right-0 z-40 bg-gradient-to-r from-[#F6E05E] via-[#F59E0B] to-[#F6E05E] shadow-lg overflow-hidden">
-        {/* Animated background shimmer */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse"></div>
-        
-        <div className="max-w-7xl mx-auto px-6 py-3 relative">
-          <div className="flex items-center justify-center text-center">
-            <div className="flex items-center gap-3">
-              <div className="w-2 h-2 bg-[#111827] rounded-full animate-bounce"></div>
-              <span className="text-[#111827] font-bold text-sm md:text-base tracking-wide">
-                {t.saleBanner.text}
-              </span>
-              <div className="w-2 h-2 bg-[#111827] rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
-            </div>
-          </div>
-              </div>
-              
-        {/* Animated border */}
-        <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-[#111827] to-transparent animate-pulse"></div>
-        
-        {/* Subtle glow effect */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#F6E05E]/30 via-[#F59E0B]/30 to-[#F6E05E]/30 blur-sm -z-10"></div>
-      </div>
 
-      <main className="flex-grow pt-32">
+      <main className="flex-grow pt-40">
         {/* Premium $100M Startup Hero Section */}
         <section className="relative min-h-[90vh] bg-gradient-to-br from-[#0F1419] via-[#1A202C] to-[#161B22] flex items-center justify-center overflow-hidden">
           {/* Premium Background Effects */}
@@ -165,8 +156,8 @@ export default function Page() {
             <div className="absolute top-20 left-20 w-72 h-72 bg-[#F6E05E]/10 rounded-full blur-3xl animate-pulse"></div>
             <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#60A5FA]/8 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-[#F6E05E]/5 to-[#A78BFA]/5 rounded-full blur-3xl"></div>
-          </div>
-
+              </div>
+              
           <div className="relative z-10 max-w-7xl mx-auto px-6 py-12">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               
@@ -209,12 +200,9 @@ export default function Page() {
                 <div className="space-y-4">
                   <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
                     <Link href="https://app.lymo.me">
-                      <Button className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-bold text-lg px-8 py-6 rounded-2xl shadow-2xl hover:shadow-[#F6E05E]/30 transition-all duration-300 transform hover:scale-105 group relative">
+                      <Button className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-bold text-lg px-8 py-6 rounded-2xl shadow-2xl hover:shadow-[#F6E05E]/30 transition-all duration-300 transform hover:scale-105 group">
                         <Sparkles className="w-5 h-5 mr-3 group-hover:rotate-12 transition-transform" />
-                        Try Free Today
-                        <div className="absolute -top-2 -right-2 bg-[#10B981] text-white text-xs font-bold px-2 py-1 rounded-full animate-pulse">
-                          FREE
-                        </div>
+                        Start Creating Free
                 </Button>
                     </Link>
                 <Button 
@@ -241,7 +229,7 @@ export default function Page() {
                 </div>
                       <div className="flex items-center gap-2 text-[#A0AEC0]">
                         <CheckCircle className="w-4 h-4 text-[#10B981]" />
-                        <span>14-day free trial</span>
+                        <span>Free account available</span>
                 </div>
                       <div className="flex items-center gap-2 text-[#A0AEC0]">
                         <CheckCircle className="w-4 h-4 text-[#10B981]" />
@@ -448,24 +436,42 @@ export default function Page() {
               {/* Product Showcase Video */}
               <div className="group relative">
                 <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 border border-gray-700 hover:border-[#F4D03F]/50 transition-all duration-500 hover:scale-105">
-                  <div className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gradient-to-br from-[#F4D03F]/10 to-[#F1C40F]/10 mb-6">
-                    {/* Video Preview */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-orange-600/20 to-red-600/20"></div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="bg-white/90 backdrop-blur-sm rounded-full p-6 shadow-2xl group-hover:scale-110 transition-transform duration-300">
-                        <Play className="w-8 h-8 text-gray-900 ml-1" />
-              </div>
-            </div>
+                  <div className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gradient-to-br from-[#F4D03F]/10 to-[#F1C40F]/10 mb-6 group cursor-pointer">
+                    {/* Video Element */}
+                    <video 
+                      className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+                      muted
+                      loop
+                      playsInline
+                      onMouseEnter={(e) => e.currentTarget.play()}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.pause();
+                        e.currentTarget.currentTime = 0;
+                      }}
+                    >
+                      <source src="/images/3bff4339-9711-438d-9995-952e23d2b626.mp4" type="video/mp4" />
+                    </video>
+                    
+                    {/* Hover Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     
                     {/* Product Elements */}
                     <div className="absolute top-4 left-4 bg-orange-500 rounded-full px-3 py-1">
                       <span className="text-xs font-bold text-white">Product Demo</span>
-                    </div>
+              </div>
                     <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg px-2 py-1">
                       <span className="text-xs text-white">01:20</span>
-                    </div>
-                    <div className="absolute bottom-4 right-4 bg-green-500 rounded-full px-2 py-1">
+            </div>
+                    <div className="absolute bottom-4 right-4 bg-green-500 rounded-full px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <span className="text-xs font-bold text-white">VIRAL</span>
+                    </div>
+                    
+                    {/* Play Indicator */}
+                    <div className="absolute bottom-4 left-4 bg-black/60 backdrop-blur-sm rounded-full px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <span className="text-xs text-white font-medium flex items-center gap-1">
+                        <div className="w-1.5 h-1.5 bg-[#10B981] rounded-full animate-pulse"></div>
+                        Playing
+                      </span>
                     </div>
                   </div>
                   
@@ -1134,7 +1140,7 @@ export default function Page() {
                   </Button>
                 </Link>
                 <div className="text-[#111827]/70 text-sm">
-                  ✓ 14-day free trial • ✓ No credit card • ✓ Instant access
+                  ✓ Free account • ✓ No credit card • ✓ Instant access
                 </div>
               </div>
             </div>
