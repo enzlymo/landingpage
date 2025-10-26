@@ -37,7 +37,7 @@ export default function Page() {
             <div className="flex items-center gap-3">
               <div className="w-2 h-2 bg-[#111827] rounded-full animate-bounce"></div>
               <span className="text-[#111827] font-bold text-sm md:text-base tracking-wide">
-                🔥 LAUNCH MONTH SALE - Limited Time Only! 🔥
+                 LAUNCH MONTH SALE - Limited Time Only! 
               </span>
               <div className="w-2 h-2 bg-[#111827] rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
             </div>
@@ -167,7 +167,7 @@ export default function Page() {
                 <div className="flex items-center justify-center lg:justify-start gap-4">
                   <div className="flex items-center gap-2 bg-[#0F1419]/80 backdrop-blur-sm border border-[#2D3748] rounded-full px-4 py-2">
                     <div className="w-2 h-2 bg-[#10B981] rounded-full animate-pulse"></div>
-                    <span className="text-sm text-[#A0AEC0]">50,000+ creators</span>
+                    <span className="text-sm text-[#A0AEC0]">100+ creators</span>
                   </div>
                   <div className="flex items-center gap-1">
                     <span className="text-[#F6E05E] text-sm">★★★★★</span>
