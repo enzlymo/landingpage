@@ -6,7 +6,7 @@ import { VideoCard } from "@/components/ui/video-card"
 import { Inter } from 'next/font/google'
 import Link from "next/link"
 import Image from "next/image"
-import { Play, ArrowRight, Sparkles, Zap, Target, Users, BarChart3, CheckCircle, Quote, Image as ImageIcon, Video, FileText, Upload, Wand2, TrendingUp } from "lucide-react"
+import { Play, ArrowRight, Sparkles, Zap, Target, Users, BarChart3, CheckCircle, Quote, Image as ImageIcon, Video, FileText, Upload, Wand2, TrendingUp, Mail, MessageCircle, Clock, Shield } from "lucide-react"
 import { StatsBanner } from "@/components/ui/stats-banner"
 import { RotatingText } from "@/components/ui/rotating-text"
 import { ProductTransformationShowcase } from "@/components/ui/product-transformation-showcase"
@@ -117,15 +117,15 @@ export default function Page() {
                 </div>
                 
                 <Link href="https://app.lymo.me">
-                  <Button 
-                    size="sm" 
+                <Button 
+                  size="sm" 
                     className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-semibold text-sm px-6 shadow-lg hover:shadow-xl transition-all duration-300 relative"
-                  >
+                >
                     Try Free Today
                     <div className="absolute -top-1 -right-1 bg-[#10B981] text-white text-xs font-bold px-1.5 py-0.5 rounded-full animate-pulse">
                       FREE
                     </div>
-                  </Button>
+                </Button>
                 </Link>
               </div>
             </div>
@@ -148,8 +148,8 @@ export default function Page() {
               <div className="w-2 h-2 bg-[#111827] rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
             </div>
           </div>
-        </div>
-        
+              </div>
+              
         {/* Animated border */}
         <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-[#111827] to-transparent animate-pulse"></div>
         
@@ -192,19 +192,19 @@ export default function Page() {
                       AI Content
                     </span>
                     <span className="block text-3xl sm:text-4xl lg:text-5xl">
-                      <RotatingText 
+                  <RotatingText 
                         texts={["in Seconds", "That Converts", "That Scales", "That Sells"]}
                         interval={2500}
-                      />
-                    </span>
-                  </h1>
-                  
+                  />
+                </span>
+              </h1>
+              
                   <p className="text-lg lg:text-xl text-[#A0AEC0] leading-relaxed max-w-2xl">
                     Transform any product photo into professional videos, ads, and campaigns. 
                     <span className="text-[#F7FAFC] font-semibold"> Start your free trial today</span> and join the AI revolution.
                   </p>
-                </div>
-
+              </div>
+              
                 {/* CTA Section - More Compact */}
                 <div className="space-y-4">
                   <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
@@ -215,17 +215,17 @@ export default function Page() {
                         <div className="absolute -top-2 -right-2 bg-[#10B981] text-white text-xs font-bold px-2 py-1 rounded-full animate-pulse">
                           FREE
                         </div>
-                      </Button>
+                </Button>
                     </Link>
-                    <Button 
-                      variant="outline" 
+                <Button 
+                  variant="outline" 
                       className="border-2 border-[#2D3748] bg-[#0F1419]/80 backdrop-blur-sm hover:bg-[#2D3748]/60 hover:border-[#F6E05E]/70 active:bg-[#2D3748]/80 active:text-[#F7FAFC] text-[#F7FAFC] text-lg px-8 py-6 rounded-2xl transition-all duration-300 group"
-                    >
+                >
                       <Play className="w-5 h-5 mr-3 group-hover:scale-110 transition-transform" />
                       Watch Demo
-                    </Button>
-                  </div>
-
+                </Button>
+              </div>
+              
                   {/* Enhanced Free Trial Messaging */}
                   <div className="bg-[#0F1419]/60 backdrop-blur-sm border border-[#2D3748] rounded-2xl p-4 max-w-lg">
                     <div className="flex items-center gap-3 mb-3">
@@ -237,25 +237,25 @@ export default function Page() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
                       <div className="flex items-center gap-2 text-[#A0AEC0]">
                         <CheckCircle className="w-4 h-4 text-[#10B981]" />
-                        <span>No credit card required</span>
-                      </div>
+                  <span>No credit card required</span>
+                </div>
                       <div className="flex items-center gap-2 text-[#A0AEC0]">
                         <CheckCircle className="w-4 h-4 text-[#10B981]" />
                         <span>14-day free trial</span>
-                      </div>
+                </div>
                       <div className="flex items-center gap-2 text-[#A0AEC0]">
                         <CheckCircle className="w-4 h-4 text-[#10B981]" />
-                        <span>Cancel anytime</span>
+                  <span>Cancel anytime</span>
                       </div>
                       <div className="flex items-center gap-2 text-[#A0AEC0]">
                         <CheckCircle className="w-4 h-4 text-[#10B981]" />
                         <span>Instant access</span>
                       </div>
                     </div>
-                  </div>
                 </div>
               </div>
-              
+            </div>
+            
               {/* Right Visual Showcase - Interactive Video Example */}
               <div className="relative">
                 {/* Floating Performance Cards */}
@@ -319,7 +319,7 @@ export default function Page() {
                       
                       <div className="aspect-[4/3] bg-gradient-to-br from-[#2D3748] to-[#1A202C] rounded-xl border-2 border-dashed border-[#4A5568] flex items-center justify-center relative overflow-hidden group cursor-pointer">
                         {/* Original Cosmetic Tube Mockup */}
-                        <Image
+                        <Image 
                           src="/images/Free Cosmetic Tube Mockup.png"
                           alt="Product showcase"
                           fill
@@ -327,7 +327,7 @@ export default function Page() {
                         />
                         
                         {/* AI Generated Result - Shows on Hover */}
-                        <Image
+                        <Image 
                           src="/images/1.jpg"
                           alt="AI Generated Result"
                           fill
@@ -342,22 +342,22 @@ export default function Page() {
                           <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-[#F6E05E] to-transparent animate-pulse"></div>
                           <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-[#60A5FA] to-transparent animate-pulse" style={{ animationDelay: '0.5s' }}></div>
                           <div className="absolute top-1/2 left-0 w-0.5 h-full bg-gradient-to-b from-transparent via-[#A78BFA] to-transparent animate-pulse" style={{ animationDelay: '0.25s' }}></div>
-                        </div>
+                      </div>
                         
                         {/* Transform Indicator */}
                         <div className="absolute top-3 right-3 bg-[#F6E05E] text-[#111827] px-2 py-1 rounded-full text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse">
                           AI ENHANCED
-                        </div>
+                    </div>
                         
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                         <div className="absolute bottom-3 left-3 right-3">
                           <div className="w-full bg-[#F6E05E] h-1.5 rounded-full shadow-lg">
                             <div className="bg-gradient-to-r from-[#F6E05E] to-[#10B981] h-1.5 rounded-full animate-pulse" style={{ width: '100%' }}></div>
                           </div>
-                        </div>
-                      </div>
                     </div>
-
+                  </div>
+                </div>
+                
 
                     {/* Premium Processing Status */}
                     <div className="bg-[#1A202C] rounded-xl p-3 border border-[#2D3748] group hover:border-[#10B981]/50 transition-all duration-300">
@@ -366,15 +366,15 @@ export default function Page() {
                         <div className="flex items-center gap-2">
                           <div className="w-2 h-2 bg-[#10B981] rounded-full animate-pulse"></div>
                           <span className="text-xs text-[#10B981] font-semibold animate-pulse">Ready</span>
-                        </div>
+                      </div>
                       </div>
                       <div className="w-full bg-[#2D3748] rounded-full h-2 overflow-hidden">
                         <div className="bg-gradient-to-r from-[#F6E05E] via-[#60A5FA] to-[#10B981] h-2 rounded-full relative" style={{ width: '100%' }}>
                           {/* Premium Shimmer Effect */}
                           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-pulse"></div>
+                    </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -432,7 +432,7 @@ export default function Page() {
                     </div>
                   </div>
                   
-                  <div className="text-center">
+                      <div className="text-center">
                     <h3 className="text-xl font-bold mb-2 text-white">Avatar Marketing</h3>
                     <p className="text-gray-400 text-sm mb-4">
                       AI avatars present your products with realistic human engagement and professional delivery
@@ -440,10 +440,10 @@ export default function Page() {
                     <div className="flex items-center justify-center gap-4 text-xs text-gray-500">
                       <span>✨ Realistic AI Presenter</span>
                       <span>🎯 Brand Focused</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
               {/* Product Showcase Video */}
               <div className="group relative">
@@ -454,8 +454,8 @@ export default function Page() {
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="bg-white/90 backdrop-blur-sm rounded-full p-6 shadow-2xl group-hover:scale-110 transition-transform duration-300">
                         <Play className="w-8 h-8 text-gray-900 ml-1" />
-                      </div>
-                    </div>
+              </div>
+            </div>
                     
                     {/* Product Elements */}
                     <div className="absolute top-4 left-4 bg-orange-500 rounded-full px-3 py-1">
@@ -715,7 +715,7 @@ export default function Page() {
                       fill
                       className="object-cover"
                     />
-                  </div>
+                      </div>
                 </div>
               </div>
 
@@ -755,7 +755,7 @@ export default function Page() {
                       fill
                       className="object-cover"
                     />
-                  </div>
+                    </div>
                 </div>
               </div>
 
@@ -795,8 +795,8 @@ export default function Page() {
                       fill
                       className="object-cover"
                     />
-                  </div>
-                </div>
+                    </div>
+                        </div>
               </div>
             </div>
           </div>
@@ -936,6 +936,132 @@ export default function Page() {
           </div>
         </section>
 
+        {/* Contact Section */}
+        <section className="py-24 bg-gradient-to-br from-[#0F1419] via-[#1A202C] to-[#161B22] relative overflow-hidden">
+          {/* Background Effects */}
+          <div className="absolute inset-0">
+            <div className="absolute top-20 left-20 w-96 h-96 bg-[#F6E05E]/5 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-20 right-20 w-80 h-80 bg-[#60A5FA]/8 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '3s' }}></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-r from-[#A78BFA]/3 to-[#F6E05E]/3 rounded-full blur-3xl"></div>
+          </div>
+
+          <div className="max-w-6xl mx-auto px-6 relative z-10">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-[#F6E05E]/10 backdrop-blur-sm border border-[#F6E05E]/20 rounded-full px-6 py-3 mb-8">
+                <div className="w-2 h-2 bg-[#F6E05E] rounded-full animate-pulse"></div>
+                <span className="text-[#F6E05E] font-semibold text-sm">GET IN TOUCH</span>
+                <div className="w-2 h-2 bg-[#F6E05E] rounded-full animate-pulse"></div>
+              </div>
+              
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F7FAFC] mb-6">
+                Ready to Transform
+                <span className="block bg-gradient-to-r from-[#F6E05E] via-[#60A5FA] to-[#A78BFA] bg-clip-text text-transparent">
+                  Your Content?
+                </span>
+              </h2>
+              <p className="text-xl text-[#A0AEC0] max-w-3xl mx-auto leading-relaxed">
+                Have questions about our AI platform? Want to discuss enterprise solutions? 
+                <span className="text-[#F7FAFC] font-semibold"> We&apos;re here to help you succeed.</span>
+              </p>
+            </div>
+
+            {/* Contact Cards Grid */}
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
+              {/* Email Contact Card */}
+              <div className="group">
+                <div className="bg-[#0F1419]/90 backdrop-blur-xl border border-[#2D3748] rounded-3xl p-8 shadow-2xl hover:shadow-[#F6E05E]/20 transition-all duration-500 hover:scale-105 hover:border-[#F6E05E]/50 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#F6E05E]/5 to-[#F59E0B]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
+                  <div className="relative z-10">
+                    <div className="w-16 h-16 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <Mail className="w-8 h-8 text-[#111827]" />
+                    </div>
+                    
+                    <h3 className="text-2xl font-bold text-[#F7FAFC] mb-4">Email Us</h3>
+                    <p className="text-[#A0AEC0] mb-6 leading-relaxed">
+                      Get direct access to our team. We typically respond within 2 hours during business hours.
+                    </p>
+                    
+                    <div className="bg-[#1A202C] rounded-2xl p-4 border border-[#2D3748] group-hover:border-[#F6E05E]/30 transition-colors duration-300">
+                      <div className="flex items-center gap-3">
+                        <div className="w-3 h-3 bg-[#10B981] rounded-full animate-pulse"></div>
+                        <a 
+                          href="mailto:lymoadsai@gmail.com" 
+                          className="text-[#F6E05E] font-semibold text-lg hover:text-[#F59E0B] transition-colors duration-200 group-hover:underline"
+                        >
+                          lymoadsai@gmail.com
+                        </a>
+                    </div>
+                      <div className="text-xs text-[#A0AEC0] mt-2 ml-6">
+                        ✓ Enterprise inquiries welcome
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Quick Response Card */}
+              <div className="group">
+                <div className="bg-[#0F1419]/90 backdrop-blur-xl border border-[#2D3748] rounded-3xl p-8 shadow-2xl hover:shadow-[#60A5FA]/20 transition-all duration-500 hover:scale-105 hover:border-[#60A5FA]/50 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#60A5FA]/5 to-[#A78BFA]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
+                  <div className="relative z-10">
+                    <div className="w-16 h-16 bg-gradient-to-r from-[#60A5FA] to-[#A78BFA] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <MessageCircle className="w-8 h-8 text-white" />
+                    </div>
+                    
+                    <h3 className="text-2xl font-bold text-[#F7FAFC] mb-4">Quick Response</h3>
+                    <p className="text-[#A0AEC0] mb-6 leading-relaxed">
+                      Need immediate assistance? Our support team is standing by to help you get started.
+                    </p>
+                    
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3 text-sm text-[#A0AEC0]">
+                        <Clock className="w-4 h-4 text-[#10B981]" />
+                        <span>Average response: <span className="text-[#F7FAFC] font-semibold">2 hours</span></span>
+                    </div>
+                      <div className="flex items-center gap-3 text-sm text-[#A0AEC0]">
+                        <Users className="w-4 h-4 text-[#60A5FA]" />
+                        <span>Dedicated support team</span>
+                  </div>
+                      <div className="flex items-center gap-3 text-sm text-[#A0AEC0]">
+                        <Shield className="w-4 h-4 text-[#F6E05E]" />
+                        <span>Enterprise-grade security</span>
+                </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom CTA */}
+            <div className="text-center">
+              <div className="bg-[#0F1419]/90 backdrop-blur-xl border border-[#2D3748] rounded-3xl p-8 max-w-2xl mx-auto shadow-2xl">
+                <h3 className="text-2xl font-bold text-[#F7FAFC] mb-4">
+                  Ready to Get Started?
+                </h3>
+                <p className="text-[#A0AEC0] mb-6">
+                  Join thousands of creators already using Lymo AI to transform their content strategy.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-bold px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <Sparkles className="w-5 h-5 mr-2" />
+                    Start Free Trial
+                  </Button>
+                  <a href="mailto:lymoadsai@gmail.com">
+                    <Button 
+                      variant="outline" 
+                      className="border-2 border-[#2D3748] bg-transparent hover:bg-[#1A202C] hover:border-[#F6E05E]/50 text-[#F7FAFC] px-8 py-4 rounded-2xl transition-all duration-300"
+                    >
+                      <Mail className="w-5 h-5 mr-2" />
+                      Contact Sales
+                    </Button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Final CTA */}
         <section className="py-24 bg-gradient-to-br from-[#F6E05E] via-[#F59E0B] to-[#60A5FA] relative overflow-hidden">
