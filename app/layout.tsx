@@ -115,16 +115,16 @@ export const metadata: Metadata = {
   // Icons and Manifest
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: '32x32' },
       { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
-      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/web-app-manifest-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/web-app-manifest-512x512.png', sizes: '512x512', type: 'image/png' },
     ],
     apple: [
       { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
     other: [
-      { rel: 'icon', url: '/web-app-manifest-192x192.png', sizes: '192x192', type: 'image/png' },
-      { rel: 'icon', url: '/web-app-manifest-512x512.png', sizes: '512x512', type: 'image/png' },
+      { rel: 'icon', url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { rel: 'shortcut icon', url: '/favicon-96x96.png', type: 'image/png' },
     ],
   },
   manifest: '/manifest.json',
@@ -292,6 +292,12 @@ export default function RootLayout({
         
         {/* Canonical URL */}
         <link rel="canonical" href="https://lymo.me" />
+        
+        {/* Explicit Favicon Links */}
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/web-app-manifest-192x192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/web-app-manifest-512x512.png" />
+        <link rel="shortcut icon" href="/favicon-96x96.png" />
       </head>
       <body className={`${inter.className} ${sora.variable} ${inter.variable} bg-background text-foreground font-sans`}>
         <GoogleAnalytics />

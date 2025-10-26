@@ -209,8 +209,19 @@ export function ProductTransformationShowcase({ className = '' }: Transformation
                 className={`relative transition-all duration-700 delay-200 ${
                   showResults ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'
                 }`}
-                onMouseEnter={() => setIsHovering(true)}
-                onMouseLeave={() => setIsHovering(false)}
+                onMouseEnter={() => {
+                  setIsHovering(true);
+                  if (videoRef.current) {
+                    videoRef.current.play();
+                  }
+                }}
+                onMouseLeave={() => {
+                  setIsHovering(false);
+                  if (videoRef.current) {
+                    videoRef.current.pause();
+                    videoRef.current.currentTime = 0;
+                  }
+                }}
               >
                 <div className="bg-gradient-to-br from-[#111827] to-[#0F1419] rounded-2xl p-4 border-2 border-[#F59E0B] shadow-2xl overflow-hidden group cursor-pointer h-full">
                   <div className="absolute top-3 left-3 bg-gradient-to-r from-red-500 to-orange-500 rounded-full px-4 py-1.5 z-10 shadow-lg">
@@ -229,11 +240,6 @@ export function ProductTransformationShowcase({ className = '' }: Transformation
                       muted
                       loop
                       playsInline
-                      onMouseEnter={(e) => e.currentTarget.play()}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.pause();
-                        e.currentTarget.currentTime = 0;
-                      }}
                     >
                       <source src="/images/3bff4339-9711-438d-9995-952e23d2b626.mp4" type="video/mp4" />
                     </video>

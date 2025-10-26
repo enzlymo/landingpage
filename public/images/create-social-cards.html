@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lymo AI Social Cards Generator</title>
+    <style>
+        body { margin: 0; padding: 20px; font-family: Arial, sans-serif; }
+        .card { margin: 20px 0; position: relative; }
+        canvas { border: 1px solid #ccc; display: block; margin: 10px 0; }
+        button { padding: 10px 20px; margin: 5px; background: #F6E05E; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Lymo AI Social Media Cards Generator</h1>
+    
+    <div class="card">
+        <h2>Facebook/LinkedIn OG Image (1200x630)</h2>
+        <canvas id="ogCanvas" width="1200" height="630"></canvas>
+        <button onclick="downloadOG()">Download OG Image</button>
+    </div>
+    
+    <div class="card">
+        <h2>Twitter Card Image (1200x675)</h2>
+        <canvas id="twitterCanvas" width="1200" height="675"></canvas>
+        <button onclick="downloadTwitter()">Download Twitter Card</button>
+    </div>
+
+    <script>
+        // Create OG Image (1200x630)
+        function createOGImage() {
+            const canvas = document.getElementById('ogCanvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Background gradient
+            const gradient = ctx.createLinearGradient(0, 0, 1200, 630);
+            gradient.addColorStop(0, '#0F1419');
+            gradient.addColorStop(0.5, '#1A202C');
+            gradient.addColorStop(1, '#161B22');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 1200, 630);
+            
+            // Add glow effects
+            ctx.beginPath();
+            const glowGradient = ctx.createRadialGradient(300, 200, 0, 300, 200, 200);
+            glowGradient.addColorStop(0, 'rgba(246, 224, 94, 0.1)');
+            glowGradient.addColorStop(1, 'rgba(246, 224, 94, 0)');
+            ctx.fillStyle = glowGradient;
+            ctx.fillRect(0, 0, 1200, 630);
+            
+            // Logo area (simplified)
+            ctx.fillStyle = '#F6E05E';
+            ctx.fillRect(80, 80, 60, 60);
+            ctx.fillStyle = '#F59E0B';
+            ctx.fillRect(90, 90, 40, 40);
+            
+            // Main title
+            ctx.fillStyle = '#F7FAFC';
+            ctx.font = 'bold 72px Arial';
+            ctx.fillText('Lymo AI', 180, 140);
+            
+            // Subtitle
+            ctx.fillStyle = '#A0AEC0';
+            ctx.font = '48px Arial';
+            ctx.fillText('Create Winning AI Videos', 180, 200);
+            ctx.fillText('in Seconds', 180, 260);
+            
+            // Feature highlights
+            ctx.fillStyle = '#F6E05E';
+            ctx.font = 'bold 32px Arial';
+            ctx.fillText('✨ AI-Powered Video Generation', 180, 350);
+            ctx.fillText('🚀 Professional Results in 60 Seconds', 180, 400);
+            ctx.fillText('🎯 No Editing Skills Required', 180, 450);
+            
+            // Call to action
+            ctx.fillStyle = '#F6E05E';
+            ctx.fillRect(180, 500, 300, 60);
+            ctx.fillStyle = '#111827';
+            ctx.font = 'bold 28px Arial';
+            ctx.fillText('Start Creating Free', 200, 540);
+            
+            // URL
+            ctx.fillStyle = '#A0AEC0';
+            ctx.font = '24px Arial';
+            ctx.fillText('lymo.me', 180, 590);
+        }
+        
+        // Create Twitter Card (1200x675)
+        function createTwitterCard() {
+            const canvas = document.getElementById('twitterCanvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Background gradient
+            const gradient = ctx.createLinearGradient(0, 0, 1200, 675);
+            gradient.addColorStop(0, '#0F1419');
+            gradient.addColorStop(0.5, '#1A202C');
+            gradient.addColorStop(1, '#161B22');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 1200, 675);
+            
+            // Add glow effects
+            ctx.beginPath();
+            const glowGradient = ctx.createRadialGradient(600, 300, 0, 600, 300, 300);
+            glowGradient.addColorStop(0, 'rgba(246, 224, 94, 0.15)');
+            glowGradient.addColorStop(1, 'rgba(246, 224, 94, 0)');
+            ctx.fillStyle = glowGradient;
+            ctx.fillRect(0, 0, 1200, 675);
+            
+            // Logo area (simplified)
+            ctx.fillStyle = '#F6E05E';
+            ctx.fillRect(100, 100, 80, 80);
+            ctx.fillStyle = '#F59E0B';
+            ctx.fillRect(115, 115, 50, 50);
+            
+            // Main title
+            ctx.fillStyle = '#F7FAFC';
+            ctx.font = 'bold 84px Arial';
+            ctx.fillText('Lymo AI', 220, 170);
+            
+            // Subtitle with gradient effect
+            ctx.fillStyle = '#F6E05E';
+            ctx.font = 'bold 56px Arial';
+            ctx.fillText('AI Video Generator', 220, 240);
+            
+            // Description
+            ctx.fillStyle = '#A0AEC0';
+            ctx.font = '40px Arial';
+            ctx.fillText('Transform any product into', 220, 320);
+            ctx.fillText('stunning video content', 220, 370);
+            ctx.fillText('perfect for social media', 220, 420);
+            
+            // Stats
+            ctx.fillStyle = '#10B981';
+            ctx.font = 'bold 32px Arial';
+            ctx.fillText('⚡ 60 Second Generation', 220, 500);
+            ctx.fillText('🎯 100+ Creators Trust Us', 220, 540);
+            
+            // Call to action
+            ctx.fillStyle = '#F6E05E';
+            ctx.fillRect(220, 580, 280, 50);
+            ctx.fillStyle = '#111827';
+            ctx.font = 'bold 24px Arial';
+            ctx.fillText('Try Free Today', 240, 610);
+        }
+        
+        function downloadOG() {
+            const canvas = document.getElementById('ogCanvas');
+            const link = document.createElement('a');
+            link.download = 'lymo-og-image.png';
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+        
+        function downloadTwitter() {
+            const canvas = document.getElementById('twitterCanvas');
+            const link = document.createElement('a');
+            link.download = 'lymo-twitter-card.png';
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+        
+        // Generate images on load
+        createOGImage();
+        createTwitterCard();
+    </script>
+</body>
+</html>

@@ -436,18 +436,26 @@ export default function Page() {
               {/* Product Showcase Video */}
               <div className="group relative">
                 <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 border border-gray-700 hover:border-[#F6E05E]/50 transition-all duration-500 hover:scale-105">
-                  <div className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gradient-to-br from-[#F6E05E]/10 to-[#F59E0B]/10 mb-6 group cursor-pointer">
+                  <div 
+                    className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gradient-to-br from-[#F6E05E]/10 to-[#F59E0B]/10 mb-6 group cursor-pointer"
+                    onMouseEnter={(e) => {
+                      const video = e.currentTarget.querySelector('video');
+                      if (video) video.play();
+                    }}
+                    onMouseLeave={(e) => {
+                      const video = e.currentTarget.querySelector('video');
+                      if (video) {
+                        video.pause();
+                        video.currentTime = 0;
+                      }
+                    }}
+                  >
                     {/* Video Element */}
                     <video 
                       className="absolute inset-0 w-full h-full object-cover rounded-2xl"
                       muted
                       loop
                       playsInline
-                      onMouseEnter={(e) => e.currentTarget.play()}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.pause();
-                        e.currentTarget.currentTime = 0;
-                      }}
                     >
                       <source src="/images/3bff4339-9711-438d-9995-952e23d2b626.mp4" type="video/mp4" />
                     </video>
