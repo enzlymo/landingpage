@@ -138,7 +138,7 @@ export default function Page() {
                   size="sm" 
                     className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-semibold text-sm px-6 shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                    Start Creating Free
+                    Login
                 </Button>
                 </Link>
               </div>
@@ -396,11 +396,11 @@ export default function Page() {
             {/* Video Showcase Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
               
-              {/* Avatar Marketing Video */}
+              {/* Avatar Marketing */}
               <div className="group relative">
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 border border-gray-700 hover:border-[#F4D03F]/50 transition-all duration-500 hover:scale-105">
-                  <div className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gradient-to-br from-[#F4D03F]/10 to-[#F1C40F]/10 mb-6">
-                    {/* Video Preview */}
+                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 border border-gray-700 hover:border-[#F6E05E]/50 transition-all duration-500 hover:scale-105">
+                  <div className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gradient-to-br from-[#F6E05E]/10 to-[#F59E0B]/10 mb-6">
+                    {/* Static Preview */}
                     <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-600/20"></div>
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="bg-white/90 backdrop-blur-sm rounded-full p-6 shadow-2xl group-hover:scale-110 transition-transform duration-300">
@@ -409,7 +409,7 @@ export default function Page() {
                     </div>
                     
                     {/* Floating UI Elements */}
-                    <div className="absolute top-4 left-4 bg-[#F4D03F] rounded-full px-3 py-1">
+                    <div className="absolute top-4 left-4 bg-[#F6E05E] rounded-full px-3 py-1">
                       <span className="text-xs font-bold text-gray-900">AI Avatar</span>
                     </div>
                     <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg px-2 py-1">
@@ -435,8 +435,8 @@ export default function Page() {
 
               {/* Product Showcase Video */}
               <div className="group relative">
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 border border-gray-700 hover:border-[#F4D03F]/50 transition-all duration-500 hover:scale-105">
-                  <div className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gradient-to-br from-[#F4D03F]/10 to-[#F1C40F]/10 mb-6 group cursor-pointer">
+                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 border border-gray-700 hover:border-[#F6E05E]/50 transition-all duration-500 hover:scale-105">
+                  <div className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gradient-to-br from-[#F6E05E]/10 to-[#F59E0B]/10 mb-6 group cursor-pointer">
                     {/* Video Element */}
                     <video 
                       className="absolute inset-0 w-full h-full object-cover rounded-2xl"
@@ -490,8 +490,8 @@ export default function Page() {
 
               {/* Character Transformation */}
               <div className="group relative">
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 border border-gray-700 hover:border-[#F4D03F]/50 transition-all duration-500 hover:scale-105">
-                  <div className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gradient-to-br from-[#F4D03F]/10 to-[#F1C40F]/10 mb-6">
+                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 border border-gray-700 hover:border-[#F6E05E]/50 transition-all duration-500 hover:scale-105">
+                  <div className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gradient-to-br from-[#F6E05E]/10 to-[#F59E0B]/10 mb-6">
                     {/* Video Preview */}
                     <div className="absolute inset-0 bg-gradient-to-br from-pink-600/20 to-purple-600/20"></div>
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -554,47 +554,15 @@ export default function Page() {
               {/* Avatar Marketing Interface */}
               <div className="group relative">
                 <div className="bg-[#0F1419] rounded-3xl p-8 shadow-2xl border border-[#2D3748] hover:border-[#F6E05E]/50 hover:shadow-3xl transition-all duration-700 hover:scale-105">
-                  {/* Interface Preview Video */}
-                  <div className="relative aspect-[4/3] bg-gradient-to-br from-[#2D3748] to-[#1A202C] rounded-2xl overflow-hidden mb-6 border-2 border-[#2D3748] group cursor-pointer">
-                    {/* Video Element */}
-                    <video 
-                      className="absolute inset-0 w-full h-full object-cover rounded-xl"
-                      muted
-                      loop
-                      playsInline
-                      onMouseEnter={(e) => e.currentTarget.play()}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.pause();
-                        e.currentTarget.currentTime = 0;
-                      }}
-                    >
-                      <source src="/images/3bff4339-9711-438d-9995-952e23d2b626.mp4" type="video/mp4" />
-                    </video>
-                    
-                    {/* Hover Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    
-                    {/* Play Indicator */}
-                    <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-sm rounded-full px-3 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <span className="text-xs text-white font-medium flex items-center gap-1">
-                        <div className="w-2 h-2 bg-[#10B981] rounded-full animate-pulse"></div>
-                        Playing
-                      </span>
-                    </div>
-                    
-                    {/* Video Badge */}
-                    <div className="absolute top-4 left-4 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-full px-3 py-1">
-                      <span className="text-xs font-bold text-[#111827] flex items-center gap-1">
-                        <Video className="w-3 h-3" />
-                        AI Avatar
-                      </span>
-                    </div>
-                    
-                    {/* Bottom Info */}
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <div className="bg-black/60 backdrop-blur-sm rounded-lg px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <div className="text-xs text-white font-medium">Marketing Video</div>
-                        <div className="text-xs text-[#F6E05E]">Hover to preview</div>
+                  {/* Interface Preview */}
+                  <div className="relative aspect-[4/3] bg-gradient-to-br from-[#2D3748] to-[#1A202C] rounded-2xl overflow-hidden mb-6 border-2 border-[#2D3748]">
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                          <Video className="w-8 h-8 text-[#111827]" />
+                        </div>
+                        <div className="text-sm text-[#F7FAFC] font-medium">Avatar Marketing Interface</div>
+                        <div className="text-xs text-[#A0AEC0]">AI-powered presenter creation</div>
                       </div>
                     </div>
                   </div>

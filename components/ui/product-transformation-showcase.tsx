@@ -14,6 +14,7 @@ export function ProductTransformationShowcase({ className = '' }: Transformation
   const [isTransforming, setIsTransforming] = useState(false)
   const [showResults, setShowResults] = useState(false)
   const [isHovering, setIsHovering] = useState(false)
+  const videoRef = useRef<HTMLVideoElement>(null)
 
   const handleTransform = () => {
     setIsTransforming(true)
@@ -22,6 +23,12 @@ export function ProductTransformationShowcase({ className = '' }: Transformation
     setTimeout(() => {
       setShowResults(true)
       setIsTransforming(false)
+      // Auto-play the video when results show
+      setTimeout(() => {
+        if (videoRef.current) {
+          videoRef.current.play()
+        }
+      }, 500)
     }, 2000)
   }
 
@@ -215,16 +222,31 @@ export function ProductTransformationShowcase({ className = '' }: Transformation
                   
                   {/* Phone Ratio Video Container */}
                   <div className="relative aspect-[9/16] rounded-xl bg-gradient-to-br from-[#1A202C] to-[#111827] flex items-center justify-center overflow-hidden max-w-[200px] mx-auto">
-                    {/* Animated Background */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#F6E05E]/10 to-[#F59E0B]/10"></div>
+                    {/* Video Element */}
+                    <video 
+                      ref={videoRef}
+                      className="absolute inset-0 w-full h-full object-cover rounded-xl"
+                      muted
+                      loop
+                      playsInline
+                      onMouseEnter={(e) => e.currentTarget.play()}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.pause();
+                        e.currentTarget.currentTime = 0;
+                      }}
+                    >
+                      <source src="/images/3bff4339-9711-438d-9995-952e23d2b626.mp4" type="video/mp4" />
+                    </video>
                     
-                    {/* Play Button */}
-                    <div className={`relative z-10 transition-all duration-500 ${
-                      isHovering ? 'scale-110' : 'scale-100'
-                    }`}>
-                      <div className="bg-white/95 backdrop-blur-sm rounded-full p-5 shadow-2xl">
-                        <Play className="w-8 h-8 text-gray-900 ml-0.5" />
-                      </div>
+                    {/* Hover Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    {/* Play Indicator */}
+                    <div className="absolute bottom-2 left-2 bg-black/60 backdrop-blur-sm rounded-full px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <span className="text-xs text-white font-medium flex items-center gap-1">
+                        <div className="w-1.5 h-1.5 bg-[#10B981] rounded-full animate-pulse"></div>
+                        Playing
+                      </span>
                     </div>
                     
                     {/* Floating Elements */}

@@ -115,7 +115,7 @@ export const metadata: Metadata = {
   // Icons and Manifest
   icons: {
     icon: [
-      { url: '/favicon.ico' },
+      { url: '/favicon.ico', sizes: '32x32' },
       { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
       { url: '/favicon.svg', type: 'image/svg+xml' },
     ],
@@ -275,8 +275,8 @@ export default function RootLayout({
         />
         
         {/* Additional Meta Tags */}
-        <meta name="theme-color" content="#F4D03F" />
-        <meta name="msapplication-TileColor" content="#F4D03F" />
+        <meta name="theme-color" content="#F6E05E" />
+        <meta name="msapplication-TileColor" content="#F6E05E" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
         
         {/* Preconnect to external domains for performance */}
