@@ -119,9 +119,12 @@ export default function Page() {
                 <Link href="https://app.lymo.me">
                   <Button 
                     size="sm" 
-                    className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-semibold text-sm px-6 shadow-lg hover:shadow-xl transition-all duration-300"
+                    className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-semibold text-sm px-6 shadow-lg hover:shadow-xl transition-all duration-300 relative"
                   >
-                    {t.nav.signIn}
+                    Try Free Today
+                    <div className="absolute -top-1 -right-1 bg-[#10B981] text-white text-xs font-bold px-1.5 py-0.5 rounded-full animate-pulse">
+                      FREE
+                    </div>
                   </Button>
                 </Link>
               </div>
@@ -198,7 +201,7 @@ export default function Page() {
                   
                   <p className="text-lg lg:text-xl text-[#A0AEC0] leading-relaxed max-w-2xl">
                     Transform any product photo into professional videos, ads, and campaigns. 
-                    <span className="text-[#F7FAFC] font-semibold"> Join the AI revolution</span> that&apos;s changing content creation forever.
+                    <span className="text-[#F7FAFC] font-semibold"> Start your free trial today</span> and join the AI revolution.
                   </p>
                 </div>
 
@@ -206,9 +209,12 @@ export default function Page() {
                 <div className="space-y-4">
                   <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
                     <Link href="https://app.lymo.me">
-                      <Button className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-bold text-lg px-8 py-6 rounded-2xl shadow-2xl hover:shadow-[#F6E05E]/30 transition-all duration-300 transform hover:scale-105 group">
+                      <Button className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-bold text-lg px-8 py-6 rounded-2xl shadow-2xl hover:shadow-[#F6E05E]/30 transition-all duration-300 transform hover:scale-105 group relative">
                         <Sparkles className="w-5 h-5 mr-3 group-hover:rotate-12 transition-transform" />
-                        Start Creating Free
+                        Try Free Today
+                        <div className="absolute -top-2 -right-2 bg-[#10B981] text-white text-xs font-bold px-2 py-1 rounded-full animate-pulse">
+                          FREE
+                        </div>
                       </Button>
                     </Link>
                     <Button 
@@ -220,15 +226,31 @@ export default function Page() {
                     </Button>
                   </div>
 
-                  {/* Social Proof - More Compact */}
-                  <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 pt-2">
-                    <div className="flex items-center gap-2 text-sm text-[#A0AEC0]">
-                      <CheckCircle className="w-4 h-4 text-[#10B981]" />
-                      <span>No credit card required</span>
+                  {/* Enhanced Free Trial Messaging */}
+                  <div className="bg-[#0F1419]/60 backdrop-blur-sm border border-[#2D3748] rounded-2xl p-4 max-w-lg">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-8 h-8 bg-[#10B981] rounded-full flex items-center justify-center">
+                        <CheckCircle className="w-5 h-5 text-white" />
+                      </div>
+                      <span className="text-[#F7FAFC] font-semibold text-lg">Start Your Free Account Today</span>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-[#A0AEC0]">
-                      <CheckCircle className="w-4 h-4 text-[#10B981]" />
-                      <span>14-day free trial</span>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                      <div className="flex items-center gap-2 text-[#A0AEC0]">
+                        <CheckCircle className="w-4 h-4 text-[#10B981]" />
+                        <span>No credit card required</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-[#A0AEC0]">
+                        <CheckCircle className="w-4 h-4 text-[#10B981]" />
+                        <span>14-day free trial</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-[#A0AEC0]">
+                        <CheckCircle className="w-4 h-4 text-[#10B981]" />
+                        <span>Cancel anytime</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-[#A0AEC0]">
+                        <CheckCircle className="w-4 h-4 text-[#10B981]" />
+                        <span>Instant access</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -887,6 +909,30 @@ export default function Page() {
                 </div>
               ))}
             </div>
+            
+            {/* Free Trial CTA within How It Works */}
+            <div className="text-center mt-16">
+              <div className="bg-gradient-to-r from-[#0F1419] via-[#1A202C] to-[#0F1419] border border-[#2D3748] rounded-3xl p-8 max-w-4xl mx-auto">
+                <div className="flex items-center justify-center gap-3 mb-4">
+                  <div className="w-3 h-3 bg-[#10B981] rounded-full animate-pulse"></div>
+                  <span className="text-[#10B981] font-semibold text-sm uppercase tracking-wide">Free Account Available</span>
+                  <div className="w-3 h-3 bg-[#10B981] rounded-full animate-pulse"></div>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold text-[#F7FAFC] mb-4">
+                  Ready to create your first AI video?
+                </h3>
+                <p className="text-[#A0AEC0] mb-6 max-w-2xl mx-auto">
+                  Join thousands of creators who started with a free account. No credit card required, instant access to all features.
+                </p>
+                <Link href="https://app.lymo.me">
+                  <Button className="bg-gradient-to-r from-[#10B981] to-[#60A5FA] hover:from-[#60A5FA] hover:to-[#10B981] text-white font-bold text-lg px-10 py-4 rounded-2xl shadow-2xl hover:shadow-[#10B981]/30 transition-all duration-300 transform hover:scale-105 group">
+                    <Sparkles className="w-5 h-5 mr-3 group-hover:rotate-12 transition-transform" />
+                    Create Free Account
+                    <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </Link>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -902,21 +948,34 @@ export default function Page() {
           
           <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
             <div>
+              {/* Free Trial Badge */}
+              <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+                <div className="w-2 h-2 bg-[#10B981] rounded-full animate-pulse"></div>
+                <span className="text-[#111827] font-semibold text-sm">FREE TRIAL AVAILABLE</span>
+                <div className="w-2 h-2 bg-[#10B981] rounded-full animate-pulse"></div>
+              </div>
+              
               <h2 className="text-3xl md:text-4xl font-light text-[#111827] mb-6">
-                Ready to transform your
-                <span className="block font-medium text-[#0F1419]">content creation?</span>
+                Start your free trial
+                <span className="block font-medium text-[#0F1419]">and create your first AI video today</span>
               </h2>
               <p className="text-lg text-[#111827]/80 mb-8 max-w-2xl mx-auto">
-                Join thousands of creators who are already making high-converting videos with AI
+                Join thousands of creators who started with a free account. No credit card required, cancel anytime.
               </p>
-              <div className="flex justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Link href="https://app.lymo.me">
-                  <Button className="bg-[#0F1419] hover:bg-[#1A202C] text-white font-bold text-xl px-12 py-6 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 group">
+                  <Button className="bg-[#0F1419] hover:bg-[#1A202C] text-white font-bold text-xl px-12 py-6 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 group relative">
                     <Sparkles className="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform" />
-                    Start Creating Now
+                    Try Free Today
                     <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" />
+                    <div className="absolute -top-2 -right-2 bg-[#10B981] text-white text-xs font-bold px-2 py-1 rounded-full animate-bounce">
+                      FREE
+                    </div>
                   </Button>
                 </Link>
+                <div className="text-[#111827]/70 text-sm">
+                  ✓ 14-day free trial • ✓ No credit card • ✓ Instant access
+                </div>
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@ export const translations = {
       features: "Features",
       howItWorks: "How It Works", 
       pricing: "Pricing",
-      signIn: "Launch App"
+      signIn: "Try Free Today"
     },
 
     // Sale Banner
@@ -145,7 +145,7 @@ export const translations = {
       features: "Funktioner",
       howItWorks: "Så fungerar det",
       pricing: "Priser", 
-      signIn: "Starta App"
+      signIn: "Testa Gratis"
     },
 
     // Sale Banner
