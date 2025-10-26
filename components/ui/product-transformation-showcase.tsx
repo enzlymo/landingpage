@@ -212,6 +212,8 @@ export function ProductTransformationShowcase({ className = '' }: Transformation
                 onMouseEnter={() => {
                   setIsHovering(true);
                   if (videoRef.current) {
+                    videoRef.current.volume = 0.63;
+                    videoRef.current.muted = false;
                     videoRef.current.play();
                   }
                 }}
@@ -220,6 +222,7 @@ export function ProductTransformationShowcase({ className = '' }: Transformation
                   if (videoRef.current) {
                     videoRef.current.pause();
                     videoRef.current.currentTime = 0;
+                    videoRef.current.muted = true;
                   }
                 }}
               >

@@ -440,13 +440,18 @@ export default function Page() {
                     className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gradient-to-br from-[#F6E05E]/10 to-[#F59E0B]/10 mb-6 group cursor-pointer"
                     onMouseEnter={(e) => {
                       const video = e.currentTarget.querySelector('video');
-                      if (video) video.play();
+                      if (video) {
+                        video.volume = 0.63;
+                        video.muted = false;
+                        video.play();
+                      }
                     }}
                     onMouseLeave={(e) => {
                       const video = e.currentTarget.querySelector('video');
                       if (video) {
                         video.pause();
                         video.currentTime = 0;
+                        video.muted = true;
                       }
                     }}
                   >
