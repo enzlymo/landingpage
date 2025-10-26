@@ -473,7 +473,7 @@ export default function Page() {
                       <span className="text-xs font-bold text-white">Product Demo</span>
               </div>
                     <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg px-2 py-1">
-                      <span className="text-xs text-white">01:20</span>
+                      <span className="text-xs text-white">00:22</span>
             </div>
                     <div className="absolute bottom-4 right-4 bg-green-500 rounded-full px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <span className="text-xs font-bold text-white">VIRAL</span>
