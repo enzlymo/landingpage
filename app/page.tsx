@@ -394,19 +394,44 @@ export default function Page() {
             </div>
 
             {/* Video Showcase Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
               
               {/* Avatar Marketing */}
               <div className="group relative">
                 <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 border border-gray-700 hover:border-[#F6E05E]/50 transition-all duration-500 hover:scale-105">
-                  <div className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gradient-to-br from-[#F6E05E]/10 to-[#F59E0B]/10 mb-6">
-                    {/* Static Preview */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-600/20"></div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="bg-white/90 backdrop-blur-sm rounded-full p-6 shadow-2xl group-hover:scale-110 transition-transform duration-300">
-                        <Play className="w-8 h-8 text-gray-900 ml-1" />
-                      </div>
-                    </div>
+                  <div 
+                    className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gradient-to-br from-[#F6E05E]/10 to-[#F59E0B]/10 mb-6 group cursor-pointer"
+                    onMouseEnter={(e) => {
+                      const video = e.currentTarget.querySelector('video');
+                      if (video) {
+                        video.volume = 0.63;
+                        video.muted = false;
+                        video.play();
+                      }
+                    }}
+                    onMouseLeave={(e) => {
+                      const video = e.currentTarget.querySelector('video');
+                      if (video) {
+                        video.pause();
+                        video.currentTime = 0;
+                        video.muted = true;
+                      }
+                    }}
+                  >
+                    {/* Video Element */}
+                    <video 
+                      className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+                      muted
+                      loop
+                      playsInline
+                      poster="/images/Skärmbild 2025-10-27 224821.png"
+                      preload="metadata"
+                    >
+                      <source src="/images/bb97578d-a267-45ea-bd5b-1c0be429465b.mp4" type="video/mp4" />
+                    </video>
+                    
+                    {/* Hover Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     
                     {/* Floating UI Elements */}
                     <div className="absolute top-4 left-4 bg-[#F6E05E] rounded-full px-3 py-1">
@@ -418,20 +443,28 @@ export default function Page() {
                     <div className="absolute bottom-4 left-4 bg-black/50 backdrop-blur-sm rounded-lg px-2 py-1">
                       <span className="text-xs text-white">Marketing Video</span>
                     </div>
+                    
+                    {/* Play Indicator */}
+                    <div className="absolute bottom-4 right-4 bg-black/60 backdrop-blur-sm rounded-full px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <span className="text-xs text-white font-medium flex items-center gap-1">
+                        <div className="w-1.5 h-1.5 bg-[#10B981] rounded-full animate-pulse"></div>
+                        Playing
+                      </span>
+                    </div>
                   </div>
                   
-                      <div className="text-center">
+                  <div className="text-center">
                     <h3 className="text-xl font-bold mb-2 text-white">Avatar Marketing</h3>
                     <p className="text-gray-400 text-sm mb-4">
                       AI avatars present your products with realistic human engagement and professional delivery
                     </p>
                     <div className="flex items-center justify-center gap-4 text-xs text-gray-500">
-                      <span>✨ Realistic AI Presenter</span>
+                      <span>✨ Done in minutes</span>
                       <span>🎯 Brand Focused</span>
-                      </div>
                     </div>
                   </div>
                 </div>
+              </div>
 
               {/* Product Showcase Video */}
               <div className="group relative">
@@ -461,7 +494,7 @@ export default function Page() {
                       muted
                       loop
                       playsInline
-                      poster="/images/1.jpg"
+                      poster="/images/Skärmbild 2025-10-27 224722.png"
                       preload="metadata"
                     >
                       <source src="/images/3bff4339-9711-438d-9995-952e23d2b626.mp4" type="video/mp4" />
@@ -491,54 +524,17 @@ export default function Page() {
                   </div>
                   
                   <div className="text-center">
-                    <h3 className="text-xl font-bold mb-2 text-white">Product Showcase</h3>
+                    <h3 className="text-xl font-bold mb-2 text-white">Cosmetic</h3>
                     <p className="text-gray-400 text-sm mb-4">
-                      Transform any product into stunning video content perfect for social media and advertising
+                      Transform any product-url into stunning video content
                     </p>
                     <div className="flex items-center justify-center gap-4 text-xs text-gray-500">
-                      <span>📱 Social Ready</span>
-                      <span>🚀 Viral Potential</span>
+                      <span>🚀 Viral</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Character Transformation */}
-              <div className="group relative">
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 border border-gray-700 hover:border-[#F6E05E]/50 transition-all duration-500 hover:scale-105">
-                  <div className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gradient-to-br from-[#F6E05E]/10 to-[#F59E0B]/10 mb-6">
-                    {/* Video Preview */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-pink-600/20 to-purple-600/20"></div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="bg-white/90 backdrop-blur-sm rounded-full p-6 shadow-2xl group-hover:scale-110 transition-transform duration-300">
-                        <Play className="w-8 h-8 text-gray-900 ml-1" />
-                      </div>
-                    </div>
-                    
-                    {/* Character Elements */}
-                    <div className="absolute top-4 left-4 bg-pink-500 rounded-full px-3 py-1">
-                      <span className="text-xs font-bold text-white">AI Transform</span>
-                    </div>
-                    <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg px-2 py-1">
-                      <span className="text-xs text-white">00:30</span>
-                    </div>
-                    <div className="absolute bottom-4 left-4 bg-purple-500 rounded-full px-2 py-1">
-                      <span className="text-xs font-bold text-white">TRENDING</span>
-                    </div>
-                  </div>
-                  
-                  <div className="text-center">
-                    <h3 className="text-xl font-bold mb-2 text-white">Character Swap</h3>
-                    <p className="text-gray-400 text-sm mb-4">
-                      Replace anyone in videos with custom characters while maintaining natural movement and expressions
-                    </p>
-                    <div className="flex items-center justify-center gap-4 text-xs text-gray-500">
-                      <span>🎭 Face Swap</span>
-                      <span>⚡ Instant Results</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
 
           </div>
@@ -583,9 +579,9 @@ export default function Page() {
                   </div>
 
                   <div className="text-center">
-                    <h3 className="text-xl font-bold text-[#F7FAFC] mb-2">Avatar Marketing</h3>
+                    <h3 className="text-xl font-bold text-[#F7FAFC] mb-2">AI-UGC</h3>
                     <p className="text-[#A0AEC0] text-sm">
-                      AI avatars present your products with realistic human engagement and professional delivery
+                      AI avatars present your products with realistic human engagement and product photos from your product-url!
                     </p>
                   </div>
                 </div>

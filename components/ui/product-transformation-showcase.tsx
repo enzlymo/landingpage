@@ -243,7 +243,7 @@ export function ProductTransformationShowcase({ className = '' }: Transformation
                       muted
                       loop
                       playsInline
-                      poster="/images/2.jpg"
+                      poster="/images/Skärmbild 2025-10-27 224722.png"
                       preload="metadata"
                     >
                       <source src="/images/3bff4339-9711-438d-9995-952e23d2b626.mp4" type="video/mp4" />
