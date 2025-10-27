@@ -19,6 +19,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://lymo.me'),
   // Basic Meta Tags
   title: {
     default: "Lymo AI - Create Winning AI Videos in Seconds | #1 AI Video Generator",
@@ -112,31 +113,14 @@ export const metadata: Metadata = {
     },
   },
   
-  // Icons and Manifest
+  // Icons and Manifest (Next.js will auto-detect app/favicon.ico, app/icon.png, app/apple-icon.png)
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: '32x32' },
-      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
       { url: '/web-app-manifest-192x192.png', sizes: '192x192', type: 'image/png' },
       { url: '/web-app-manifest-512x512.png', sizes: '512x512', type: 'image/png' },
     ],
-    apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
-    ],
-    other: [
-      { rel: 'icon', url: '/favicon.ico', type: 'image/x-icon' },
-      { rel: 'shortcut icon', url: '/favicon.ico', type: 'image/x-icon' },
-    ],
   },
   manifest: '/manifest.json',
-  
-  // Viewport
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-    userScalable: true,
-  },
   
   // Alternate Languages (if you plan to support multiple languages)
   alternates: {
@@ -155,6 +139,13 @@ export const metadata: Metadata = {
       should_fallback: true,
     },
   },
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 };
 
 export default function RootLayout({
@@ -294,15 +285,9 @@ export default function RootLayout({
         {/* Canonical URL */}
         <link rel="canonical" href="https://lymo.me" />
         
-        {/* Explicit Favicon Links */}
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-96x96.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-96x96.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+        {/* Additional PWA Icons (Next.js auto-handles app/favicon.ico, app/icon.png, app/apple-icon.png) */}
         <link rel="icon" type="image/png" sizes="192x192" href="/web-app-manifest-192x192.png" />
         <link rel="icon" type="image/png" sizes="512x512" href="/web-app-manifest-512x512.png" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
       </head>
       <body className={`${inter.className} ${sora.variable} ${inter.variable} bg-background text-foreground font-sans`}>
         <GoogleAnalytics />

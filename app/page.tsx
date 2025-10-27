@@ -461,6 +461,8 @@ export default function Page() {
                       muted
                       loop
                       playsInline
+                      poster="/images/1.jpg"
+                      preload="metadata"
                     >
                       <source src="/images/3bff4339-9711-438d-9995-952e23d2b626.mp4" type="video/mp4" />
                     </video>
