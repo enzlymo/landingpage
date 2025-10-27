@@ -273,7 +273,7 @@ export function ProductTransformationShowcase({ className = '' }: Transformation
                   
                   <div className="mt-3 text-center bg-[#111827] rounded-lg py-2 border border-[#2D3748]">
                     <div className="text-sm font-bold text-[#F7FAFC]">Social Ready Video</div>
-                    <div className="text-xs text-[#F59E0B] font-semibold">Coming Soon</div>
+                    <div className="text-xs text-[#F59E0B] font-semibold">Chloe AI-UGC</div>
                   </div>
                 </div>
               </div>

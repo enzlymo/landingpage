@@ -394,13 +394,13 @@ export default function Page() {
             </div>
 
             {/* Video Showcase Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto">
               
               {/* Avatar Marketing */}
               <div className="group relative">
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 border border-gray-700 hover:border-[#F6E05E]/50 transition-all duration-500 hover:scale-105">
+                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-4 border border-gray-700 hover:border-[#F6E05E]/50 transition-all duration-300 hover:scale-102">
                   <div 
-                    className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gradient-to-br from-[#F6E05E]/10 to-[#F59E0B]/10 mb-6 group cursor-pointer"
+                    className="relative aspect-[9/16] rounded-xl overflow-hidden bg-gradient-to-br from-[#F6E05E]/10 to-[#F59E0B]/10 mb-4 group cursor-pointer"
                     onMouseEnter={(e) => {
                       const video = e.currentTarget.querySelector('video');
                       if (video) {
@@ -420,7 +420,7 @@ export default function Page() {
                   >
                     {/* Video Element */}
                     <video 
-                      className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+                      className="absolute inset-0 w-full h-full object-cover rounded-xl"
                       muted
                       loop
                       playsInline
@@ -434,20 +434,17 @@ export default function Page() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     
                     {/* Floating UI Elements */}
-                    <div className="absolute top-4 left-4 bg-[#F6E05E] rounded-full px-3 py-1">
+                    <div className="absolute top-2 left-2 bg-[#F6E05E] rounded-full px-2 py-1">
                       <span className="text-xs font-bold text-gray-900">AI Avatar</span>
                     </div>
-                    <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg px-2 py-1">
+                    <div className="absolute top-2 right-2 bg-black/50 backdrop-blur-sm rounded-md px-2 py-1">
                       <span className="text-xs text-white">00:45</span>
-                    </div>
-                    <div className="absolute bottom-4 left-4 bg-black/50 backdrop-blur-sm rounded-lg px-2 py-1">
-                      <span className="text-xs text-white">Marketing Video</span>
                     </div>
                     
                     {/* Play Indicator */}
-                    <div className="absolute bottom-4 right-4 bg-black/60 backdrop-blur-sm rounded-full px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute bottom-2 right-2 bg-black/60 backdrop-blur-sm rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <span className="text-xs text-white font-medium flex items-center gap-1">
-                        <div className="w-1.5 h-1.5 bg-[#10B981] rounded-full animate-pulse"></div>
+                        <div className="w-1 h-1 bg-[#10B981] rounded-full animate-pulse"></div>
                         Playing
                       </span>
                     </div>
@@ -468,9 +465,9 @@ export default function Page() {
 
               {/* Product Showcase Video */}
               <div className="group relative">
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 border border-gray-700 hover:border-[#F6E05E]/50 transition-all duration-500 hover:scale-105">
+                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-4 border border-gray-700 hover:border-[#F6E05E]/50 transition-all duration-300 hover:scale-102">
                   <div 
-                    className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-gradient-to-br from-[#F6E05E]/10 to-[#F59E0B]/10 mb-6 group cursor-pointer"
+                    className="relative aspect-[9/16] rounded-xl overflow-hidden bg-gradient-to-br from-[#F6E05E]/10 to-[#F59E0B]/10 mb-4 group cursor-pointer"
                     onMouseEnter={(e) => {
                       const video = e.currentTarget.querySelector('video');
                       if (video) {
@@ -490,7 +487,7 @@ export default function Page() {
                   >
                     {/* Video Element */}
                     <video 
-                      className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+                      className="absolute inset-0 w-full h-full object-cover rounded-xl"
                       muted
                       loop
                       playsInline
@@ -504,27 +501,24 @@ export default function Page() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     
                     {/* Product Elements */}
-                    <div className="absolute top-4 left-4 bg-orange-500 rounded-full px-3 py-1">
+                    <div className="absolute top-2 left-2 bg-orange-500 rounded-full px-2 py-1">
                       <span className="text-xs font-bold text-white">Product Demo</span>
-              </div>
-                    <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg px-2 py-1">
+                    </div>
+                    <div className="absolute top-2 right-2 bg-black/50 backdrop-blur-sm rounded-md px-2 py-1">
                       <span className="text-xs text-white">00:22</span>
-            </div>
-                    <div className="absolute bottom-4 right-4 bg-green-500 rounded-full px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <span className="text-xs font-bold text-white">VIRAL</span>
                     </div>
                     
                     {/* Play Indicator */}
-                    <div className="absolute bottom-4 left-4 bg-black/60 backdrop-blur-sm rounded-full px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute bottom-2 right-2 bg-black/60 backdrop-blur-sm rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <span className="text-xs text-white font-medium flex items-center gap-1">
-                        <div className="w-1.5 h-1.5 bg-[#10B981] rounded-full animate-pulse"></div>
+                        <div className="w-1 h-1 bg-[#10B981] rounded-full animate-pulse"></div>
                         Playing
                       </span>
                     </div>
                   </div>
                   
                   <div className="text-center">
-                    <h3 className="text-xl font-bold mb-2 text-white">Cosmetic</h3>
+                    <h3 className="text-xl font-bold mb-2 text-white">Chloe AI-UGC</h3>
                     <p className="text-gray-400 text-sm mb-4">
                       Transform any product-url into stunning video content
                     </p>
@@ -544,7 +538,7 @@ export default function Page() {
         <ProductTransformationShowcase />
 
         {/* AI Video Creation Interface Showcase */}
-        <section className="py-24 bg-gradient-to-br from-[#1A202C] via-[#2D3748] to-[#1A202C]">
+        <section className="py-24 bg-gradient-to-br from-[#1A202C] via-[#2D3748] to-[#1A202C] hidden">
           <div className="max-w-7xl mx-auto px-6">
             {/* Header */}
             <div className="text-center mb-16">
@@ -712,8 +706,8 @@ export default function Page() {
                 </h3>
                 
                 <p className="text-[#A0AEC0] text-sm leading-relaxed mb-6">
-                  {activeContentType === 'pictures' && 'Simply drag and drop your product images or existing photos. Our AI will analyze the style and content.'}
-                  {activeContentType === 'videos' && 'Instantly pull in your logo, colors, fonts and style with one click, making every video 100% on-brand.'}
+                  {activeContentType === 'pictures' && 'Simply put your product-url existing photos. Our AI will analyze the style and content.'}
+                  {activeContentType === 'videos' && 'Instantly pull in your colors, fonts and style with one product-url, making every video 100% on-brand.'}
                   {activeContentType === 'text' && 'Tell us what kind of content you want to create. Be as specific or general as you like.'}
                 </p>
 
@@ -752,8 +746,8 @@ export default function Page() {
                 </h3>
                 
                 <p className="text-[#A0AEC0] text-sm leading-relaxed mb-6">
-                  {activeContentType === 'pictures' && 'Pick the perfect style and format for your campaign. Our AI will adapt your images into any style you need.'}
-                  {activeContentType === 'videos' && 'Pick the perfect format for your campaign and our AI will adapt your brand into any video style you need.'}
+                  {activeContentType === 'pictures' && 'Pick the perfect style and format for your campaign. Put in any text you want to be visible on the image.'}
+                  {activeContentType === 'videos' && 'Pick the perfect AI-UGC creator and format for your campaign, our AI will adapt your brand.'}
                   {activeContentType === 'text' && 'Choose from various content formats. Our AI will structure your ideas into the perfect format.'}
                 </p>
 
@@ -821,65 +815,6 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Features Section */}
-        <section id="features" className="py-24 bg-gradient-to-br from-[#1A202C] via-[#0F1419] to-[#161B22]">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-light text-[#F7FAFC] mb-4">
-                Everything you need to create
-                <span className="block font-medium bg-gradient-to-r from-[#F6E05E] via-[#60A5FA] to-[#A78BFA] bg-clip-text text-transparent">
-                  converting video content
-                </span>
-              </h2>
-              <p className="text-lg text-[#A0AEC0] max-w-2xl mx-auto">
-                Professional video creation tools powered by advanced AI technology
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                {
-                  icon: Zap,
-                  title: "Lightning Fast",
-                  description: "Generate videos in under 60 seconds",
-                  gradient: "from-[#F6E05E] to-[#F59E0B]"
-                },
-                {
-                  icon: Target,
-                  title: "AI Optimization",
-                  description: "Smart algorithms for maximum engagement",
-                  gradient: "from-[#60A5FA] to-[#A78BFA]"
-                },
-                {
-                  icon: Users,
-                  title: "Team Collaboration",
-                  description: "Real-time collaboration tools",
-                  gradient: "from-[#A78BFA] to-[#F6E05E]"
-                },
-                {
-                  icon: BarChart3,
-                  title: "Analytics",
-                  description: "Detailed performance insights",
-                  gradient: "from-[#10B981] to-[#60A5FA]"
-                }
-              ].map((feature, index) => (
-                <div key={index} className="bg-[#0F1419] rounded-2xl p-6 border border-[#2D3748] h-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-[#F6E05E]/30 group">
-                  <div className="mb-4">
-                    <div className={`w-12 h-12 bg-gradient-to-br ${feature.gradient} rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                      <feature.icon className="h-6 w-6 text-[#111827]" />
-                    </div>
-                  </div>
-                  <h3 className="text-lg font-semibold text-[#F7FAFC] mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-[#A0AEC0] text-sm leading-relaxed">
-                    {feature.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* How It Works */}
         <section id="how-it-works" className="py-24 bg-gradient-to-br from-[#0F1419] via-[#161B22] to-[#1A202C]">
@@ -899,7 +834,7 @@ export default function Page() {
                 {
                   step: "01",
                   title: "Enter Your Content",
-                  description: "Simply describe your video concept or paste your marketing copy",
+                  description: "Simply put in a product-url, choose music, ugc-creator, format and voice.",
                   gradient: "from-[#F6E05E] to-[#F59E0B]"
                 },
                 {
@@ -1019,66 +954,41 @@ export default function Page() {
                 </div>
               </div>
 
-              {/* Quick Response Card */}
+              {/* Ready to Get Started Card */}
               <div className="group">
-                <div className="bg-[#0F1419]/90 backdrop-blur-xl border border-[#2D3748] rounded-3xl p-8 shadow-2xl hover:shadow-[#60A5FA]/20 transition-all duration-500 hover:scale-105 hover:border-[#60A5FA]/50 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#60A5FA]/5 to-[#A78BFA]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="bg-[#0F1419]/90 backdrop-blur-xl border border-[#2D3748] rounded-3xl p-8 shadow-2xl hover:shadow-[#F6E05E]/20 transition-all duration-500 hover:scale-105 hover:border-[#F6E05E]/50 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#F6E05E]/5 to-[#F59E0B]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   
                   <div className="relative z-10">
-                    <div className="w-16 h-16 bg-gradient-to-r from-[#60A5FA] to-[#A78BFA] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                      <MessageCircle className="w-8 h-8 text-white" />
+                    <div className="w-16 h-16 bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <Sparkles className="w-8 h-8 text-[#111827]" />
                     </div>
                     
-                    <h3 className="text-2xl font-bold text-[#F7FAFC] mb-4">Quick Response</h3>
+                    <h3 className="text-2xl font-bold text-[#F7FAFC] mb-4">Ready to Get Started?</h3>
                     <p className="text-[#A0AEC0] mb-6 leading-relaxed">
-                      Need immediate assistance? Our support team is standing by to help you get started.
+                      Join thousands of creators already using Lymo AI to transform their content strategy.
                     </p>
                     
-                    <div className="space-y-3">
-                      <div className="flex items-center gap-3 text-sm text-[#A0AEC0]">
-                        <Clock className="w-4 h-4 text-[#10B981]" />
-                        <span>Average response: <span className="text-[#F7FAFC] font-semibold">2 hours</span></span>
-                    </div>
-                      <div className="flex items-center gap-3 text-sm text-[#A0AEC0]">
-                        <Users className="w-4 h-4 text-[#60A5FA]" />
-                        <span>Dedicated support team</span>
-                  </div>
-                      <div className="flex items-center gap-3 text-sm text-[#A0AEC0]">
-                        <Shield className="w-4 h-4 text-[#F6E05E]" />
-                        <span>Enterprise-grade security</span>
-                </div>
+                    <div className="flex flex-col gap-3">
+                      <Button className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-bold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                        <Sparkles className="w-4 h-4 mr-2" />
+                        Start Free Trial
+                      </Button>
+                      <a href="mailto:lymoadsai@gmail.com">
+                        <Button 
+                          variant="outline" 
+                          className="w-full border-2 border-[#2D3748] bg-transparent hover:bg-[#1A202C] hover:border-[#F6E05E]/50 text-[#F7FAFC] px-6 py-3 rounded-xl transition-all duration-300"
+                        >
+                          <Mail className="w-4 h-4 mr-2" />
+                          Contact Sales
+                        </Button>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Bottom CTA */}
-            <div className="text-center">
-              <div className="bg-[#0F1419]/90 backdrop-blur-xl border border-[#2D3748] rounded-3xl p-8 max-w-2xl mx-auto shadow-2xl">
-                <h3 className="text-2xl font-bold text-[#F7FAFC] mb-4">
-                  Ready to Get Started?
-                </h3>
-                <p className="text-[#A0AEC0] mb-6">
-                  Join thousands of creators already using Lymo AI to transform their content strategy.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button className="bg-gradient-to-r from-[#F6E05E] to-[#F59E0B] hover:from-[#F59E0B] hover:to-[#F6E05E] text-[#111827] font-bold px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                    <Sparkles className="w-5 h-5 mr-2" />
-                    Start Free Trial
-                  </Button>
-                  <a href="mailto:lymoadsai@gmail.com">
-                    <Button 
-                      variant="outline" 
-                      className="border-2 border-[#2D3748] bg-transparent hover:bg-[#1A202C] hover:border-[#F6E05E]/50 text-[#F7FAFC] px-8 py-4 rounded-2xl transition-all duration-300"
-                    >
-                      <Mail className="w-5 h-5 mr-2" />
-                      Contact Sales
-                    </Button>
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -1093,12 +1003,6 @@ export default function Page() {
           
           <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
             <div>
-              {/* Free Trial Badge */}
-              <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-                <div className="w-2 h-2 bg-[#10B981] rounded-full animate-pulse"></div>
-                <span className="text-[#111827] font-semibold text-sm">FREE TRIAL AVAILABLE</span>
-                <div className="w-2 h-2 bg-[#10B981] rounded-full animate-pulse"></div>
-              </div>
               
               <h2 className="text-3xl md:text-4xl font-light text-[#111827] mb-6">
                 Start your free trial
@@ -1109,13 +1013,10 @@ export default function Page() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Link href="https://app.lymo.me">
-                  <Button className="bg-[#0F1419] hover:bg-[#1A202C] text-white font-bold text-xl px-12 py-6 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 group relative">
+                  <Button className="bg-[#0F1419] hover:bg-[#1A202C] text-white font-bold text-xl px-12 py-6 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 group">
                     <Sparkles className="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform" />
                     Try Free Today
                     <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" />
-                    <div className="absolute -top-2 -right-2 bg-[#10B981] text-white text-xs font-bold px-2 py-1 rounded-full animate-bounce">
-                      FREE
-                    </div>
                   </Button>
                 </Link>
                 <div className="text-[#111827]/70 text-sm">
