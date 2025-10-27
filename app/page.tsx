@@ -32,7 +32,7 @@ export default function Page() {
       <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#F6E05E] via-[#F59E0B] to-[#F6E05E] shadow-lg overflow-hidden">
         {/* Animated background shimmer */}
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse"></div>
-        <div className="max-w-7xl mx-auto px-6 py-2 relative">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 py-1.5 md:py-2 relative">
           <div className="flex items-center justify-center text-center">
             <div className="flex items-center gap-3">
               <div className="w-2 h-2 bg-[#111827] rounded-full animate-bounce"></div>
@@ -46,9 +46,9 @@ export default function Page() {
       </div>
 
       {/* Professional Navigation */}
-      <header className="fixed top-[48px] left-0 right-0 z-40 bg-[#1A202C]/95 backdrop-blur-sm border-b border-[#2D3748] shadow-xl">
+      <header className="fixed top-[40px] md:top-[48px] left-0 right-0 z-40 bg-[#1A202C]/95 backdrop-blur-sm border-b border-[#2D3748] shadow-xl">
         <div className="max-w-7xl mx-auto">
-          <div className="px-6 py-4">
+          <div className="px-4 md:px-6 py-3 md:py-4">
             <div className="flex items-center justify-between">
               <Link href="/" className="flex items-center justify-center">
                 <Image 
@@ -148,9 +148,9 @@ export default function Page() {
       </header>
 
 
-      <main className="flex-grow pt-16">
+      <main className="flex-grow pt-[100px] md:pt-[120px]">
         {/* Premium $100M Startup Hero Section */}
-<section className="relative min-h-[80vh] bg-gradient-to-br from-[#0F1419] via-[#1A202C] to-[#161B22] flex items-center justify-center overflow-hidden">
+<section className="relative min-h-[70vh] md:min-h-[80vh] bg-gradient-to-br from-[#0F1419] via-[#1A202C] to-[#161B22] flex items-center justify-center overflow-hidden">
           {/* Premium Background Effects */}
           <div className="absolute inset-0">
             <div className="absolute top-20 left-20 w-72 h-72 bg-[#F6E05E]/10 rounded-full blur-3xl animate-pulse"></div>
@@ -158,7 +158,7 @@ export default function Page() {
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-[#F6E05E]/5 to-[#A78BFA]/5 rounded-full blur-3xl"></div>
               </div>
               
-          <div className="relative z-10 max-w-7xl mx-auto px-6 py-8">
+          <div className="relative z-10 max-w-7xl mx-auto px-6 py-4 md:py-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               
               {/* Left Content - More Compact */}
