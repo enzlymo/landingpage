@@ -148,9 +148,9 @@ export default function Page() {
       </header>
 
 
-      <main className="flex-grow pt-40">
+      <main className="flex-grow pt-24">
         {/* Premium $100M Startup Hero Section */}
-        <section className="relative min-h-[90vh] bg-gradient-to-br from-[#0F1419] via-[#1A202C] to-[#161B22] flex items-center justify-center overflow-hidden">
+<section className="relative min-h-[80vh] bg-gradient-to-br from-[#0F1419] via-[#1A202C] to-[#161B22] flex items-center justify-center overflow-hidden">
           {/* Premium Background Effects */}
           <div className="absolute inset-0">
             <div className="absolute top-20 left-20 w-72 h-72 bg-[#F6E05E]/10 rounded-full blur-3xl animate-pulse"></div>
@@ -158,7 +158,7 @@ export default function Page() {
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-[#F6E05E]/5 to-[#A78BFA]/5 rounded-full blur-3xl"></div>
               </div>
               
-          <div className="relative z-10 max-w-7xl mx-auto px-6 py-12">
+          <div className="relative z-10 max-w-7xl mx-auto px-6 py-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               
               {/* Left Content - More Compact */}
