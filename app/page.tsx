@@ -1009,7 +1009,7 @@ export default function Page() {
                 <span className="block font-medium text-[#0F1419]">and create your first AI video today</span>
               </h2>
               <p className="text-lg text-[#111827]/80 mb-8 max-w-2xl mx-auto">
-                Join thousands of creators who started with a free account. No credit card required, cancel anytime.
+                The future of marketing is here.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Link href="https://app.lymo.me">
