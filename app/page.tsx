@@ -148,7 +148,7 @@ export default function Page() {
       </header>
 
 
-      <main className="flex-grow pt-24">
+      <main className="flex-grow pt-16">
         {/* Premium $100M Startup Hero Section */}
 <section className="relative min-h-[80vh] bg-gradient-to-br from-[#0F1419] via-[#1A202C] to-[#161B22] flex items-center justify-center overflow-hidden">
           {/* Premium Background Effects */}
@@ -369,12 +369,6 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Premium Scroll Indicator */}
-          <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <div className="w-6 h-10 border-2 border-[#2D3748] rounded-full flex justify-center">
-              <div className="w-1 h-3 bg-[#F6E05E] rounded-full mt-2 animate-pulse"></div>
-            </div>
-          </div>
         </section>
 
         {/* AI Video Generation Showcase */}
