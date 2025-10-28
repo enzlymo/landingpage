@@ -205,13 +205,15 @@ export default function Page() {
                         Start Creating Free
                 </Button>
                     </Link>
-                <Button 
-                  variant="outline" 
-                      className="border-2 border-[#2D3748] bg-[#0F1419]/80 backdrop-blur-sm hover:bg-[#2D3748]/60 hover:border-[#F6E05E]/70 active:bg-[#2D3748]/80 active:text-[#F7FAFC] text-[#F7FAFC] text-lg px-8 py-6 rounded-2xl transition-all duration-300 group"
-                >
-                      <Play className="w-5 h-5 mr-3 group-hover:scale-110 transition-transform" />
-                      Watch Demo
-                </Button>
+                <a href="#ai-video-creation">
+                  <Button 
+                    variant="outline" 
+                        className="border-2 border-[#2D3748] bg-[#0F1419]/80 backdrop-blur-sm hover:bg-[#2D3748]/60 hover:border-[#F6E05E]/70 active:bg-[#2D3748]/80 active:text-[#F7FAFC] text-[#F7FAFC] text-lg px-8 py-6 rounded-2xl transition-all duration-300 group"
+                  >
+                        <Play className="w-5 h-5 mr-3 group-hover:scale-110 transition-transform" />
+                        Watch Demo
+                  </Button>
+                </a>
               </div>
               
                   {/* Enhanced Free Trial Messaging */}
@@ -372,7 +374,7 @@ export default function Page() {
         </section>
 
         {/* AI Video Generation Showcase */}
-        <section className="py-24 bg-gradient-to-br from-[#1A202C] via-[#2D3748] to-[#1A202C] text-white">
+        <section id="ai-video-creation" className="py-24 bg-gradient-to-br from-[#1A202C] via-[#2D3748] to-[#1A202C] text-white">
           <div className="max-w-7xl mx-auto px-6">
             {/* Header */}
             <div className="text-center mb-16">
@@ -460,14 +462,6 @@ export default function Page() {
                       </span>
                     </div>
                     
-                    {/* Mobile Tap Indicator */}
-                    <div className="absolute inset-0 flex items-center justify-center md:hidden">
-                      <div className="bg-black/70 backdrop-blur-sm rounded-full p-3 border border-white/20">
-                        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z"/>
-                        </svg>
-                      </div>
-                    </div>
                   </div>
                   
                   <div className="text-center">
@@ -553,14 +547,6 @@ export default function Page() {
                       </span>
                     </div>
                     
-                    {/* Mobile Tap Indicator */}
-                    <div className="absolute inset-0 flex items-center justify-center md:hidden">
-                      <div className="bg-black/70 backdrop-blur-sm rounded-full p-3 border border-white/20">
-                        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z"/>
-                        </svg>
-                      </div>
-                    </div>
                   </div>
                   
                   <div className="text-center">
