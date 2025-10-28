@@ -210,19 +210,41 @@ export function ProductTransformationShowcase({ className = '' }: Transformation
                   showResults ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'
                 }`}
                 onMouseEnter={() => {
-                  setIsHovering(true);
-                  if (videoRef.current) {
-                    videoRef.current.volume = 0.63;
-                    videoRef.current.muted = false;
-                    videoRef.current.play();
+                  if (window.innerWidth >= 768) {
+                    setIsHovering(true);
+                    if (videoRef.current) {
+                      videoRef.current.volume = 0.63;
+                      videoRef.current.muted = false;
+                      videoRef.current.play().catch(() => {});
+                    }
                   }
                 }}
                 onMouseLeave={() => {
-                  setIsHovering(false);
+                  if (window.innerWidth >= 768) {
+                    setIsHovering(false);
+                    if (videoRef.current) {
+                      videoRef.current.pause();
+                      videoRef.current.currentTime = 0;
+                      videoRef.current.muted = true;
+                    }
+                  }
+                }}
+                onTouchStart={() => {
                   if (videoRef.current) {
-                    videoRef.current.pause();
-                    videoRef.current.currentTime = 0;
-                    videoRef.current.muted = true;
+                    if (videoRef.current.paused) {
+                      setIsHovering(true);
+                      videoRef.current.muted = false;
+                      videoRef.current.volume = 0.63;
+                      videoRef.current.play().catch(() => {
+                        if (videoRef.current) {
+                          videoRef.current.muted = true;
+                          videoRef.current.play().catch(() => {});
+                        }
+                      });
+                    } else {
+                      setIsHovering(false);
+                      videoRef.current.pause();
+                    }
                   }
                 }}
               >

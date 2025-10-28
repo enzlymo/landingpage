@@ -397,18 +397,33 @@ export default function Page() {
                     className="relative aspect-[9/16] rounded-xl overflow-hidden bg-gradient-to-br from-[#F6E05E]/10 to-[#F59E0B]/10 mb-4 group cursor-pointer"
                     onMouseEnter={(e) => {
                       const video = e.currentTarget.querySelector('video');
-                      if (video) {
+                      if (video && window.innerWidth >= 768) {
                         video.volume = 0.63;
                         video.muted = false;
-                        video.play();
+                        video.play().catch(() => {});
                       }
                     }}
                     onMouseLeave={(e) => {
                       const video = e.currentTarget.querySelector('video');
-                      if (video) {
+                      if (video && window.innerWidth >= 768) {
                         video.pause();
                         video.currentTime = 0;
                         video.muted = true;
+                      }
+                    }}
+                    onTouchStart={(e) => {
+                      const video = e.currentTarget.querySelector('video');
+                      if (video) {
+                        if (video.paused) {
+                          video.muted = false;
+                          video.volume = 0.63;
+                          video.play().catch(() => {
+                            video.muted = true;
+                            video.play().catch(() => {});
+                          });
+                        } else {
+                          video.pause();
+                        }
                       }
                     }}
                   >
@@ -420,6 +435,8 @@ export default function Page() {
                       playsInline
                       poster="/images/Skärmbild 2025-10-27 224821.png"
                       preload="metadata"
+                      controls={false}
+                      webkit-playsinline="true"
                     >
                       <source src="/images/bb97578d-a267-45ea-bd5b-1c0be429465b.mp4" type="video/mp4" />
                     </video>
@@ -441,6 +458,15 @@ export default function Page() {
                         <div className="w-1 h-1 bg-[#10B981] rounded-full animate-pulse"></div>
                         Playing
                       </span>
+                    </div>
+                    
+                    {/* Mobile Tap Indicator */}
+                    <div className="absolute inset-0 flex items-center justify-center md:hidden">
+                      <div className="bg-black/70 backdrop-blur-sm rounded-full p-3 border border-white/20">
+                        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z"/>
+                        </svg>
+                      </div>
                     </div>
                   </div>
                   
@@ -464,18 +490,33 @@ export default function Page() {
                     className="relative aspect-[9/16] rounded-xl overflow-hidden bg-gradient-to-br from-[#F6E05E]/10 to-[#F59E0B]/10 mb-4 group cursor-pointer"
                     onMouseEnter={(e) => {
                       const video = e.currentTarget.querySelector('video');
-                      if (video) {
+                      if (video && window.innerWidth >= 768) {
                         video.volume = 0.63;
                         video.muted = false;
-                        video.play();
+                        video.play().catch(() => {});
                       }
                     }}
                     onMouseLeave={(e) => {
                       const video = e.currentTarget.querySelector('video');
-                      if (video) {
+                      if (video && window.innerWidth >= 768) {
                         video.pause();
                         video.currentTime = 0;
                         video.muted = true;
+                      }
+                    }}
+                    onTouchStart={(e) => {
+                      const video = e.currentTarget.querySelector('video');
+                      if (video) {
+                        if (video.paused) {
+                          video.muted = false;
+                          video.volume = 0.63;
+                          video.play().catch(() => {
+                            video.muted = true;
+                            video.play().catch(() => {});
+                          });
+                        } else {
+                          video.pause();
+                        }
                       }
                     }}
                   >
@@ -487,6 +528,8 @@ export default function Page() {
                       playsInline
                       poster="/images/Skärmbild 2025-10-27 224722.png"
                       preload="metadata"
+                      controls={false}
+                      webkit-playsinline="true"
                     >
                       <source src="/images/3bff4339-9711-438d-9995-952e23d2b626.mp4" type="video/mp4" />
                     </video>
@@ -508,6 +551,15 @@ export default function Page() {
                         <div className="w-1 h-1 bg-[#10B981] rounded-full animate-pulse"></div>
                         Playing
                       </span>
+                    </div>
+                    
+                    {/* Mobile Tap Indicator */}
+                    <div className="absolute inset-0 flex items-center justify-center md:hidden">
+                      <div className="bg-black/70 backdrop-blur-sm rounded-full p-3 border border-white/20">
+                        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z"/>
+                        </svg>
+                      </div>
                     </div>
                   </div>
                   
