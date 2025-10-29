@@ -276,6 +276,17 @@
 }
 
 @layer base {
+  /* CSS Reset for flush banner positioning */
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Ensure no spacing at the top of the page */
+  body > * {
+    margin-top: 0;
+  }
+  
   * {
     @apply border-border;
   }
