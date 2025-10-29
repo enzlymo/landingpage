@@ -46,7 +46,7 @@ export default function Page() {
       </div>
 
       {/* Professional Navigation */}
-      <header className="fixed top-[40px] md:top-[48px] left-0 right-0 z-40 bg-[#1A202C]/95 backdrop-blur-sm border-b border-[#2D3748] shadow-xl">
+      <header className="fixed top-[32px] md:top-[40px] left-0 right-0 z-40 bg-[#1A202C]/95 backdrop-blur-sm border-b border-[#2D3748] shadow-xl">
         <div className="max-w-7xl mx-auto">
           <div className="px-4 md:px-6 py-3 md:py-4">
             <div className="flex items-center justify-between">
@@ -148,7 +148,7 @@ export default function Page() {
       </header>
 
 
-      <main className="flex-grow pt-[100px] md:pt-[120px]">
+      <main className="flex-grow pt-[88px] md:pt-[104px]">
         {/* Premium $100M Startup Hero Section */}
 <section className="relative min-h-[70vh] md:min-h-[80vh] bg-gradient-to-br from-[#0F1419] via-[#1A202C] to-[#161B22] flex items-center justify-center overflow-hidden">
           {/* Premium Background Effects */}
