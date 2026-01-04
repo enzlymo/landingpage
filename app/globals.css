@@ -189,36 +189,82 @@
       min-height: 48px !important;
     }
   }
+
+  /* Modern UI utilities */
+  .hero-gradient {
+    background: var(--hero-gradient);
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, var(--primary-yellow), var(--primary-orange));
+    color: var(--text-primary);
+    font-weight: 600;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: var(--btn-shadow);
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--btn-shadow-hover);
+  }
+  
+  .modern-card {
+    background: var(--surface-primary);
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+  }
+  
+  .modern-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+  }
+  
+  .section-padding {
+    padding: 120px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .section-padding {
+      padding: 80px 0;
+    }
+  }
 }
 
 @layer base {
   :root {
-    /* Original theme variables */
-    --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
-    --card: 0 0% 100%;
+    /* Artlist-inspired Light Theme */
+    --background: 0 0% 100%; /* Pure white background */
+    --foreground: 222 47% 11%; /* Dark text */
+    --card: 0 0% 100%; /* White cards */
     --card-foreground: 222 47% 11%;
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
-    --primary: 47 95% 65%; /* Lymo Yellow */
+    --primary: 47 95% 65%; /* Keep Lymo Yellow for CTAs */
     --primary-foreground: 222 47% 11%; /* Dark text on yellow */
-    --secondary: 217 33% 17%; /* Deep blue instead of black */
-    --secondary-foreground: 0 0% 100%; /* White text on deep blue */
-    --muted: 210 40% 96.1%;
+    --secondary: 220 13% 91%; /* Light gray for secondary elements */
+    --secondary-foreground: 222 47% 11%;
+    --muted: 220 14% 96%; /* Very light gray */
     --muted-foreground: 215 16% 47%;
     --accent: 47 95% 65%; /* Lymo Yellow */
     --accent-foreground: 222 47% 11%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
+    --border: 220 13% 91%; /* Light borders */
+    --input: 220 13% 91%;
     --ring: 47 95% 65%; /* Lymo Yellow */
     --chart-1: 25 95% 53%;
     --chart-2: 199 89% 48%;
     --chart-3: 37 90% 50%;
     --chart-4: 221 83% 53%;
     --chart-5: 13 90% 55%;
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* Slightly more rounded for modern look */
     
     /* Lymo specific CSS variables */
     --lymo-yellow: 45 100% 62%;
@@ -324,44 +370,42 @@
     @apply gap-6 sm:gap-8 md:gap-10;
   }
 
-  /* Minimalistic Design System */
+  /* Artlist-inspired Design System */
   :root {
-    /* Professional Blue Palette */
-    --primary-blue: #3B82F6;
-    --primary-blue-dark: #2563EB;
-    --primary-blue-light: #60A5FA;
-    --blue-50: #EFF6FF;
-    --blue-100: #DBEAFE;
-    --blue-600: #2563EB;
-    --blue-700: #1D4ED8;
-    
-    /* Neutral Palette */
-    --gray-50: #F9FAFB;
-    --gray-100: #F3F4F6;
-    --gray-200: #E5E7EB;
-    --gray-300: #D1D5DB;
-    --gray-400: #9CA3AF;
-    --gray-500: #6B7280;
-    --gray-600: #4B5563;
-    --gray-700: #374151;
-    --gray-800: #1F2937;
-    --gray-900: #111827;
+    /* Artlist Color Palette */
+    --artlist-yellow: #F6E05E; /* Primary CTA color */
+    --artlist-orange: #F59E0B; /* Secondary CTA */
+    --artlist-pink: #FBD5EC; /* Soft pink accent */
+    --artlist-purple: #E9D5FF; /* Soft purple accent */
+    --artlist-blue: #BFDBFE; /* Soft blue accent */
+    --artlist-green: #BBF7D0; /* Soft green accent */
     
     /* Typography */
-    --text-primary: var(--gray-900);
-    --text-secondary: var(--gray-600);
-    --text-muted: var(--gray-500);
+    --text-primary: #1A202C; /* Dark text for readability */
+    --text-secondary: #718096; /* Medium gray */
+    --text-muted: #A0AEC0; /* Light gray */
     
     /* Surfaces */
-    --surface-primary: #FFFFFF;
-    --surface-secondary: var(--gray-50);
+    --surface-primary: #FFFFFF; /* Pure white */
+    --surface-secondary: #F7FAFC; /* Very light gray */
     --surface-elevated: #FFFFFF;
     
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    /* Gradients for hero video overlay */
+    --hero-gradient: linear-gradient(135deg, 
+      rgba(246, 224, 94, 0.2) 0%, 
+      rgba(251, 207, 232, 0.3) 50%, 
+      rgba(165, 243, 252, 0.2) 100%
+    );
+    
+    /* Artlist-style shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
+    
+    /* Button shadows */
+    --btn-shadow: 0 4px 14px rgba(246, 224, 94, 0.4);
+    --btn-shadow-hover: 0 6px 20px rgba(246, 224, 94, 0.6);
   }
 
 }
@@ -372,5 +416,26 @@
   }
   .font-sans {
     font-family: var(--font-sans);
+  }
+  
+  /* Artlist-inspired utility classes */
+  .artlist-section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .artlist-card {
+    @apply bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-lg transition-all duration-300;
+  }
+
+  .artlist-hero-gradient {
+    background: linear-gradient(135deg, 
+      rgba(246, 224, 94, 0.2) 0%, 
+      rgba(251, 207, 232, 0.3) 50%, 
+      rgba(165, 243, 252, 0.2) 100%
+    );
+  }
+
+  .artlist-btn-primary {
+    @apply bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-orange-400 hover:to-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105;
   }
 }
