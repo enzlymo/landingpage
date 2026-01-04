@@ -39,15 +39,16 @@ export function HeroVideo() {
 
   return (
     <div className="hero-video-container">
-      {/* Fallback Background Image */}
+      {/* Fallback Background - Video Poster */}
       <div className={`absolute inset-0 video-loading transition-opacity duration-700 ${isLoaded ? 'opacity-0' : 'opacity-100'}`}>
-        <Image
-          src="/images/1.jpg" // Using existing image as fallback
-          alt="Hero Background"
-          fill
-          className="object-cover opacity-60"
-          priority
-        />
+        <video
+          className="w-full h-full object-cover opacity-60"
+          poster="/newherovid.mp4#t=0.1"
+          preload="metadata"
+          muted
+        >
+          <source src="/newherovid.mp4" type="video/mp4" />
+        </video>
       </div>
       
       {/* Hero Video */}
@@ -59,7 +60,7 @@ export function HeroVideo() {
         loop
         playsInline
         preload="metadata"
-        poster="/images/1.jpg" // Fallback poster
+        poster="/newherovid.mp4#t=0.1" // Use first frame of the video as poster
         style={{ 
           filter: isMobile 
             ? 'brightness(0.6) contrast(1.2) saturate(1.3)' // Stronger filters for mobile for better text readability
