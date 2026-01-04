@@ -46,11 +46,11 @@ export function Navigation() {
               {/* Logo */}
               <Link href="/" className="flex items-center">
                 <Image 
-                  src="/lymo-logo.png" 
+                  src="/Framedark.svg" 
                   alt="Lymo Logo" 
-                  width={32}
-                  height={32}
-                  className="h-8 w-auto"
+                  width={120}
+                  height={40}
+                  className="h-10 w-auto"
                 />
               </Link>
               

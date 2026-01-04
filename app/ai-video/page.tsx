@@ -23,13 +23,12 @@ export default function AIVideoPage() {
             <div className="md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
                 <img 
-                  src="/images/lymologonew.svg.svg" 
+                  src="/Framedark.svg" 
                   alt="Lymo Logo" 
-                  width={40}
+                  width={120}
                   height={40}
                   className="h-10 w-auto"
                 />
-                <span className="text-xl font-semibold text-gray-900">Lymo AI</span>
               </div>
               <p className="text-gray-600 max-w-md">
                 Transform any product into professional AI videos and images. 
