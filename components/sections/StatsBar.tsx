@@ -4,9 +4,9 @@ import React from 'react'
 
 export function StatsBar() {
   const stats = [
-    { value: '100K+', label: 'Creators' },
+    { value: '100+', label: 'Creators' },
     { value: '4.9/5', label: 'Rating' },
-    { value: '10M+', label: 'Videos Created' }
+    { value: '100+', label: 'Videos Created' }
   ]
 
   return (
