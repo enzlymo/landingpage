@@ -23,9 +23,9 @@ export function HeroSection() {
         
         {/* Subtitle */}
         <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Get cutting-edge AI image and video, voiceovers, high-quality music, and more.
+          Get cutting-edge AI image and video, voiceovers and more.
           <br />
-          The choice of 33M+ creators worldwide.
+          The choice of creators worldwide.
         </p>
         
         {/* Primary CTA */}
