@@ -142,7 +142,7 @@ export async function GET() {
     <image:image>
       <image:loc>${baseUrl}/images/lymologonew.svg.svg</image:loc>
       <image:title>Lymo AI Logo</image:title>
-      <image:caption>Lymo AI - #1 AI Image Generator & Video Creator</image:caption>
+      <image:caption>Lymo AI - #1 AI Image Generator and Video Creator</image:caption>
     </image:image>` : ''}
   </url>`).join('')}
 </urlset>`;
