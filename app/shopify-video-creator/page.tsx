@@ -4,6 +4,7 @@ import { AIVideoStudio } from '@/components/demo/AIVideoStudio'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { Sparkles, ArrowRight, ShoppingBag, TrendingUp, CheckCircle, Play, Zap, Target, DollarSign } from 'lucide-react'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: "Shopify Video Creator | Transform Shopify Products into Professional Videos",
@@ -382,7 +383,7 @@ export default function ShopifyVideoCreatorPage() {
             {/* Logo and Description */}
             <div className="md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
-                <img 
+                <Image 
                   src="/Framedark.svg" 
                   alt="Lymo Logo" 
                   width={120}

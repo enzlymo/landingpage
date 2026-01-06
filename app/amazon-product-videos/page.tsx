@@ -4,6 +4,7 @@ import { AIVideoStudio } from '@/components/demo/AIVideoStudio'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { Sparkles, ArrowRight, Package, TrendingUp, CheckCircle, Play, Zap, Target, Star, Award } from 'lucide-react'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: "Amazon Product Video Maker | Create Professional Amazon Listing Videos",
@@ -363,7 +364,7 @@ export default function AmazonProductVideosPage() {
             {/* Logo and Description */}
             <div className="md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
-                <img 
+                <Image 
                   src="/Framedark.svg" 
                   alt="Lymo Logo" 
                   width={120}

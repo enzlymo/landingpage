@@ -4,6 +4,7 @@ import { AIVideoStudio } from '@/components/demo/AIVideoStudio'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { Sparkles, ArrowRight, Users, TrendingUp, Target, CheckCircle, Play } from 'lucide-react'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: "UGC Ads Creator | AI-Generated User Content for Marketing",
@@ -343,7 +344,7 @@ export default function UGCAdsCreatorPage() {
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">Perfect for Every Industry</h3>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Whether you're in e-commerce, SaaS, beauty, fitness, or any other industry, our <strong>UGC ads creator</strong> can generate authentic content that resonates with your audience. From product reviews to unboxing videos, testimonials to tutorials, we cover all the high-converting UGC formats.
+                Whether you&apos;re in e-commerce, SaaS, beauty, fitness, or any other industry, our <strong>UGC ads creator</strong> can generate authentic content that resonates with your audience. From product reviews to unboxing videos, testimonials to tutorials, we cover all the high-converting UGC formats.
               </p>
 
               <div className="bg-purple-50 border border-purple-200 rounded-2xl p-8 text-center">
@@ -370,7 +371,7 @@ export default function UGCAdsCreatorPage() {
             {/* Logo and Description */}
             <div className="md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
-                <img 
+                <Image 
                   src="/Framedark.svg" 
                   alt="Lymo Logo" 
                   width={120}

@@ -3,6 +3,7 @@ import { Navigation } from '@/components/layout/Navigation'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { Calendar, Clock, User, ArrowRight, CheckCircle, TrendingUp, Target, Zap } from 'lucide-react'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: "How to Create Product Videos That Actually Convert: Complete E-commerce Guide",
@@ -358,7 +359,7 @@ export default function ProductVideoGuide() {
             {/* Logo and Description */}
             <div className="md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
-                <img 
+                <Image 
                   src="/Framedark.svg" 
                   alt="Lymo Logo" 
                   width={120}

@@ -4,6 +4,7 @@ import { AIVideoStudio } from '@/components/demo/AIVideoStudio'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { Sparkles, ArrowRight, Link as LinkIcon, ShoppingCart, TrendingUp, CheckCircle, Play, Zap, Target } from 'lucide-react'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: "URL to Video Generator | Transform Product Links into Professional Videos",
@@ -107,7 +108,7 @@ export default function URLToVideoGeneratorPage() {
                 How Our <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent font-medium">URL to Video Generator</span> Works
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                The world's first and only platform that transforms product URLs into professional videos
+                The world&apos;s first and only platform that transforms product URLs into professional videos
               </p>
             </div>
 
@@ -272,7 +273,7 @@ export default function URLToVideoGeneratorPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-8">The Ultimate URL to Video Generator for E-commerce</h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Our <strong>URL to video generator</strong> is the world's first platform specifically designed to transform product URLs into professional marketing videos. Whether you're selling on Amazon, running a Shopify store, or managing any e-commerce website, our AI-powered tool extracts product information directly from URLs and creates compelling video content in seconds.
+                Our <strong>URL to video generator</strong> is the world&apos;s first platform specifically designed to transform product URLs into professional marketing videos. Whether you&apos;re selling on Amazon, running a Shopify store, or managing any e-commerce website, our AI-powered tool extracts product information directly from URLs and creates compelling video content in seconds.
               </p>
 
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">Why Choose Our URL to Video Generator?</h3>
@@ -330,7 +331,7 @@ export default function URLToVideoGeneratorPage() {
             {/* Logo and Description */}
             <div className="md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
-                <img 
+                <Image 
                   src="/Framedark.svg" 
                   alt="Lymo Logo" 
                   width={120}
@@ -339,7 +340,7 @@ export default function URLToVideoGeneratorPage() {
                 />
               </div>
               <p className="text-gray-600 max-w-md">
-                The world's first URL to video generator. Transform any product URL into professional marketing videos instantly.
+                The world&apos;s first URL to video generator. Transform any product URL into professional marketing videos instantly.
               </p>
             </div>
 
