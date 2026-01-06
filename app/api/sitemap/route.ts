@@ -12,11 +12,66 @@ export async function GET() {
       changefreq: 'daily',
       priority: '1.0'
     },
+    // High-priority SEO pages for target keywords
+    {
+      url: '/url-to-video-generator',
+      lastmod: currentDate,
+      changefreq: 'weekly',
+      priority: '0.95'
+    },
+    {
+      url: '/shopify-video-creator',
+      lastmod: currentDate,
+      changefreq: 'weekly',
+      priority: '0.95'
+    },
+    {
+      url: '/amazon-product-videos',
+      lastmod: currentDate,
+      changefreq: 'weekly',
+      priority: '0.95'
+    },
+    {
+      url: '/ai-image',
+      lastmod: currentDate,
+      changefreq: 'weekly',
+      priority: '0.8'
+    },
+    {
+      url: '/free-ai-image-generator',
+      lastmod: currentDate,
+      changefreq: 'weekly',
+      priority: '0.8'
+    },
+    {
+      url: '/ai-video',
+      lastmod: currentDate,
+      changefreq: 'weekly',
+      priority: '0.8'
+    },
+    {
+      url: '/ugc-ads-creator',
+      lastmod: currentDate,
+      changefreq: 'weekly',
+      priority: '0.8'
+    },
+    {
+      url: '/e-commerce-video-generator',
+      lastmod: currentDate,
+      changefreq: 'weekly',
+      priority: '0.95'
+    },
+    {
+      url: '/ai-studios',
+      lastmod: currentDate,
+      changefreq: 'weekly',
+      priority: '0.8'
+    },
     {
       url: '/features',
       lastmod: currentDate,
       changefreq: 'weekly',
-      priority: '0.8'
+      priority: '0.7'
     },
     {
       url: '/pricing',
@@ -40,6 +95,12 @@ export async function GET() {
       url: '/blog',
       lastmod: currentDate,
       changefreq: 'weekly',
+      priority: '0.8'
+    },
+    {
+      url: '/blog/how-to-create-product-videos-that-convert',
+      lastmod: currentDate,
+      changefreq: 'monthly',
       priority: '0.7'
     },
     {
@@ -49,14 +110,20 @@ export async function GET() {
       priority: '0.5'
     },
     {
-      url: '/privacy',
-      lastmod: currentDate,
+      url: '/privacy-policy',
+      lastmod: '2025-09-22',
       changefreq: 'yearly',
       priority: '0.3'
     },
     {
-      url: '/terms',
-      lastmod: currentDate,
+      url: '/terms-of-service',
+      lastmod: '2025-09-22',
+      changefreq: 'yearly',
+      priority: '0.3'
+    },
+    {
+      url: '/cookie-policy',
+      lastmod: '2025-09-22',
       changefreq: 'yearly',
       priority: '0.3'
     }
@@ -75,7 +142,7 @@ export async function GET() {
     <image:image>
       <image:loc>${baseUrl}/images/lymologonew.svg.svg</image:loc>
       <image:title>Lymo AI Logo</image:title>
-      <image:caption>Lymo AI - Create winning AI videos in seconds</image:caption>
+      <image:caption>Lymo AI - #1 AI Image Generator & Video Creator</image:caption>
     </image:image>` : ''}
   </url>`).join('')}
 </urlset>`;

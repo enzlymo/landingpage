@@ -1,8 +1,47 @@
-'use client'
-
 import React from 'react'
 import { Navigation } from '@/components/layout/Navigation'
 import { AIVideoStudio } from '@/components/demo/AIVideoStudio'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "AI Video Generator | Create UGC Ads & Marketing Videos Free",
+  description: "Create professional UGC ads and marketing videos with AI. Free AI video generator with realistic avatars. Transform URLs into viral video content instantly. No editing skills required.",
+  keywords: [
+    "AI video generator",
+    "UGC ads",
+    "UGC creator",
+    "AI marketing videos",
+    "user generated content",
+    "AI video maker",
+    "video ads creator",
+    "AI avatars",
+    "marketing video generator",
+    "social media videos AI"
+  ],
+  openGraph: {
+    title: "AI Video Generator | Create UGC Ads & Marketing Videos Free",
+    description: "Create professional UGC ads and marketing videos with AI. Free AI video generator with realistic avatars and instant content creation.",
+    url: "https://lymo.me/ai-video",
+    type: "website",
+    images: [
+      {
+        url: "/images/lymo-og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Lymo AI Video Generator - Create UGC Ads"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Video Generator | Create UGC Ads & Marketing Videos Free",
+    description: "Create professional UGC ads and marketing videos with AI. Free AI video generator with realistic avatars.",
+    images: ["/images/lymo-twitter-card.png"]
+  },
+  alternates: {
+    canonical: "https://lymo.me/ai-video"
+  }
+}
 
 export default function AIVideoPage() {
   return (

@@ -22,28 +22,33 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://lymo.me'),
   // Basic Meta Tags
   title: {
-    default: "Lymo AI - Create Winning AI Videos in Seconds | #1 AI Video Generator",
+    default: "Lymo AI - AI Video Generator | Transform Product URLs into Videos",
     template: "%s | Lymo AI - AI Video Generator"
   },
-  description: "Generate high-converting video ads from text with Lymo AI. No editing skills required. Choose from hundreds of AI actors and create professional videos in minutes. Transform URLs into viral content instantly.",
+  description: "Create winning AI videos in seconds with Lymo AI. Transform any product URL into professional marketing videos. Perfect for e-commerce stores, Amazon sellers, and online marketers.",
   
-  // Keywords
+  // Keywords - Optimized for unique value proposition
   keywords: [
-    "AI video generator",
-    "text to video",
-    "video creation tool",
-    "AI content creator",
-    "automated video production",
-    "marketing videos",
-    "social media videos",
-    "AI actors",
-    "video marketing",
-    "content generation",
-    "URL to video",
-    "UGC creation",
-    "video ads",
-    "AI video maker",
-    "professional video creator"
+    "URL to video generator",
+    "product URL to video",
+    "URL to image converter",
+    "product link to content",
+    "e-commerce video generator",
+    "Shopify video creator",
+    "Amazon product video maker",
+    "product URL converter",
+    "e-commerce content generator",
+    "online store video creator",
+    "product link video generator",
+    "WooCommerce video maker",
+    "e-commerce marketing videos",
+    "product URL to ads",
+    "online store content creator",
+    "retail video generator",
+    "product page video creator",
+    "e-commerce visual content",
+    "store product videos",
+    "marketplace video ads"
   ],
   
   // Author and Publisher
@@ -70,8 +75,8 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://lymo.me',
     siteName: 'Lymo AI',
-    title: 'Lymo AI - Create Winning AI Videos in Seconds',
-    description: 'Generate high-converting video ads from text with Lymo AI. No editing skills required. Transform URLs into viral content instantly.',
+    title: 'Lymo AI - AI Video Generator | Transform Product URLs into Videos',
+    description: 'Create winning AI videos in seconds with Lymo AI. Transform any product URL into professional marketing videos. Perfect for e-commerce stores.',
     images: [
       {
         url: '/images/lymo-og-image.png',
@@ -93,8 +98,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@LymoAI',
     creator: '@LymoAI',
-    title: 'Lymo AI - Create Winning AI Videos in Seconds',
-    description: 'Generate high-converting video ads from text with Lymo AI. Transform URLs into viral content instantly.',
+    title: 'Lymo AI - AI Video Generator | Transform Product URLs into Videos',
+    description: 'Create winning AI videos in seconds with Lymo AI. Transform any product URL into professional marketing videos.',
     images: ['/images/lymo-twitter-card.png'],
   },
   
@@ -167,7 +172,7 @@ export default function RootLayout({
           "width": 512,
           "height": 512
         },
-        "description": "Leading AI video generation platform for creating professional videos from text and URLs",
+        "description": "Leading e-commerce video generator that transforms product URLs into professional marketing videos for online stores",
         "sameAs": [
           "https://twitter.com/LymoAI",
           "https://linkedin.com/company/lymo-ai",
@@ -199,8 +204,8 @@ export default function RootLayout({
       {
         "@type": "SoftwareApplication",
         "@id": "https://lymo.me/#software",
-        "name": "Lymo AI Video Generator",
-        "description": "AI-powered video generation platform that creates professional videos from text and URLs",
+        "name": "Lymo AI E-commerce Video Generator",
+        "description": "AI-powered platform that transforms product URLs into professional marketing videos. Perfect for Shopify, Amazon, and all e-commerce stores.",
         "url": "https://lymo.me",
         "applicationCategory": "MultimediaApplication",
         "operatingSystem": "Web Browser",

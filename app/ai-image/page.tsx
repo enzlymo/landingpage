@@ -1,8 +1,47 @@
-'use client'
-
 import React from 'react'
 import { Navigation } from '@/components/layout/Navigation'
 import { AIImageStudio } from '@/components/demo/AIImageStudio'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "Free AI Image Generator | Create Professional Images Instantly",
+  description: "Generate stunning AI images for free. Professional AI image generator with advanced models. Create product photos, marketing visuals, and social media content in seconds. No design skills required.",
+  keywords: [
+    "AI image generator",
+    "free AI image generator",
+    "AI image creator",
+    "AI photo generator", 
+    "professional AI images",
+    "product image generator",
+    "marketing image creator",
+    "social media images AI",
+    "AI generated images",
+    "artificial intelligence images"
+  ],
+  openGraph: {
+    title: "Free AI Image Generator | Create Professional Images Instantly",
+    description: "Generate stunning AI images for free. Professional AI image generator with advanced models. Create product photos and marketing visuals in seconds.",
+    url: "https://lymo.me/ai-image",
+    type: "website",
+    images: [
+      {
+        url: "/images/lymo-og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Lymo AI Image Generator - Create Professional Images"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Free AI Image Generator | Create Professional Images Instantly",
+    description: "Generate stunning AI images for free. Professional AI image generator with advanced models.",
+    images: ["/images/lymo-twitter-card.png"]
+  },
+  alternates: {
+    canonical: "https://lymo.me/ai-image"
+  }
+}
 
 export default function AIImagePage() {
   return (

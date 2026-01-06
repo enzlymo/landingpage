@@ -133,13 +133,13 @@ export default function Page() {
                   </div>
                   
                   <div className="text-center">
-                    <h3 className="text-xl font-bold mb-2 text-gray-900">Avatar Marketing</h3>
+                    <h3 className="text-xl font-bold mb-2 text-gray-900">AI Avatar UGC Ads</h3>
                     <p className="text-gray-600 text-sm mb-4">
-                      AI avatars present your products with realistic human engagement and professional delivery
+                      Create authentic UGC ads with AI avatars that present your products with realistic human engagement
                     </p>
                     <div className="flex items-center justify-center gap-4 text-xs text-gray-500">
-                      <span>✨ Done in minutes</span>
-                      <span>🎯 Brand Focused</span>
+                      <span>✨ UGC Style</span>
+                      <span>🎯 High Converting</span>
                     </div>
                   </div>
                 </div>
@@ -236,6 +236,70 @@ export default function Page() {
 
         {/* Product Transformation Showcase */}
         <ProductTransformationShowcase />
+
+        {/* AI Tools Navigation Section */}
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">
+                Explore Our <span className="bg-gradient-to-r from-yellow-400 via-blue-500 to-purple-500 bg-clip-text text-transparent font-medium">AI-Powered Tools</span>
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Discover specialized AI tools for every content creation need
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* URL to Video Generator */}
+              <Link href="/url-to-video-generator" className="group">
+                <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-blue-200 transition-all duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-purple-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-2xl">🔗</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">URL to Video Generator</h3>
+                  <p className="text-gray-600 mb-4">
+                    Transform any product URL into professional marketing videos. Perfect for e-commerce stores
+                  </p>
+                  <div className="text-blue-600 font-semibold group-hover:underline">
+                    Try URL to Video →
+                  </div>
+                </div>
+              </Link>
+
+              {/* Shopify Video Creator */}
+              <Link href="/shopify-video-creator" className="group">
+                <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-green-200 transition-all duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-blue-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-2xl">🛍️</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Shopify Video Creator</h3>
+                  <p className="text-gray-600 mb-4">
+                    Create professional videos from Shopify products. Boost conversions and sales instantly
+                  </p>
+                  <div className="text-green-600 font-semibold group-hover:underline">
+                    Create Shopify Videos →
+                  </div>
+                </div>
+              </Link>
+
+              {/* Amazon Product Videos */}
+              <Link href="/amazon-product-videos" className="group">
+                <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-orange-200 transition-all duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-r from-orange-400 to-red-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-2xl">📦</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Amazon Product Videos</h3>
+                  <p className="text-gray-600 mb-4">
+                    Create professional Amazon listing videos that boost rankings and sales
+                  </p>
+                  <div className="text-orange-600 font-semibold group-hover:underline">
+                    Create Amazon Videos →
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </section>
 
 
         {/* Professional 3-Steps Section */}
@@ -620,12 +684,13 @@ export default function Page() {
 
             {/* Product Links */}
             <div>
-              <h4 className="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">Product</h4>
+              <h4 className="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">AI Tools</h4>
               <div className="space-y-3">
-                <Link href="/ai-video" className="block text-gray-600 hover:text-yellow-600 transition-colors">AI Video</Link>
-                <Link href="/ai-image" className="block text-gray-600 hover:text-yellow-600 transition-colors">AI Image</Link>
+                <Link href="/ai-image" className="block text-gray-600 hover:text-yellow-600 transition-colors">AI Image Generator</Link>
+                <Link href="/free-ai-image-generator" className="block text-gray-600 hover:text-yellow-600 transition-colors">Free AI Image Generator</Link>
+                <Link href="/ai-video" className="block text-gray-600 hover:text-yellow-600 transition-colors">AI Video Generator</Link>
+                <Link href="/ugc-ads-creator" className="block text-gray-600 hover:text-yellow-600 transition-colors">UGC Ads Creator</Link>
                 <Link href="/ai-studios" className="block text-gray-600 hover:text-yellow-600 transition-colors">AI Studios</Link>
-                <Link href="/pricing" className="block text-gray-600 hover:text-yellow-600 transition-colors">Pricing</Link>
               </div>
             </div>
 

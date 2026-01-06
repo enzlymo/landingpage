@@ -1,20 +1,23 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   
-  // Enable experimental features
+  // Enable experimental features for better performance
   experimental: {
     optimizeCss: true,
     optimizeServerReact: true,
+    webVitalsAttribution: ['CLS', 'LCP', 'FCP', 'FID', 'TTFB'],
   },
   
-  // Image optimization
+  // Image optimization for better Core Web Vitals
   images: {
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    domains: ['lymo.ai', 'cdn.lymo.ai'], // Add your domains
+    domains: ['lymo.me', 'lymo.ai', 'cdn.lymo.ai'],
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    minimumCacheTTL: 31536000, // 1 year cache
+    unoptimized: false,
   },
   
   // Compression
