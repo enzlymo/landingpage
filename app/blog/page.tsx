@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Navigation } from '@/components/layout/Navigation'
 import { Metadata } from 'next'
