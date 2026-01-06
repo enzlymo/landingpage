@@ -459,7 +459,7 @@ export default function Page() {
               <div className="bg-gray-50 border border-gray-200 rounded-3xl p-8 max-w-4xl mx-auto">
                 <div className="flex items-center justify-center gap-3 mb-4">
                   <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-green-600 font-semibold text-sm uppercase tracking-wide">Free Account Available</span>
+                  <span className="text-green-600 font-semibold text-sm uppercase tracking-wide">Launch month sale</span>
                   <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
@@ -643,7 +643,7 @@ export default function Page() {
 
           <div className="border-t border-gray-200 pt-8 text-center">
             <p className="text-gray-500 text-sm">
-              © 2025 Lymo AI. All rights reserved.
+              © 2026 Lymo AI. All rights reserved.
             </p>
           </div>
         </div>

@@ -117,22 +117,6 @@ export function AIImageStudio() {
                       </div>
                     </div>
 
-                    {/* Usage Indicator */}
-                    <div className="mb-6 p-4 bg-yellow-50 border border-yellow-200 rounded-xl">
-                      <div className="flex items-center justify-between mb-2">
-                        <span className="text-sm font-medium text-yellow-800">⚡ Images this month</span>
-                        <span className="text-sm font-bold text-yellow-800">5 / 1</span>
-                      </div>
-                      <div className="w-full bg-yellow-200 rounded-full h-2">
-                        <div className="bg-yellow-500 h-2 rounded-full" style={{ width: '100%' }}></div>
-                      </div>
-                      <div className="text-xs text-yellow-700 mt-2 flex items-center justify-between">
-                        <span>Starter (New)</span>
-                        <span className="bg-red-100 text-red-800 px-2 py-1 rounded-full text-xs font-medium">
-                          Monthly limit reached
-                        </span>
-                      </div>
-                    </div>
                   </>
                 ) : (
                   <>

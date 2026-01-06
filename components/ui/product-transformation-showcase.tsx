@@ -146,20 +146,17 @@ export function ProductTransformationShowcase({ className = '' }: Transformation
           {/* Result */}
           <div className="relative">
             {showResults ? (
-              <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-4 border-2 border-yellow-300 shadow-2xl">
+              <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-6 border-2 border-yellow-300 shadow-2xl">
                 <div className="absolute top-3 left-3 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full px-4 py-1.5 z-10 shadow-lg">
                   <span className="text-sm font-bold text-gray-900">AI Result</span>
                 </div>
-                <div className="aspect-square rounded-xl overflow-hidden bg-white relative">
+                <div className="aspect-square rounded-xl overflow-hidden bg-white relative w-72">
                   <Image
                     src={currentDemo.result}
                     alt="AI transformed result"
                     fill
                     className="object-cover"
                   />
-                </div>
-                <div className="mt-3 text-center bg-white rounded-lg py-2 border border-gray-200">
-                  <span className="text-sm font-semibold text-gray-900">Professional Result</span>
                 </div>
               </div>
             ) : (

@@ -129,6 +129,16 @@ export function Navigation() {
               
               {/* Right Side Actions */}
               <div className="flex items-center space-x-4">
+                {/* Login Button */}
+                <Link href="https://app.lymo.me/auth/signin" className="hidden sm:block">
+                  <Button 
+                    variant="outline" 
+                    className="border-2 border-gray-300 text-gray-700 hover:border-gray-400 hover:text-gray-900 hover:bg-gray-50 font-medium px-6 py-3 rounded-xl transition-all duration-300"
+                  >
+                    Log In
+                  </Button>
+                </Link>
+                
                 {/* Primary CTA */}
                 <Link href="https://app.lymo.me">
                   <Button className="artlist-btn-primary">
@@ -178,6 +188,28 @@ export function Navigation() {
                   {item.label}
                 </Link>
               ))}
+              
+              {/* Mobile Action Buttons */}
+              <div className="pt-4 border-t border-gray-100 space-y-3">
+                <Link href="https://app.lymo.me/auth/signin" className="block">
+                  <Button 
+                    variant="outline" 
+                    className="w-full border-2 border-gray-300 text-gray-700 hover:border-gray-400 hover:text-gray-900 hover:bg-gray-50 font-medium py-3 rounded-xl transition-all duration-300"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Log In
+                  </Button>
+                </Link>
+                
+                <Link href="https://app.lymo.me" className="block">
+                  <Button 
+                    className="w-full artlist-btn-primary py-3"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Start Free Now
+                  </Button>
+                </Link>
+              </div>
               
               {/* Mobile Language Switcher */}
               <div className="pt-4 border-t border-gray-100">
