@@ -138,12 +138,6 @@ export async function GET() {
     <lastmod>${page.lastmod}</lastmod>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>
-    ${page.url === '' ? `
-    <image:image>
-      <image:loc>${baseUrl}/images/lymologonew.svg.svg</image:loc>
-      <image:title>Lymo AI Logo</image:title>
-      <image:caption>Lymo AI - #1 AI Image Generator and Video Creator</image:caption>
-    </image:image>` : ''}
   </url>`).join('')}
 </urlset>`;
 
