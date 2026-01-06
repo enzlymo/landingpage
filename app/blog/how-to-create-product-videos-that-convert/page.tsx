@@ -92,21 +92,21 @@ export default function ProductVideoGuide() {
               {/* Introduction */}
               <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-8">
                 <p className="text-lg text-gray-700 mb-0">
-                  <strong>Did you know?</strong> E-commerce stores that use product videos see an average of <strong>80% higher conversion rates</strong> compared to those that don't. Yet, most online store owners still rely solely on static images to showcase their products.
+                  <strong>Did you know?</strong> E-commerce stores that use product videos see an average of <strong>80% higher conversion rates</strong> compared to those that don&apos;t. Yet, most online store owners still rely solely on static images to showcase their products.
                 </p>
               </div>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                In today's competitive e-commerce landscape, product videos aren't just nice-to-have—they're essential for success. Whether you're selling on Shopify, Amazon, or any other platform, the right product video can be the difference between a browser and a buyer.
+                In today&apos;s competitive e-commerce landscape, product videos aren&apos;t just nice-to-have—they&apos;re essential for success. Whether you&apos;re selling on Shopify, Amazon, or any other platform, the right product video can be the difference between a browser and a buyer.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                In this comprehensive guide, we'll walk you through everything you need to know about creating product videos that actually convert, from planning and production to optimization and distribution.
+                In this comprehensive guide, we&apos;ll walk you through everything you need to know about creating product videos that actually convert, from planning and production to optimization and distribution.
               </p>
 
               {/* Table of Contents */}
               <div className="bg-gray-50 rounded-2xl p-8 mb-12">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">What You'll Learn</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">What You&apos;ll Learn</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {[
                     "Why product videos convert better than images",
@@ -128,7 +128,7 @@ export default function ProductVideoGuide() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Product Videos Convert 80% Better Than Images</h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Before diving into the how-to, let's understand why product videos are so effective at driving conversions:
+                Before diving into the how-to, let&apos;s understand why product videos are so effective at driving conversions:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -141,7 +141,7 @@ export default function ProductVideoGuide() {
                   {
                     icon: <Zap className="w-8 h-8" />,
                     title: "Showcase Features Better",
-                    description: "Demonstrate functionality, size, and quality in ways static images simply can't."
+                    description: "Demonstrate functionality, size, and quality in ways static images simply ca&apos;t."
                   },
                   {
                     icon: <TrendingUp className="w-8 h-8" />,
@@ -257,7 +257,7 @@ export default function ProductVideoGuide() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Creating Professional Videos Without Breaking the Bank</h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                You don't need a Hollywood budget to create converting product videos. Here's how to get professional results on any budget:
+                You don't need a Hollywood budget to create converting product videos. Here&apos;s how to get professional results on any budget:
               </p>
 
               <div className="space-y-6 mb-8">
@@ -313,7 +313,7 @@ export default function ProductVideoGuide() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Start Converting More Customers Today</h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Product videos are no longer optional in e-commerce—they're essential for staying competitive. Whether you choose to create videos yourself or use AI-powered tools like Lymo AI, the important thing is to start now.
+                Product videos are no longer optional in e-commerce—they&apos;re essential for staying competitive. Whether you choose to create videos yourself or use AI-powered tools like Lymo AI, the important thing is to start now.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-8">

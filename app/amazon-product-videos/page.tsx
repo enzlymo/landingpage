@@ -58,7 +58,7 @@ export default function AmazonProductVideosPage() {
           <div className="max-w-6xl mx-auto px-6 text-center">
             <div className="inline-flex items-center gap-2 bg-orange-100 border border-orange-200 rounded-full px-6 py-3 mb-8">
               <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></div>
-              <span className="text-orange-800 font-semibold text-sm">AMAZON SELLER'S SECRET WEAPON</span>
+              <span className="text-orange-800 font-semibold text-sm">AMAZON SELLER&apos;S SECRET WEAPON</span>
               <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></div>
             </div>
             
@@ -228,7 +228,7 @@ export default function AmazonProductVideosPage() {
                 {
                   icon: <Award className="w-8 h-8" />,
                   title: "Improve Amazon SEO Rankings",
-                  description: "Amazon's algorithm favors listings with video content. Our videos are optimized to boost your product's visibility in search results and increase organic traffic.",
+                  description: "Amazon&apos;s algorithm favors listings with video content. Our videos are optimized to boost your product&apos;s visibility in search results and increase organic traffic.",
                   stat: "67% better search rankings",
                   gradient: "from-orange-400 to-red-400"
                 },
@@ -242,7 +242,7 @@ export default function AmazonProductVideosPage() {
                 {
                   icon: <TrendingUp className="w-8 h-8" />,
                   title: "Reduce Return Rates",
-                  description: "Clear video demonstrations help customers understand exactly what they're buying, leading to fewer returns and higher customer satisfaction.",
+                  description: "Clear video demonstrations help customers understand exactly what they&apos;re buying, leading to fewer returns and higher customer satisfaction.",
                   stat: "45% reduction in returns",
                   gradient: "from-pink-400 to-purple-400"
                 }
@@ -306,7 +306,7 @@ export default function AmazonProductVideosPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-8">The Ultimate Amazon Product Video Maker for Sellers</h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Our <strong>Amazon product video maker</strong> is specifically designed for Amazon sellers who want to dominate their categories and increase sales. Unlike generic video tools, our platform understands Amazon's unique requirements and creates videos that not only look professional but also improve your search rankings and conversion rates.
+                Our <strong>Amazon product video maker</strong> is specifically designed for Amazon sellers who want to dominate their categories and increase sales. Unlike generic video tools, our platform understands Amazon&apos;s unique requirements and creates videos that not only look professional but also improve your search rankings and conversion rates.
               </p>
 
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">Why Amazon Sellers Choose Our Video Maker</h3>
@@ -330,14 +330,14 @@ export default function AmazonProductVideosPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                  <span><strong>Compliance Ready:</strong> All videos meet Amazon's content guidelines and requirements</span>
+                  <span><strong>Compliance Ready:</strong> All videos meet Amazon&apos;s content guidelines and requirements</span>
                 </li>
               </ul>
 
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">Dominate Your Amazon Category</h3>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                In today's competitive Amazon marketplace, product videos are essential for success. Our <strong>Amazon product video maker</strong> gives you the edge you need to outperform competitors and increase your market share. From electronics to fashion, home goods to beauty products, our AI creates compelling videos that showcase your products' unique value propositions and drive sales.
+                In today&apos;s competitive Amazon marketplace, product videos are essential for success. Our <strong>Amazon product video maker</strong> gives you the edge you need to outperform competitors and increase your market share. From electronics to fashion, home goods to beauty products, our AI creates compelling videos that showcase your products unique value propositions and drive sales.
               </p>
 
               <div className="bg-orange-50 border border-orange-200 rounded-2xl p-8 text-center">
