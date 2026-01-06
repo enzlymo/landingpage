@@ -158,7 +158,7 @@ export default function FreeAIImageGeneratorPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-8">The Best Free AI Image Generator for Professional Results</h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Our <strong>free AI image generator</strong> combines the power of advanced artificial intelligence with an intuitive interface, making professional image creation accessible to everyone. Whether you're a marketer, designer, content creator, or business owner, our platform delivers stunning results without any cost or signup requirements.
+                Our <strong>free AI image generator</strong> combines the power of advanced artificial intelligence with an intuitive interface, making professional image creation accessible to everyone. Whether you&apos;re a marketer, designer, content creator, or business owner, our platform delivers stunning results without any cost or signup requirements.
               </p>
 
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">What Makes Our AI Image Generator Special?</h3>
@@ -200,7 +200,7 @@ export default function FreeAIImageGeneratorPage() {
                 <Link href="https://app.lymo.me">
                   <button className="bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-orange-400 hover:to-yellow-400 text-gray-900 font-bold text-lg px-10 py-4 rounded-2xl shadow-lg transition-all duration-300 transform hover:scale-105">
                     <Sparkles className="w-5 h-5 inline mr-2" />
-                    Start Creating Now - It's Free!
+                    Start Creating Now - It&apos;s Free!
                   </button>
                 </Link>
               </div>
@@ -225,7 +225,7 @@ export default function FreeAIImageGeneratorPage() {
                 />
               </div>
               <p className="text-gray-600 max-w-md">
-                The world's best free AI image generator. Create professional images, product photos, and marketing visuals instantly.
+                The world&apos;s best free AI image generator. Create professional images, product photos, and marketing visuals instantly.
               </p>
             </div>
 

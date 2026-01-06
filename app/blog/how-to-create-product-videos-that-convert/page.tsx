@@ -257,7 +257,7 @@ export default function ProductVideoGuide() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Creating Professional Videos Without Breaking the Bank</h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                You don't need a Hollywood budget to create converting product videos. Here&apos;s how to get professional results on any budget:
+                You don&apos;t need a Hollywood budget to create converting product videos. Here&apos;s how to get professional results on any budget:
               </p>
 
               <div className="space-y-6 mb-8">
@@ -327,7 +327,7 @@ export default function ProductVideoGuide() {
                   {[
                     {
                       title: "Shopify Video Marketing: Complete Guide",
-                      description: "Learn how to use videos to boost your Shopify store's conversions",
+                      description: "Learn how to use videos to boost your Shopify store&apos;s conversions",
                       href: "/blog/shopify-video-marketing-guide",
                       status: "Coming Soon"
                     },

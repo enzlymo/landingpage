@@ -243,7 +243,7 @@ export default function EcommerceVideoGeneratorPage() {
                 Built for <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent font-medium">E-commerce Success</span>
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Every feature designed to boost your online store's performance
+                Every feature designed to boost your online store&apos;s performance
               </p>
             </div>
 
@@ -295,7 +295,7 @@ export default function EcommerceVideoGeneratorPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-8">The Ultimate E-commerce Video Generator for Online Stores</h2>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Our <strong>e-commerce video generator</strong> is the world's first platform specifically designed for online stores and e-commerce businesses. Unlike generic video tools, our AI understands the unique needs of e-commerce and creates videos that drive sales, improve conversions, and boost search rankings.
+                Our <strong>e-commerce video generator</strong> is the world&apos;s first platform specifically designed for online stores and e-commerce businesses. Unlike generic video tools, our AI understands the unique needs of e-commerce and creates videos that drive sales, improve conversions, and boost search rankings.
               </p>
 
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">Why E-commerce Businesses Choose Our Video Generator</h3>
@@ -326,7 +326,7 @@ export default function EcommerceVideoGeneratorPage() {
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">Transform Your E-commerce Business</h3>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                In today's competitive e-commerce landscape, video content is essential for success. Our <strong>e-commerce video generator</strong> gives you the competitive edge you need to outperform competitors and maximize your online store's potential. From fashion to electronics, home goods to beauty products, our AI creates compelling videos that showcase your products and drive sales.
+                In today&apos;s competitive e-commerce landscape, video content is essential for success. Our <strong>e-commerce video generator</strong> gives you the competitive edge you need to outperform competitors and maximize your online store&apos;s potential. From fashion to electronics, home goods to beauty products, our AI creates compelling videos that showcase your products and drive sales.
               </p>
 
               <div className="bg-blue-50 border border-blue-200 rounded-2xl p-8 text-center">

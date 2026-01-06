@@ -219,7 +219,7 @@ export default function ShopifyVideoCreatorPage() {
                 Built Specifically for <span className="bg-gradient-to-r from-green-500 via-blue-500 to-purple-500 bg-clip-text text-transparent font-medium">Shopify Stores</span>
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Features designed to maximize your Shopify store's success
+                Features designed to maximize your Shopify store&apos;s success
               </p>
             </div>
 
@@ -345,7 +345,7 @@ export default function ShopifyVideoCreatorPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                  <span><strong>Brand Consistency:</strong> Maintain your store's branding across all video content</span>
+                  <span><strong>Brand Consistency:</strong> Maintain your store&apos;s branding across all video content</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
@@ -353,7 +353,7 @@ export default function ShopifyVideoCreatorPage() {
                 </li>
               </ul>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Transform Your Shopify Store's Performance</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Transform Your Shopify Store&apos;s Performance</h3>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Video content is no longer optional for successful Shopify stores. Our <strong>Shopify video creator</strong> makes it easy to add professional product videos to every product in your store, helping you compete with larger retailers and increase your sales. From fashion to electronics, home goods to beauty products, our AI creates compelling videos that showcase your products in the best light.

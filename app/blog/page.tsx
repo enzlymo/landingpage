@@ -113,7 +113,7 @@ export default function BlogPage() {
                 More Articles Coming Soon
               </h2>
               <p className="text-xl text-gray-600">
-                We're working on more valuable content to help you succeed with video marketing
+                We&apos;re working on more valuable content to help you succeed with video marketing
               </p>
             </div>
 

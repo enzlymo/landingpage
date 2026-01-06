@@ -58,7 +58,7 @@ export default function URLToVideoGeneratorPage() {
           <div className="max-w-6xl mx-auto px-6 text-center">
             <div className="inline-flex items-center gap-2 bg-blue-100 border border-blue-200 rounded-full px-6 py-3 mb-8">
               <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-              <span className="text-blue-800 font-semibold text-sm">WORLD'S FIRST URL TO VIDEO GENERATOR</span>
+              <span className="text-blue-800 font-semibold text-sm">WORLD&apos;S FIRST URL TO VIDEO GENERATOR</span>
               <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
             </div>
             
@@ -304,7 +304,7 @@ export default function URLToVideoGeneratorPage() {
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">Perfect for Every E-commerce Business</h3>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Whether you're an Amazon seller looking to create product videos, a Shopify store owner wanting to boost conversions, or a digital marketer managing multiple e-commerce accounts, our <strong>URL to video generator</strong> streamlines your content creation process. Simply paste any product URL, and watch as our AI creates professional marketing videos that drive sales and engagement.
+                Whether yo&apos;re an Amazon seller looking to create product videos, a Shopify store owner wanting to boost conversions, or a digital marketer managing multiple e-commerce accounts, our <strong>URL to video generator</strong> streamlines your content creation process. Simply paste any product URL, and watch as our AI creates professional marketing videos that drive sales and engagement.
               </p>
 
               <div className="bg-blue-50 border border-blue-200 rounded-2xl p-8 text-center">
