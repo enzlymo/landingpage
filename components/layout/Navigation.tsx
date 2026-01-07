@@ -109,16 +109,21 @@ export function Navigation() {
                           </button>
                           <button
                             onClick={() => {
-                              switchLocale('sv')
-                              setIsMoreDropdownOpen(false)
+                              // Disable Svenska for now - show coming soon message
+                              // switchLocale('sv')
+                              // setIsMoreDropdownOpen(false)
                             }}
-                            className={`flex-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
+                            className={`flex-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors relative ${
                               locale === 'sv' 
                                 ? 'bg-yellow-100 text-yellow-800' 
-                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                                : 'bg-gray-100 text-gray-400 cursor-not-allowed'
                             }`}
+                            disabled
                           >
                             Svenska
+                            <span className="absolute -top-1 -right-1 bg-orange-500 text-white text-xs px-1.5 py-0.5 rounded-full font-medium">
+                              Soon
+                            </span>
                           </button>
                         </div>
                       </div>
@@ -230,16 +235,21 @@ export function Navigation() {
                   </button>
                   <button
                     onClick={() => {
-                      switchLocale('sv')
-                      setIsMobileMenuOpen(false)
+                      // Disable Svenska for now - show coming soon message
+                      // switchLocale('sv')
+                      // setIsMobileMenuOpen(false)
                     }}
-                    className={`flex-1 py-2 px-4 text-sm font-medium rounded-lg transition-colors ${
+                    className={`flex-1 py-2 px-4 text-sm font-medium rounded-lg transition-colors relative ${
                       locale === 'sv' 
                         ? 'bg-yellow-100 text-yellow-800' 
-                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                        : 'bg-gray-100 text-gray-400 cursor-not-allowed'
                     }`}
+                    disabled
                   >
                     Svenska
+                    <span className="absolute -top-1 -right-1 bg-orange-500 text-white text-xs px-1.5 py-0.5 rounded-full font-medium">
+                      Soon
+                    </span>
                   </button>
                 </div>
               </div>
