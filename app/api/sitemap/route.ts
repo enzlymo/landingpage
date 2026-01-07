@@ -87,30 +87,6 @@ export async function GET() {
       priority: '0.8'
     },
     {
-      url: '/features',
-      lastmod: currentDate,
-      changefreq: 'weekly',
-      priority: '0.7'
-    },
-    {
-      url: '/pricing',
-      lastmod: currentDate,
-      changefreq: 'weekly',
-      priority: '0.8'
-    },
-    {
-      url: '/about',
-      lastmod: currentDate,
-      changefreq: 'monthly',
-      priority: '0.6'
-    },
-    {
-      url: '/contact',
-      lastmod: currentDate,
-      changefreq: 'monthly',
-      priority: '0.6'
-    },
-    {
       url: '/blog',
       lastmod: currentDate,
       changefreq: 'weekly',
@@ -127,6 +103,12 @@ export async function GET() {
       lastmod: currentDate,
       changefreq: 'monthly',
       priority: '0.5'
+    },
+    {
+      url: '/business',
+      lastmod: currentDate,
+      changefreq: 'monthly',
+      priority: '0.7'
     },
     {
       url: '/api',
