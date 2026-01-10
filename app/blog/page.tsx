@@ -8,6 +8,16 @@ import Image from 'next/image'
 
 const blogPosts = [
   {
+    title: "Shopify Video Marketing: Complete Guide to Boost Sales in 2026",
+    excerpt: "Master Shopify video marketing with proven strategies that increase conversions by 85%. Learn how to add videos, optimize for mobile, and boost your store's sales.",
+    slug: "shopify-video-marketing-guide",
+    date: "2026-01-14",
+    readTime: "12 min read",
+    author: "Lymo AI Team",
+    category: "Shopify Marketing",
+    featured: true
+  },
+  {
     title: "How to Create Product Videos That Actually Convert: A Complete Guide for E-commerce Stores",
     excerpt: "Discover the proven strategies and techniques that top e-commerce stores use to create product videos that drive sales and boost conversions.",
     slug: "how-to-create-product-videos-that-convert",
@@ -15,7 +25,7 @@ const blogPosts = [
     readTime: "8 min read",
     author: "Lymo AI Team",
     category: "E-commerce Marketing",
-    featured: true
+    featured: false
   }
 ]
 
@@ -82,8 +92,46 @@ export default function BlogPage() {
           </section>
         ))}
 
-        {/* Coming Soon Posts */}
+        {/* Recent Posts */}
         <section className="py-20 bg-gray-50">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">
+                Recent Articles
+              </h2>
+              <p className="text-xl text-gray-600">
+                Latest insights and strategies for e-commerce video marketing
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+              {blogPosts.filter(post => !post.featured).map((post, index) => (
+                <Link key={index} href={`/blog/${post.slug}`}>
+                  <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div className="mb-4">
+                      <span className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">{post.category}</span>
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3 hover:text-blue-600 transition-colors">{post.title}</h3>
+                    <p className="text-gray-600 mb-4">{post.excerpt}</p>
+                    <div className="flex items-center gap-4 text-sm text-gray-500">
+                      <div className="flex items-center gap-2">
+                        <Calendar className="w-4 h-4" />
+                        <span>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Clock className="w-4 h-4" />
+                        <span>{post.readTime}</span>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Coming Soon Posts */}
+        <section className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">
@@ -97,19 +145,22 @@ export default function BlogPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
-                  title: "Shopify Video Marketing: Complete Guide",
-                  description: "Learn how to use videos to boost your Shopify store's conversions",
-                  category: "Shopify Tips"
+                  title: "How to Add Product Videos to Shopify: 5 Methods That Actually Work",
+                  description: "Step-by-step tutorial for implementing videos on your Shopify store",
+                  category: "Shopify Tutorial",
+                  status: "Coming Friday"
                 },
                 {
-                  title: "Amazon Product Video Best Practices",
-                  description: "Optimize your Amazon listings with professional product videos",
-                  category: "Amazon Selling"
+                  title: "Amazon Product Video Requirements: Complete 2026 Compliance Guide",
+                  description: "Master Amazon's video requirements and boost your listing rankings",
+                  category: "Amazon Selling",
+                  status: "Coming Soon"
                 },
                 {
-                  title: "URL to Video: The Future of Content Creation",
-                  description: "Why transforming URLs into videos is revolutionizing marketing",
-                  category: "Innovation"
+                  title: "E-commerce Video Marketing Statistics: 50+ Stats That Will Shock You",
+                  description: "Latest data and trends in e-commerce video marketing for 2026",
+                  category: "Industry Insights",
+                  status: "Coming Soon"
                 }
               ].map((post, index) => (
                 <div key={index} className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
@@ -118,7 +169,9 @@ export default function BlogPage() {
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">{post.title}</h3>
                   <p className="text-gray-600 mb-4">{post.description}</p>
-                  <div className="text-gray-400 text-sm">Coming Soon</div>
+                  <div className={`text-sm font-medium ${post.status === 'Coming Friday' ? 'text-blue-600' : 'text-gray-400'}`}>
+                    {post.status}
+                  </div>
                 </div>
               ))}
             </div>
