@@ -11,9 +11,7 @@ Allow: /
 # Allow all search engines to crawl the site
 Allow: /images/
 Allow: /videos/
-Allow: /api/
 Allow: /blog/
-Allow: /help/
 
 # Disallow admin areas and sensitive paths
 Disallow: /admin/

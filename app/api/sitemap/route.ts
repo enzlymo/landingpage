@@ -99,22 +99,16 @@ export async function GET() {
       priority: '0.7'
     },
     {
-      url: '/help',
+      url: '/blog/shopify-video-marketing-guide',
       lastmod: currentDate,
       changefreq: 'monthly',
-      priority: '0.5'
+      priority: '0.7'
     },
     {
       url: '/business',
       lastmod: currentDate,
       changefreq: 'monthly',
       priority: '0.7'
-    },
-    {
-      url: '/api',
-      lastmod: currentDate,
-      changefreq: 'monthly',
-      priority: '0.4'
     },
     {
       url: '/privacy-policy',

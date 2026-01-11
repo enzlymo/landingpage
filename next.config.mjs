@@ -98,6 +98,43 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      // Redirect non-existent pages that were in sitemap
+      {
+        source: '/help',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/api',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/about',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/pricing',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/features',
+        destination: '/',
+        permanent: true,
+      },
+      // Language redirects - redirect to main site for now
+      {
+        source: '/es',
+        destination: '/',
+        permanent: false, // Use temporary redirect in case you want to add Spanish later
+      },
+      {
+        source: '/fr',
+        destination: '/',
+        permanent: false, // Use temporary redirect in case you want to add French later
+      },
       // Add more redirects as needed
     ];
   },
