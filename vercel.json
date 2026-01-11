@@ -22,6 +22,16 @@
       "source": "https://www.lymo.me/(.*)",
       "destination": "https://lymo.me/$1",
       "permanent": true
+    },
+    {
+      "source": "http://lymo.me/(.*)",
+      "destination": "https://lymo.me/$1",
+      "permanent": true
+    },
+    {
+      "source": "http://www.lymo.me/(.*)",
+      "destination": "https://lymo.me/$1",
+      "permanent": true
     }
   ],
   "headers": [

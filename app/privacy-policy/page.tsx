@@ -4,25 +4,60 @@ import { ArrowLeft, Info } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Lymo AI - AI Video Generator",
-  description: "Privacy Policy for Lymo AI platform. Learn how we collect, use, and protect your personal data in compliance with GDPR.",
+  description: "Privacy Policy for Lymo AI platform. Learn how we collect, use, and protect your personal data in compliance with GDPR and data protection laws.",
+  keywords: "privacy policy, lymo ai, gdpr, data protection, personal data, cookies, analytics",
   openGraph: {
     title: "Privacy Policy | Lymo AI",
-    description: "Privacy Policy for Lymo AI platform",
+    description: "Privacy Policy for Lymo AI platform. Learn how we collect, use, and protect your personal data in compliance with GDPR.",
     url: "https://lymo.me/privacy-policy",
+    siteName: "Lymo AI",
+    type: "website",
   },
   twitter: {
     card: "summary",
     title: "Privacy Policy | Lymo AI",
-    description: "Privacy Policy for Lymo AI platform",
+    description: "Privacy Policy for Lymo AI platform. Learn how we collect, use, and protect your personal data in compliance with GDPR.",
   },
   alternates: {
     canonical: "https://lymo.me/privacy-policy",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default function PrivacyPolicyPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy",
+    "description": "Privacy Policy for Lymo AI platform. Learn how we collect, use, and protect your personal data in compliance with GDPR.",
+    "url": "https://lymo.me/privacy-policy",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "LYMERA AB",
+      "url": "https://lymo.me",
+      "email": "lymoadsai@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "SE"
+      }
+    },
+    "dateModified": "2025-09-22",
+    "inLanguage": "en"
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Header */}
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-6 py-4">

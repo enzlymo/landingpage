@@ -23,12 +23,10 @@ Disallow: /temp/
 Disallow: /.env
 Disallow: /config/
 
-# Prevent indexing of app subdomain
-User-agent: *
-Disallow: https://app.lymo.me/
-
 # Canonical domain preference
 Host: lymo.me
+
+# Note: app.lymo.me should have its own robots.txt that disallows all crawling
 
 # Disallow URL parameters that might create duplicate content
 Disallow: /*?utm_*
