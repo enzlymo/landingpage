@@ -4,25 +4,60 @@ import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Terms of Service | Lymo AI - AI Video Generator",
-  description: "Terms of Service for Lymo AI platform. Learn about user accounts, acceptable use, intellectual property rights, and legal terms.",
+  description: "Terms of Service for Lymo AI platform. Learn about user accounts, acceptable use, intellectual property rights, and legal terms for our AI video and image generation service.",
+  keywords: "terms of service, lymo ai, legal terms, user agreement, ai video generator, privacy policy",
   openGraph: {
     title: "Terms of Service | Lymo AI",
-    description: "Terms of Service for Lymo AI platform",
+    description: "Terms of Service for Lymo AI platform. Learn about user accounts, acceptable use, intellectual property rights, and legal terms.",
     url: "https://lymo.me/terms-of-service",
+    siteName: "Lymo AI",
+    type: "website",
   },
   twitter: {
     card: "summary",
     title: "Terms of Service | Lymo AI",
-    description: "Terms of Service for Lymo AI platform",
+    description: "Terms of Service for Lymo AI platform. Learn about user accounts, acceptable use, intellectual property rights, and legal terms.",
   },
   alternates: {
     canonical: "https://lymo.me/terms-of-service",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default function TermsOfServicePage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Terms of Service",
+    "description": "Terms of Service for Lymo AI platform. Learn about user accounts, acceptable use, intellectual property rights, and legal terms.",
+    "url": "https://lymo.me/terms-of-service",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "LYMERA AB",
+      "url": "https://lymo.me",
+      "email": "lymoadsai@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "SE"
+      }
+    },
+    "dateModified": "2025-09-22",
+    "inLanguage": "en"
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Header */}
       <header className="border-b border-gray-200 bg-white">
         <div className="max-w-4xl mx-auto px-6 py-4">

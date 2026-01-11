@@ -54,10 +54,10 @@ const nextConfig = {
             key: 'Referrer-Policy',
             value: 'origin-when-cross-origin'
           },
-          // Performance headers
+          // Canonical URL header to prevent www duplication
           {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable'
+            key: 'Link',
+            value: '<https://lymo.me>; rel="canonical"'
           }
         ],
       },
@@ -149,6 +149,10 @@ const nextConfig = {
       {
         source: '/robots.txt',
         destination: '/api/robots',
+      },
+      {
+        source: '/favicon.ico',
+        destination: '/favicon.svg',
       },
     ];
   },
